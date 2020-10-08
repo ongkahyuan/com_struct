@@ -1,0 +1,16 @@
+module checker (
+    input sum1,
+    input cout1,
+    input sum2,
+    input cout2,
+    output out
+  ) {
+  
+  always {
+  if(sum1==sum2 && cout1 == cout2){
+    out = 1;
+  }
+  else{
+    out = 0;
+  }
+}

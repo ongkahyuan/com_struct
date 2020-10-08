@@ -1,0 +1,86 @@
+module au_top (
+    input clk,              // 100MHz clock
+    input rst_n,            // reset button (active low)
+    output led [8],         // 8 user controllable LEDs
+    input usb_rx,           // USB->Serial input
+    output usb_tx,          // USB->Serial output
+    output io_led [3][8],   // LEDs on IO Shield
+    output io_seg [8],      // 7-segment LEDs on IO Shield
+    output io_sel [4],      // Digit select on IO Shield
+    input io_button [5],    // 5 buttons on IO Shield
+    input io_dip [3][8],     // DIP switches on IO Shield
+    output customout[3],
+    input customin[2]
+  ) {
+  
+  sig rst;                  // reset signal
+  full_adder fa;
+  checker chk;
+  
+  .clk(clk) {
+    // The reset conditioner is used to synchronize the reset signal to the FPGA
+    // clock. This ensures the entire FPGA comes out of reset at the same time.
+    reset_conditioner reset_cond;
+    
+    //    edge_detector edge_detector (#RISE(1), #FALL(0));
+    edge_detector buttondetector[1](#RISE(1), #FALL(0));
+    button_conditioner buttoncond[1];
+    
+    .rst(rst) {
+      multi_seven_seg seg (#DIGITS(1));
+      singlecounter dec_ctr;
+      //      counter ctr (#SIZE(1), #DIV(24));
+      //      manualcounter ctr1 (#SIZE(1), #DIV(24));
+    }
+    
+  }
+  
+  always {
+    reset_cond.in = ~rst_n;   // input raw inverted reset signal
+    rst = reset_cond.out;     // conditioned reset
+    
+    io_seg = ~seg.seg; // connect segments to the driver
+    io_sel = ~seg.sel; // connect digit select to the driver
+    
+    led = 8h00;             // turn LEDs off
+    io_led = 3x{{8h00}};    // turn LEDs off
+    //    led = c{3b0, io_button};  // connect buttons to LEDs
+    
+    usb_tx = usb_rx;          // loop serial port
+    
+    customout[0] = dec_ctr.a;
+    customout[1] = dec_ctr.b;
+    customout[2] = dec_ctr.cout;
+    
+    chk.sum1 = customin[0];
+    chk.sum2 = fa.s;
+    chk.cout1 = customin[1];
+    chk.cout2 = fa.cout;
+    
+    //    edge_detector.in = ctr1.value;
+    buttondetector.in = buttoncond.out;
+    dec_ctr.inc = buttondetector.out;
+    seg.values = dec_ctr.value;
+    buttoncond.in = io_button[0];
+    buttoncond.in = io_button[1];
+    fa.x = dec_ctr.a;
+    fa.y = dec_ctr.b;
+    fa.cin = dec_ctr.cout;
+    io_led[0][0]=fa.s;
+    io_led[0][1]=fa.cout;
+    io_led[2][0]=chk.out;
+    io_led[1][0] = customin[0];
+    io_led[1][1] = customin[1];
+    //io_led[2][0]=dec_ctr.a;
+    //io_led[2][1]=dec_ctr.b;
+    //io_led[2][3]=dec_ctr.cout;
+    //fa.x = 8h00;
+    //fa.y = 8h00;
+    //fa.cin = 8h00;
+    
+    
+    //    ctr1.in = buttoncond.out;
+    
+    //    io_led = io_dip;   // connect the DIP switches to the LEDs
+  }
+}

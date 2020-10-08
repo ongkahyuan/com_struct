@@ -1,0 +1,47 @@
+module singlecounter (
+    input clk,      // clock
+    input rst,      // reset
+    input inc,      // increment the counter
+    //    output ovf,     // counter overflowed
+    output value[1][4], // current value
+    output a,
+    output b,
+    output cout
+  ) {
+  
+  .clk(clk), .rst(rst) {
+    dff val[4];     // value storage
+    dff aa[1];
+    dff bb[1];
+    dff cc[1];
+  }
+  
+  always {
+    value[0] = val.q;           // output the value
+    a = aa.q;
+    b = bb.q;
+    cout = cc.q;
+    
+    //    ovf = val.q == 9 && inc; // if max value and incrementing, overflow!    
+    
+    if (inc) {               // should add 1
+      if (val.q == 7)        // if max value
+        val.d = 0;           // reset to 0
+      else                   // otherwise
+        val.d = val.q + 1;   // add one
+      
+      case(val.q){
+        0: aa.d= 0 ; bb.d= 0 ; cc.d = 0;
+        1: aa.d= 0 ; bb.d= 0 ; cc.d = 1;
+        2: aa.d= 0 ; bb.d= 1 ; cc.d = 0;
+        3: aa.d= 1 ; bb.d= 0 ; cc.d = 0;
+        4: aa.d= 0 ; bb.d= 1 ; cc.d = 1;
+        5: aa.d= 1 ; bb.d= 0 ; cc.d = 1;
+        6: aa.d= 1 ; bb.d= 1 ; cc.d = 0;
+        7: aa.d= 1 ; bb.d= 1 ; cc.d = 1;
+        
+      }
+      
+    }
+  }
+}
