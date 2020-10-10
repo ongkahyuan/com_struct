@@ -8,9 +8,8 @@ module au_top (
     output io_seg [8],      // 7-segment LEDs on IO Shield
     output io_sel [4],      // Digit select on IO Shield
     input io_button [5],    // 5 buttons on IO Shield
-    input io_dip [3][8],     // DIP switches on IO Shield
-    output customout[3],
-    input customin[2]
+    output customout[3],    // 3 outputs for 'A', 'B', and 'Carry In' for the physical adder
+    input customin[2]       // 2 inputs for 'Sum' and 'Carry Out' from the physicall adder
   ) {
   
   sig rst;                  // reset signal
@@ -28,59 +27,48 @@ module au_top (
     
     .rst(rst) {
       multi_seven_seg seg (#DIGITS(1));
-      singlecounter dec_ctr;
-      //      counter ctr (#SIZE(1), #DIV(24));
-      //      manualcounter ctr1 (#SIZE(1), #DIV(24));
+      testcounter output_states;
     }
     
   }
   
   always {
-    reset_cond.in = ~rst_n;   // input raw inverted reset signal
-    rst = reset_cond.out;     // conditioned reset
+    reset_cond.in = ~rst_n;             // input raw inverted reset signal
+    rst = reset_cond.out;               // conditioned reset
     
-    io_seg = ~seg.seg; // connect segments to the driver
-    io_sel = ~seg.sel; // connect digit select to the driver
+    io_seg = ~seg.seg;                  // connect segments to the driver
+    io_sel = ~seg.sel;                  // connect digit select to the driver
     
-    led = 8h00;             // turn LEDs off
-    io_led = 3x{{8h00}};    // turn LEDs off
-    //    led = c{3b0, io_button};  // connect buttons to LEDs
+    led = 8h00;                         // turn LEDs off
+    io_led = 3x{{8h00}};                // turn LEDs off
     
-    usb_tx = usb_rx;          // loop serial port
+    usb_tx = usb_rx;                    // loop serial port
     
-    customout[0] = dec_ctr.a;
-    customout[1] = dec_ctr.b;
-    customout[2] = dec_ctr.cout;
+    customout[0] = output_states.a;     // connecting 'A' signal to physical full adder 
+    fa.x         = output_states.a;     // connecting 'A' signal to programmed full adder
+    customout[1] = output_states.b;     // connecting 'B' signal to physical full adder 
+    fa.y         = output_states.b;     // connecting 'B' signal to programmed full adder
+    customout[2] = output_states.cin;  // connecting 'Carry in' signal to physical full adder 
+    fa.cin       = output_states.cin;  // connecting 'Carry in' signal to programmed full adder
     
-    chk.sum1 = customin[0];
-    chk.sum2 = fa.s;
-    chk.cout1 = customin[1];
-    chk.cout2 = fa.cout;
+    chk.sum1  = customin[0];            // connecting 'Sum' from physical full adder to checker which verifies/validates signal
+    chk.sum2  = fa.s;                   // connecting desired/correct 'Sum' signal from programmed full adder to checker
+    chk.cout1 = customin[1];            // connecting 'Carry Out' from physical full adder to checker which verifies/validates signal
+    chk.cout2 = fa.cout;                // connecting desired/correct 'Carry Out' signal from programmed full adder to checker
     
-    //    edge_detector.in = ctr1.value;
-    buttondetector.in = buttoncond.out;
-    dec_ctr.inc = buttondetector.out;
-    seg.values = dec_ctr.value;
-    buttoncond.in = io_button[0];
-    buttoncond.in = io_button[1];
-    fa.x = dec_ctr.a;
-    fa.y = dec_ctr.b;
-    fa.cin = dec_ctr.cout;
-    io_led[0][0]=fa.s;
-    io_led[0][1]=fa.cout;
-    io_led[2][0]=chk.out;
-    io_led[1][0] = customin[0];
-    io_led[1][1] = customin[1];
-    //io_led[2][0]=dec_ctr.a;
-    //io_led[2][1]=dec_ctr.b;
-    //io_led[2][3]=dec_ctr.cout;
-    //fa.x = 8h00;
-    //fa.y = 8h00;
-    //fa.cin = 8h00;
+    io_led[2][0]=chk.out;               // led[2][0] should light up ONLY if both 'Sum' and 'carry in' signals are correct
+    if (chk.out == 0) io_led[1][7] = 1; // led[1][7] should light up ONLY if any wrong signal is detected
     
+    buttoncond.in = io_button[0];           // smoothes out the input signal from button press -- io_button[0] is the 'up' button
+    buttondetector.in = buttoncond.out;     // sends the smoothed signal into the edge detector
+    output_states.inc = buttondetector.out; // sends edge detector signal into state machine to counter/state machine to iterate the 8 test cases for 'A','B' and 'Carry in' signals
+    seg.values = output_states.value;       // displays the testcase being performed in the 7 segment display output 
     
-    //    ctr1.in = buttoncond.out;
+    io_led[2][5]=output_states.a;       // displays the current 'A' signal at led[2][5]
+    io_led[2][6]=output_states.b;       // displays the current 'B' signal at led[2][6]
+    io_led[2][7]=output_states.cin;     // displays the current 'Carry in' signal at led[2][7]
     
-    //    io_led = io_dip;   // connect the DIP switches to the LEDs
+    io_led[1][0]=customin[0];           // displays the current 'Sum' signal from the physical full_adder
+    io_led[1][1]=customin[1];           // displays the current 'Carry Out' signal from the physical full_adder
   }
 }

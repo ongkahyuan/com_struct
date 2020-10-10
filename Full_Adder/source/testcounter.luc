@@ -1,0 +1,43 @@
+module testcounter (
+    input clk,                            // clock
+    input rst,                            // reset
+    input inc,                            // increment the counter
+    output value[1][4],                   // current test case 2d array to match the 7 segment inputs
+    output a,                             // 'A' signal
+    output b,                             // 'B' signal
+    output cin                            // 'Carry In' signal
+  ) {
+  
+  .clk(clk), .rst(rst) {
+    dff val[4];                           // value storage
+    dff aa[1];                            // register for output 'a'
+    dff bb[1];                            // register for output 'b'
+    dff cc[1];                            // register for output 'carry in'
+  }
+  
+  always {
+    value[0] = val.q;                     // output the value
+    a = aa.q;
+    b = bb.q;
+    cin = cc.q;  
+    
+    if (val.q == 9 || val.q == 0){        // Since we want the counter to count from 1 to 8, it should change to '1' whenever it sees 0 or 9
+        val.d = 1;                        // reset to 1
+    }
+    if (inc) {                            // if increment signal detected
+        val.d = val.q + 1;                // add one
+      
+      case(val.q){
+        8: aa.d= 0 ; bb.d= 0 ; cc.d = 0;  // cases for all combinations of 'A', 'B' and 'Carry In'
+        1: aa.d= 0 ; bb.d= 0 ; cc.d = 1;
+        2: aa.d= 0 ; bb.d= 1 ; cc.d = 0;
+        3: aa.d= 1 ; bb.d= 0 ; cc.d = 0;
+        4: aa.d= 0 ; bb.d= 1 ; cc.d = 1;
+        5: aa.d= 1 ; bb.d= 0 ; cc.d = 1;
+        6: aa.d= 1 ; bb.d= 1 ; cc.d = 0;
+        7: aa.d= 1 ; bb.d= 1 ; cc.d = 1;
+      }
+      
+    }
+  }
+}

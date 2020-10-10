@@ -1,4 +1,4 @@
-module checker (
+module checker (  // simple checker to verify whether actual sum and carry out matches desired sum and carry out
     input sum1,
     input cout1,
     input sum2,
