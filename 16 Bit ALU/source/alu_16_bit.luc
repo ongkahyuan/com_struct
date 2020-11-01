@@ -1,0 +1,72 @@
+// 16-bit arithmetic logic unit
+module alu_16_bit (
+    input alufn[6],
+    input a[16],
+    input b[16],
+    output out[16],
+    output z,
+    output v,
+    output n
+  ) {
+    
+  sig z;
+  sig v;
+  sig n;
+  
+  
+    
+  alu_arithmetic arithmeticUnit;
+  alu_boolean booleanUnit;
+  alu_compare compareUnit;
+  alu_shift shiftUnit;
+  
+  always {
+    // z, v, n outputs can only be non-zero when carrying out arithmetic operations (ADD, SUB, MUL)
+    //z = 0;
+    //v = 0;
+    //n = 0;
+    arithmeticUnit.alufn=alufn;
+    arithmeticUnit.a=a;
+    arithmeticUnit.b=b;
+    
+    
+    
+    z = arithmeticUnit.z;
+    v = arithmeticUnit.v;
+    n = arithmeticUnit.n; 
+    
+    zvn[0] = z;
+    zvn[1] = v;
+    zvn[2] = n;
+     
+    
+    compareUnit.alufn = alufn;
+    compareUnit.z = z;
+    compareUnit.v = v;
+    compareUnit.n = n;
+    
+    booleanUnit.alufn = alufn;
+    booleanUnit.a = a;
+    booleanUnit.b = b;
+    
+    shiftUnit.alufn = alufn;
+    shiftUnit.a = a;
+    shiftUnit.b = b[3:0];
+    
+    case (alufn[5:4]) {
+      00: 
+        s = alu_arithmetic.o;
+        z = alu_arithmetic.z;
+        v = alu_arithmetic.v;
+        n = alu_arithmetic.n;
+      01:
+        s = alu_boolean.s;
+      10:
+        s = alu_shift.s;
+      11:
+        s = alu_compare.s;
+      default:  s = 0;
+      }
+    out = s;
+  }
+}
