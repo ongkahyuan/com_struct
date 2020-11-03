@@ -53,11 +53,11 @@ module alu_16_bit (
     shifterUnit.b = b[3:0];
     
     case (alufn[5:4]) {
-      00: out = arithmeticUnit.out;
-      01: out = booleanUnit.out;
-      10: out = shifterUnit.out;
-      11: out = compareUnit.out;
-      default:  out = 0;
+      b00: out = arithmeticUnit.out;
+      b01: out = booleanUnit.out;
+      b10: out = shifterUnit.out;
+      b11: out = compareUnit.out;
+      default:  out = 16b0;
       
       }
   }

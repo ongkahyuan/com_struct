@@ -1,10 +1,57 @@
 module au_top (
-    input clk,  // clock
-    input rst,  // reset
-    output out
+    input clk,              // 100MHz clock
+    input rst_n,            // reset button (active low)
+    input usb_rx,           // USB->Serial input
+    output usb_tx,          // USB->Serial output
+    output led [8],         // 8 user controllable LEDs
+    input io_dip [3][8],       // DIP switches on IO Shield
+    input io_button [5],       // 5 buttons on IO Shield 
+    // io_button[0] is up, io_button[1] is center, io_button[2] is down, io_button[3] is left, and io_button[4] is right.
+    output io_seg[8],          // 7-segment LEDs on IO Shield
+    output io_sel[4],          // Digit select on IO Shield
+    output io_led [3][8]       // LEDs on IO Shield
   ) {
+  
+  sig rst;
+  
+  // The reset conditioner is used to synchronize the reset signal to the FPGA
+  // clock. This ensures the entire FPGA comes out of reset at the same time.
+  reset_conditioner reset_cond(.clk(clk));
+  manual_alu_tester manual_tester;
+  
+  
+  
 
   always {
-    out = 0;
+  
+    
+    reset_cond.in = ~rst_n;   // input raw inverted reset signal
+    rst = reset_cond.out;     // conditioned reset
+    
+    led = 8h00; // turn off LEDs
+    // led = c{3b0, io_button};  // connect buttons to LEDs
+    
+    usb_tx = usb_rx;          // loop serial port
+    
+    io_led = 3x{{h00}};
+    io_seg = 8b0; // connect segments to the driver
+    io_sel = 4b0; // connect digit select to the driver
+    
+    manual_tester.io_dip = io_dip;
+    manual_tester.io_button = io_button;
+    manual_tester.clk = clk;
+    manual_tester.rst = rst;
+    
+    
+    // We set the initial state of the led, seven_seg and selector here
+    io_led = 3x{{8h00}}; // turn all LEDs off
+    io_seg = manual_tester.io_seg;
+    io_sel = manual_tester.io_sel;
+    
+    io_led = manual_tester.io_led;
+    
+    
+    
+    
   }
 }

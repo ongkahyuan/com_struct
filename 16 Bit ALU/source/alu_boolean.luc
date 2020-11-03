@@ -16,7 +16,7 @@ module alu_boolean (
       0001: out = ~(a & b); // Additional: NAND
       1111: out = ~(a | b); // Additional: NOR
       0111: out = ~(a ^ b); // Additional: XNOR
-      default: out = 0;
+      default: out = 16b0;
       
       }
   }

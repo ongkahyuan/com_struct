@@ -5,7 +5,7 @@
 // ALUFN (signal/opcode) can be input at any state.
 // A flaw of this tester is that computations on the ALU cannot be done iteratively, 
 // since the output of each round of computation is not reused as input A
-
+// manual_alu_tester
 module manual_alu_tester (
     input clk,  // clock
     input rst,  // reset

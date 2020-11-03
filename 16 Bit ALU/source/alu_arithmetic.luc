@@ -13,11 +13,11 @@ module alu_arithmetic (
     case (alufn[1:0]){
     
       // Addition Operation
-      00: s = a + b; // ADD
+      b00: s = a + b; // ADD
       // Subtraction Operation
-      01: s = a - b; // SUB
+      b01: s = a - b; // SUB
       // Additional Function: Multiply
-      10: s = (a * b); // MUL 
+      b10: s = (a * b); // MUL 
       default: s = 0;
       
     }
