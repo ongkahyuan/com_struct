@@ -2,19 +2,18 @@
 <project name="16 Bit ALU" board="Alchitry Au" language="Lucid" version="3">
   <files>
     <src>alu_arithmetic.luc</src>
+    <src>manual_alu_tester.luc</src>
     <src>alu_statement_tester.luc</src>
     <src>alu_compare.luc</src>
-    <src>alu_tester.luc</src>
-    <src>decimal_counter.luc</src>
-    <src>alu_tester_auto.luc</src>
-    <src>multi_dec_ctr.luc</src>
+    <component>pipeline.luc</component>
     <src top="true">au_top.luc</src>
     <src>seven_seg.luc</src>
     <src>alu_16_bit.luc</src>
     <src>alu_shifter.luc</src>
     <component>reset_conditioner.luc</component>
     <src>alu_boolean.luc</src>
-    <src>multi_seven_seg.luc</src>
+    <component>edge_detector.luc</component>
+    <component>button_conditioner.luc</component>
     <constraint lib="true">alchitry.acf</constraint>
     <constraint lib="true">io.acf</constraint>
     <constraint lib="true">au.xdc</constraint>
