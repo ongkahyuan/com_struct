@@ -26,7 +26,7 @@ module alu_16_bit (
     int_v = 0;
     int_n = 0;
     
-    arithmeticUnit.alufn = alufn[1:0];
+    arithmeticUnit.alufn = alufn[3:0];
     arithmeticUnit.a = a;
     arithmeticUnit.b = b;
     

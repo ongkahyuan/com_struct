@@ -9,13 +9,13 @@ module alu_boolean (
     case(alufn[3:0]){
     
       // Boolean Operations:
-      1000: out = a & b; // AND
-      1110: out = a | b; // OR
-      0110: out = a ^ b; // XOR
-      1010: out = a;     // "A"
-      0001: out = ~(a & b); // Additional: NAND
-      1111: out = ~(a | b); // Additional: NOR
-      0111: out = ~(a ^ b); // Additional: XNOR
+      b1000: out = a & b; // AND
+      b1110: out = a | b; // OR
+      b0110: out = a ^ b; // XOR
+      b1010: out = a;     // "A"
+      b0001: out = ~(a & b); // Additional: NAND
+      b1111: out = ~(a | b); // Additional: NOR
+      b0111: out = ~(a ^ b); // Additional: XNOR
       default: out = 16b0;
       
       }

@@ -14,11 +14,11 @@ module alu_compare (
     
       // Compare Operations:
       // CMPEQ: A = B
-      0011: out[0] = z;
+      b0011: out[0] = z;
       // CMLT: A < B
-      0101: out[0] = n ^ v;
+      b0101: out[0] = n ^ v;
       // CMLE: A <= B
-      0111: out[0] = z | (n ^ v);
+      b0111: out[0] = z | (n ^ v);
       default: out[0] = 0;
       
     }

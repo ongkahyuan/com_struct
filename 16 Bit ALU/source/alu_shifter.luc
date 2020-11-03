@@ -10,9 +10,9 @@ module alu_shifter (
   case (alufn[1:0]){
     
     // Shift Operations:
-    00: out = a << b; // SL
-    01: out = a >> b; // SR
-    11: out = $signed(a) >>> b; // SRA
+    b00: out = a << b; // SL
+    b01: out = a >> b; // SR
+    b11: out = $signed(a) >>> b; // SRA
     default: out = a;
        
     }
