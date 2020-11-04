@@ -13,45 +13,87 @@ module au_top (
   ) {
   
   sig rst;
+  sig state_change;
+  sig start_auto_test;
   
   // The reset conditioner is used to synchronize the reset signal to the FPGA
   // clock. This ensures the entire FPGA comes out of reset at the same time.
-  reset_conditioner reset_cond(.clk(clk));
-  manual_alu_tester manual_tester;
+  //reset_conditioner reset_cond(.clk(clk));
+  //manual_alu_tester manual_tester;
+  
+  .clk(clk){
+      reset_conditioner reset_cond;
+      button_conditioner button_cond;
+      edge_detector edge (#RISE(1), #FALL(0));
+     
+    .rst(rst) {  
+      fsm state = {MANUAL, AUTO};
+      alu_tester_auto alu_tester_auto(.start(start_auto_test));
+      alu_tester alu_tester (.io_dip(io_dip), .state_change_btn(io_button[1]) );
+    }
+  }
   
   
   
 
   always {
   
-    
     reset_cond.in = ~rst_n;   // input raw inverted reset signal
-    rst = reset_cond.out;     // conditioned reset
+    rst = reset_cond.out;     // conditioned reset_cond
     
-    led = 8h00; // turn off LEDs
-    // led = c{3b0, io_button};  // connect buttons to LEDs
+    button_cond.in = io_button[2];
+    edge.in = button_cond.out;
+    state_change = edge.out;  
     
-    usb_tx = usb_rx;          // loop serial port
+    start_auto_test = 0;
+     
+     
+    // We set the initial state of the led, seven_seg and selector here
+    io_led = {8b0,8b0,8b0};  
+    io_seg = alu_tester.io_seg;
+    io_sel = alu_tester.io_sel;
+      
+    case(state.q){
+        state.MANUAL:        
+          io_led = alu_tester.io_led;
+          if(state_change){
+            state.d = state.AUTO;
+          }
+          
+        state.AUTO:
+          io_seg = alu_tester_auto.io_seg;
+          io_sel = alu_tester_auto.io_sel;
+          io_led[2][5:0] = alu_tester_auto.opcode_led; 
+          start_auto_test = 1;
+          if(state_change){
+            state.d = state.MANUAL;
+        }
+    }
     
-    io_led = 3x{{h00}};
-    io_seg = 8b0; // connect segments to the driver
-    io_sel = 4b0; // connect digit select to the driver
+    //reset_cond.in = ~rst_n;   // input raw inverted reset signal
+    //rst = reset_cond.out;     // conditioned reset
     
-    manual_tester.io_dip = io_dip;
-    manual_tester.io_button = io_button;
-    manual_tester.clk = clk;
-    manual_tester.rst = rst;
+    led = 8h00; // turn off LEDs from documentation
+    led = c{3b0, io_button};  // connect buttons to LEDs
+    
+    usb_tx = usb_rx;          // loop serial port from documentation
+    
+    //io_led = 3x{{h00}};
+    //io_seg = 8b0; // connect segments to the driver
+    //io_sel = 4b0; // connect digit select to the driver
+    
+    //manual_tester.io_dip = io_dip;
+    //manual_tester.io_button = io_button;
+    //manual_tester.clk = clk;
+    //manual_tester.rst = rst;
     
     
     // We set the initial state of the led, seven_seg and selector here
-    io_led = 3x{{8h00}}; // turn all LEDs off
-    io_seg = manual_tester.io_seg;
-    io_sel = manual_tester.io_sel;
+    //io_led = 3x{{8h00}}; // turn all LEDs off
+    //io_seg = manual_tester.io_seg;
+    //io_sel = manual_tester.io_sel;
     
-    io_led = manual_tester.io_led;
-    
-    
-    
+    //io_led = manual_tester.io_led;
     
   }
 }

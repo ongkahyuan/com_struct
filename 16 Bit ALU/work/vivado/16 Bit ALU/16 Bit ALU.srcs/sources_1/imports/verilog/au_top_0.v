@@ -21,6 +21,10 @@ module au_top_0 (
   
   reg rst;
   
+  reg state_change;
+  
+  reg start_auto_test;
+  
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
   reset_conditioner_1 reset_cond (
@@ -28,39 +32,89 @@ module au_top_0 (
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
+  wire [1-1:0] M_button_cond_out;
+  reg [1-1:0] M_button_cond_in;
+  button_conditioner_2 button_cond (
+    .clk(clk),
+    .in(M_button_cond_in),
+    .out(M_button_cond_out)
+  );
+  wire [1-1:0] M_edge_out;
+  reg [1-1:0] M_edge_in;
+  edge_detector_3 L_edge (
+    .clk(clk),
+    .in(M_edge_in),
+    .out(M_edge_out)
+  );
+  localparam MANUAL_state = 1'd0;
+  localparam AUTO_state = 1'd1;
   
-  wire [8-1:0] M_manual_tester_io_seg;
-  wire [4-1:0] M_manual_tester_io_sel;
-  wire [24-1:0] M_manual_tester_io_led;
-  reg [1-1:0] M_manual_tester_clk;
-  reg [1-1:0] M_manual_tester_rst;
-  reg [24-1:0] M_manual_tester_io_dip;
-  reg [5-1:0] M_manual_tester_io_button;
-  manual_alu_tester_2 manual_tester (
-    .clk(M_manual_tester_clk),
-    .rst(M_manual_tester_rst),
-    .io_dip(M_manual_tester_io_dip),
-    .io_button(M_manual_tester_io_button),
-    .io_seg(M_manual_tester_io_seg),
-    .io_sel(M_manual_tester_io_sel),
-    .io_led(M_manual_tester_io_led)
+  reg M_state_d, M_state_q = MANUAL_state;
+  wire [8-1:0] M_alu_tester_auto_io_seg;
+  wire [4-1:0] M_alu_tester_auto_io_sel;
+  wire [6-1:0] M_alu_tester_auto_opcode_led;
+  alu_tester_auto_4 alu_tester_auto (
+    .clk(clk),
+    .rst(rst),
+    .start(start_auto_test),
+    .io_seg(M_alu_tester_auto_io_seg),
+    .io_sel(M_alu_tester_auto_io_sel),
+    .opcode_led(M_alu_tester_auto_opcode_led)
+  );
+  wire [8-1:0] M_alu_tester_io_seg;
+  wire [4-1:0] M_alu_tester_io_sel;
+  wire [24-1:0] M_alu_tester_io_led;
+  alu_tester_5 alu_tester (
+    .clk(clk),
+    .rst(rst),
+    .io_dip(io_dip),
+    .state_change_btn(io_button[1+0-:1]),
+    .io_seg(M_alu_tester_io_seg),
+    .io_sel(M_alu_tester_io_sel),
+    .io_led(M_alu_tester_io_led)
   );
   
   always @* begin
+    M_state_d = M_state_q;
+    
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
+    M_button_cond_in = io_button[2+0-:1];
+    M_edge_in = M_button_cond_out;
+    state_change = M_edge_out;
+    start_auto_test = 1'h0;
+    io_led = 24'h000000;
+    io_seg = M_alu_tester_io_seg;
+    io_sel = M_alu_tester_io_sel;
+    
+    case (M_state_q)
+      MANUAL_state: begin
+        io_led = M_alu_tester_io_led;
+        if (state_change) begin
+          M_state_d = AUTO_state;
+        end
+      end
+      AUTO_state: begin
+        io_seg = M_alu_tester_auto_io_seg;
+        io_sel = M_alu_tester_auto_io_sel;
+        io_led[16+0+5-:6] = M_alu_tester_auto_opcode_led;
+        start_auto_test = 1'h1;
+        if (state_change) begin
+          M_state_d = MANUAL_state;
+        end
+      end
+    endcase
     led = 8'h00;
+    led = {3'h0, io_button};
     usb_tx = usb_rx;
-    io_led = 24'h000000;
-    io_seg = 8'h00;
-    io_sel = 4'h0;
-    M_manual_tester_io_dip = io_dip;
-    M_manual_tester_io_button = io_button;
-    M_manual_tester_clk = clk;
-    M_manual_tester_rst = rst;
-    io_led = 24'h000000;
-    io_seg = M_manual_tester_io_seg;
-    io_sel = M_manual_tester_io_sel;
-    io_led = M_manual_tester_io_led;
   end
+  
+  always @(posedge clk) begin
+    if (rst == 1'b1) begin
+      M_state_q <= 1'h0;
+    end else begin
+      M_state_q <= M_state_d;
+    end
+  end
+  
 endmodule

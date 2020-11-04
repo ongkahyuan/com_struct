@@ -17,57 +17,700 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1960
+INFO: [Synth 8-7075] Helper process launched with PID 11080
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.832 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+	Parameter MANUAL_state bound to: 1'b0 
+	Parameter AUTO_state bound to: 1'b1 
 INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
 	Parameter STAGES bound to: 3'b100 
 INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_1' (1#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
-INFO: [Synth 8-6157] synthesizing module 'manual_alu_tester_2' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:7]
-	Parameter A_state bound to: 2'b00 
-	Parameter B_state bound to: 2'b01 
-	Parameter OUTPUT_state bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'button_conditioner_3' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner_2' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
 	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
 INFO: [Synth 8-6157] synthesizing module 'pipeline_6' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 	Parameter DEPTH bound to: 2'b10 
 INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_3' (3#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_4' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_2' (3#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_3' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
 	Parameter RISE bound to: 1'b1 
 	Parameter FALL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_4' (4#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
-INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_5' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_7' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_7.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_arithmetic_7' (5#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_7.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_boolean_8' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_8.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_boolean_8' (6#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_8.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_compare_9' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_compare_9' (7#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_shifter_10' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_10.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_10' (8#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_10.v:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:101]
-INFO: [Synth 8-6155] done synthesizing module 'alu_16_bit_5' (9#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:7]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:89]
-INFO: [Synth 8-6155] done synthesizing module 'manual_alu_tester_2' (10#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (11#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_3' (4#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
+INFO: [Synth 8-6157] synthesizing module 'alu_tester_auto_4' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_auto_4.v:7]
+	Parameter STANDBY_autostate bound to: 6'b000000 
+	Parameter TEST_0_autostate bound to: 6'b000001 
+	Parameter TEST_1_autostate bound to: 6'b000010 
+	Parameter TEST_2_autostate bound to: 6'b000011 
+	Parameter TEST_3_autostate bound to: 6'b000100 
+	Parameter TEST_4_autostate bound to: 6'b000101 
+	Parameter TEST_5_autostate bound to: 6'b000110 
+	Parameter TEST_6_autostate bound to: 6'b000111 
+	Parameter TEST_7_autostate bound to: 6'b001000 
+	Parameter TEST_8_autostate bound to: 6'b001001 
+	Parameter TEST_9_autostate bound to: 6'b001010 
+	Parameter TEST_10_autostate bound to: 6'b001011 
+	Parameter TEST_11_autostate bound to: 6'b001100 
+	Parameter TEST_12_autostate bound to: 6'b001101 
+	Parameter TEST_13_autostate bound to: 6'b001110 
+	Parameter TEST_14_autostate bound to: 6'b001111 
+	Parameter TEST_15_autostate bound to: 6'b010000 
+	Parameter TEST_16_autostate bound to: 6'b010001 
+	Parameter TEST_17_autostate bound to: 6'b010010 
+	Parameter TEST_18_autostate bound to: 6'b010011 
+	Parameter TEST_19_autostate bound to: 6'b010100 
+	Parameter TEST_20_autostate bound to: 6'b010101 
+	Parameter TEST_21_autostate bound to: 6'b010110 
+	Parameter TEST_22_autostate bound to: 6'b010111 
+	Parameter TEST_23_autostate bound to: 6'b011000 
+	Parameter TEST_24_autostate bound to: 6'b011001 
+	Parameter TEST_25_autostate bound to: 6'b011010 
+	Parameter TEST_26_autostate bound to: 6'b011011 
+	Parameter TEST_27_autostate bound to: 6'b011100 
+	Parameter TEST_28_autostate bound to: 6'b011101 
+	Parameter TEST_29_autostate bound to: 6'b011110 
+	Parameter TEST_30_autostate bound to: 6'b011111 
+	Parameter TEST_31_autostate bound to: 6'b100000 
+	Parameter TEST_32_autostate bound to: 6'b100001 
+	Parameter TEST_33_autostate bound to: 6'b100010 
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_7' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_7.v:14]
+	Parameter INPUT_A bound to: 16'b1010101111001101 
+	Parameter INPUT_B bound to: 16'b1110111101000010 
+	Parameter OPCODE bound to: 6'b000000 
+	Parameter EXPECTED bound to: 16'b1001101100001111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-6157] synthesizing module 'counter_42' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_42.v:14]
+	Parameter SIZE bound to: 1'b1 
+	Parameter DIV bound to: 5'b11001 
+	Parameter TOP bound to: 1'b0 
+	Parameter UP bound to: 1'b1 
+	Parameter MAX_VALUE bound to: 26'b01111111111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'counter_42' (5#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_42.v:14]
+INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg_43' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_43.v:12]
+	Parameter DIGITS bound to: 3'b100 
+	Parameter DIV bound to: 5'b10000 
+	Parameter DIGIT_BITS bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'counter_48' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
+	Parameter SIZE bound to: 2'b10 
+	Parameter DIV bound to: 5'b10000 
+	Parameter TOP bound to: 4'b0011 
+	Parameter UP bound to: 1'b1 
+	Parameter MAX_VALUE bound to: 20'b00111111111111111111 
+INFO: [Synth 8-6155] done synthesizing module 'counter_48' (6#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_49' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_49' (7#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
+INFO: [Synth 8-6157] synthesizing module 'decoder_50' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
+	Parameter WIDTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'decoder_50' (8#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg_43' (9#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_43.v:12]
+INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_41' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_41.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_44' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_44.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_arithmetic_44' (10#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_44.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_boolean_45' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_45.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_boolean_45' (11#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_45.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_compare_46' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_46.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_compare_46' (12#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_46.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_shifter_47' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_47.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_47' (13#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_47.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_41.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'alu_16_bit_41' (14#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_41.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_7.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_7' (15#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_7.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_8' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_8.v:14]
+	Parameter INPUT_A bound to: 16'b0000000101101000 
+	Parameter INPUT_B bound to: 16'b0000000101101000 
+	Parameter OPCODE bound to: 6'b000000 
+	Parameter EXPECTED bound to: 16'b0000001011010000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_8.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_8' (16#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_8.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_9' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_9.v:14]
+	Parameter INPUT_A bound to: 16'b0000000101101000 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b000001 
+	Parameter EXPECTED bound to: 16'b0000000101101000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_9.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_9' (17#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_9.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_10' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_10.v:14]
+	Parameter INPUT_A bound to: 16'b1010101111001101 
+	Parameter INPUT_B bound to: 16'b1010101111001101 
+	Parameter OPCODE bound to: 6'b000001 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_10.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_10' (18#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_10.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_11' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_11.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000000000 
+	Parameter INPUT_B bound to: 16'b1111111111111111 
+	Parameter OPCODE bound to: 6'b011000 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_11.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_11' (19#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_11.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_12' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_12.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b1111111111111111 
+	Parameter OPCODE bound to: 6'b011000 
+	Parameter EXPECTED bound to: 16'b1111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_12.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_12' (20#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_12.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_13' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_13.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000000000 
+	Parameter INPUT_B bound to: 16'b1111111111111111 
+	Parameter OPCODE bound to: 6'b011110 
+	Parameter EXPECTED bound to: 16'b1111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_13.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_13' (21#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_13.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_14' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_14.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000000001 
+	Parameter INPUT_B bound to: 16'b0000000000010000 
+	Parameter OPCODE bound to: 6'b011110 
+	Parameter EXPECTED bound to: 16'b0000000000010001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_14.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_14' (22#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_14.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_15' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_15.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b1111111111111111 
+	Parameter OPCODE bound to: 6'b010110 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_15.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_15' (23#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_15.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_16' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_16.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b010110 
+	Parameter EXPECTED bound to: 16'b1111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_16.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_16' (24#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_16.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_17' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_17.v:14]
+	Parameter INPUT_A bound to: 16'b0010000100100001 
+	Parameter INPUT_B bound to: 16'b0100001001000010 
+	Parameter OPCODE bound to: 6'b011010 
+	Parameter EXPECTED bound to: 16'b0010000100100001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_17.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_17' (25#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_17.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_18' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_18.v:14]
+	Parameter INPUT_A bound to: 16'b0100001001000010 
+	Parameter INPUT_B bound to: 16'b0100001001000010 
+	Parameter OPCODE bound to: 6'b011010 
+	Parameter EXPECTED bound to: 16'b0100001001000010 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_18.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_18' (26#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_18.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_19' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_19.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000001 
+	Parameter OPCODE bound to: 6'b100000 
+	Parameter EXPECTED bound to: 16'b1111111111111110 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_19.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_19' (27#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_19.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_20' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_20.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000001000 
+	Parameter OPCODE bound to: 6'b100000 
+	Parameter EXPECTED bound to: 16'b1111111100000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_20.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_20' (28#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_20.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_21' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_21.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000001 
+	Parameter OPCODE bound to: 6'b100001 
+	Parameter EXPECTED bound to: 16'b0111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_21.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_21' (29#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_21.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_22' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_22.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000001000 
+	Parameter OPCODE bound to: 6'b100001 
+	Parameter EXPECTED bound to: 16'b0000000011111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_22.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_22' (30#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_22.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_23' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_23.v:14]
+	Parameter INPUT_A bound to: 16'b1111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000001 
+	Parameter OPCODE bound to: 6'b100011 
+	Parameter EXPECTED bound to: 16'b1111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_23.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_23' (31#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_23.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_24' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_24.v:14]
+	Parameter INPUT_A bound to: 16'b0011111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000001000 
+	Parameter OPCODE bound to: 6'b100011 
+	Parameter EXPECTED bound to: 16'b0000000000111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_24.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_24' (32#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_24.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_25' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_25.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0111111111111111 
+	Parameter OPCODE bound to: 6'b000010 
+	Parameter EXPECTED bound to: 16'b0000000000000001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_25.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_25' (33#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_25.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_26' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_26.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b000010 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_26.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_26' (34#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_26.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_27' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_27.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0111111111111111 
+	Parameter OPCODE bound to: 6'b110011 
+	Parameter EXPECTED bound to: 16'b0000000000000001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_27.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_27' (35#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_27.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_28' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_28.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b110011 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_28.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_28' (36#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_28.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_29' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_29.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0111111111111111 
+	Parameter OPCODE bound to: 6'b110101 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_29.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_29' (37#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_29.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_30' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_30.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000000000 
+	Parameter INPUT_B bound to: 16'b0111111111111111 
+	Parameter OPCODE bound to: 6'b110101 
+	Parameter EXPECTED bound to: 16'b0000000000000001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_30.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_30' (38#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_30.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_31' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_31.v:14]
+	Parameter INPUT_A bound to: 16'b0111111111111111 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b110111 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_31.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_31' (39#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_31.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_32' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_32.v:14]
+	Parameter INPUT_A bound to: 16'b0010000100100001 
+	Parameter INPUT_B bound to: 16'b0010000100100001 
+	Parameter OPCODE bound to: 6'b110111 
+	Parameter EXPECTED bound to: 16'b0000000000000001 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_32.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_32' (40#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_32.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_33' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_33.v:14]
+	Parameter INPUT_A bound to: 16'b0010101011110000 
+	Parameter INPUT_B bound to: 16'b1010111111100000 
+	Parameter OPCODE bound to: 6'b010001 
+	Parameter EXPECTED bound to: 16'b1101010100011111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_33.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_33' (41#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_33.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_34' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_34.v:14]
+	Parameter INPUT_A bound to: 16'b1111111100000000 
+	Parameter INPUT_B bound to: 16'b0000000011111111 
+	Parameter OPCODE bound to: 6'b010001 
+	Parameter EXPECTED bound to: 16'b1111111111111111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_34.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_34' (42#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_34.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_35' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_35.v:14]
+	Parameter INPUT_A bound to: 16'b0010101011110000 
+	Parameter INPUT_B bound to: 16'b1010111111100000 
+	Parameter OPCODE bound to: 6'b011111 
+	Parameter EXPECTED bound to: 16'b0101000000001111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_35.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_35' (43#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_35.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_36' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_36.v:14]
+	Parameter INPUT_A bound to: 16'b1111111100000000 
+	Parameter INPUT_B bound to: 16'b0000000011111111 
+	Parameter OPCODE bound to: 6'b011111 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_36.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_36' (44#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_36.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_37' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_37.v:14]
+	Parameter INPUT_A bound to: 16'b0010101011110000 
+	Parameter INPUT_B bound to: 16'b1010111111100000 
+	Parameter OPCODE bound to: 6'b010111 
+	Parameter EXPECTED bound to: 16'b0111101011101111 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_37.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_37' (45#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_37.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_38' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_38.v:14]
+	Parameter INPUT_A bound to: 16'b1111111100000000 
+	Parameter INPUT_B bound to: 16'b0000000011111111 
+	Parameter OPCODE bound to: 6'b010111 
+	Parameter EXPECTED bound to: 16'b0000000000000000 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_38.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_38' (46#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_38.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_39' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_39.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000011111 
+	Parameter INPUT_B bound to: 16'b0000000000010101 
+	Parameter OPCODE bound to: 6'b000111 
+	Parameter EXPECTED bound to: 16'b0000000000001010 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_39.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_39' (47#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_39.v:14]
+INFO: [Synth 8-6157] synthesizing module 'alu_statement_tester_40' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_40.v:14]
+	Parameter INPUT_A bound to: 16'b0000000000101010 
+	Parameter INPUT_B bound to: 16'b0000000000000000 
+	Parameter OPCODE bound to: 6'b000111 
+	Parameter EXPECTED bound to: 16'b0000000000101010 
+	Parameter INIT_state bound to: 4'b0000 
+	Parameter DISP_A_1_state bound to: 4'b0001 
+	Parameter DISP_A_2_state bound to: 4'b0010 
+	Parameter DISP_B_1_state bound to: 4'b0011 
+	Parameter DISP_B_2_state bound to: 4'b0100 
+	Parameter DISP_O_1_state bound to: 4'b0101 
+	Parameter DISP_O_2_state bound to: 4'b0110 
+	Parameter DONE_state bound to: 4'b0111 
+	Parameter ERROR_1_state bound to: 4'b1000 
+	Parameter ERROR_2_state bound to: 4'b1001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_40.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'alu_statement_tester_40' (48#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_40.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_auto_4.v:573]
+INFO: [Synth 8-6155] done synthesizing module 'alu_tester_auto_4' (49#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_auto_4.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_tester_5' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_5.v:7]
+	Parameter A_state bound to: 2'b00 
+	Parameter B_state bound to: 2'b01 
+	Parameter OUT_state bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_5.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'alu_tester_5' (50#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_5.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (51#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.832 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.832 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.832 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 1015.832 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -84,59 +727,665 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1016.812 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1016.812 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.812 ; gain = 0.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.812 ; gain = 0.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1016.812 ; gain = 0.980
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_2'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_7'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_8'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_9'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_10'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_11'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_12'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_13'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_14'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_15'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_16'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_17'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_18'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_19'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_20'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_21'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_22'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_23'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_24'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_25'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_26'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_27'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_28'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_29'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_30'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_31'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_32'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_33'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_34'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_35'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_36'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_37'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_38'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_39'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_statement_tester_40'
+INFO: [Synth 8-802] inferred FSM for state register 'M_autostate_q_reg' in module 'alu_tester_auto_4'
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'alu_tester_5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_16'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_17'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_18'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_19'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_20'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_21'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_22'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_23'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_24'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_25'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_26'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_27'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_28'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_29'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_30'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_31'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_32'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_33'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_34'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_35'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_36'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_37'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_38'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_39'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              INIT_state |                             0000 |                             0000
+          DISP_A_1_state |                             0001 |                             0001
+          DISP_A_2_state |                             0010 |                             0010
+          DISP_B_1_state |                             0011 |                             0011
+          DISP_B_2_state |                             0100 |                             0100
+          DISP_O_1_state |                             0101 |                             0101
+          DISP_O_2_state |                             0110 |                             0110
+              DONE_state |                             0111 |                             0111
+           ERROR_1_state |                             1000 |                             1000
+           ERROR_2_state |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'sequential' in module 'alu_statement_tester_40'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+       STANDBY_autostate |                           000000 |                           000000
+        TEST_0_autostate |                           000001 |                           000001
+        TEST_1_autostate |                           000010 |                           000010
+        TEST_2_autostate |                           000011 |                           000011
+        TEST_3_autostate |                           000100 |                           000100
+        TEST_4_autostate |                           000101 |                           000101
+        TEST_5_autostate |                           000110 |                           000110
+        TEST_6_autostate |                           000111 |                           000111
+        TEST_7_autostate |                           001000 |                           001000
+        TEST_8_autostate |                           001001 |                           001001
+        TEST_9_autostate |                           001010 |                           001010
+       TEST_10_autostate |                           001011 |                           001011
+       TEST_11_autostate |                           001100 |                           001100
+       TEST_12_autostate |                           001101 |                           001101
+       TEST_13_autostate |                           001110 |                           001110
+       TEST_14_autostate |                           001111 |                           001111
+       TEST_15_autostate |                           010000 |                           010000
+       TEST_16_autostate |                           010001 |                           010001
+       TEST_17_autostate |                           010010 |                           010010
+       TEST_18_autostate |                           010011 |                           010011
+       TEST_19_autostate |                           010100 |                           010100
+       TEST_20_autostate |                           010101 |                           010101
+       TEST_21_autostate |                           010110 |                           010110
+       TEST_22_autostate |                           010111 |                           010111
+       TEST_23_autostate |                           011000 |                           011000
+       TEST_24_autostate |                           011001 |                           011001
+       TEST_25_autostate |                           011010 |                           011010
+       TEST_26_autostate |                           011011 |                           011011
+       TEST_27_autostate |                           011100 |                           011100
+       TEST_28_autostate |                           011101 |                           011101
+       TEST_29_autostate |                           011110 |                           011110
+       TEST_30_autostate |                           011111 |                           011111
+       TEST_31_autostate |                           100000 |                           100000
+       TEST_32_autostate |                           100001 |                           100001
+       TEST_33_autostate |                           100010 |                           100010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'M_autostate_q_reg' using encoding 'sequential' in module 'alu_tester_auto_4'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                  A_state |                              001 |                               00
                  B_state |                              010 |                               01
-            OUTPUT_state |                              100 |                               10
+               OUT_state |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'manual_alu_tester_2'
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'alu_tester_5'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1016.812 ; gain = 0.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input   16 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 34    
+	   3 Input   16 Bit       Adders := 70    
 +---XORs : 
-	   2 Input     16 Bit         XORs := 1     
-	   2 Input      1 Bit         XORs := 2     
+	   2 Input     16 Bit         XORs := 35    
+	   2 Input      1 Bit         XORs := 70    
 +---Registers : 
-	               16 Bit    Registers := 3     
+	               18 Bit    Registers := 34    
+	               16 Bit    Registers := 37    
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
 +---Muxes : 
-	   4 Input   16 Bit        Muxes := 5     
-	   2 Input   16 Bit        Muxes := 1     
-	   3 Input   16 Bit        Muxes := 1     
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 34    
+	   2 Input   16 Bit        Muxes := 140   
+	   5 Input   16 Bit        Muxes := 70    
+	   4 Input   16 Bit        Muxes := 105   
+	  10 Input   16 Bit        Muxes := 34    
+	  35 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 68    
 	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  35 Input    6 Bit        Muxes := 2     
+	  10 Input    6 Bit        Muxes := 12    
+	  10 Input    5 Bit        Muxes := 14    
+	  35 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 34    
+	  10 Input    4 Bit        Muxes := 102   
+	   2 Input    4 Bit        Muxes := 35    
+	  10 Input    3 Bit        Muxes := 2     
+	  10 Input    2 Bit        Muxes := 2     
+	  35 Input    1 Bit        Muxes := 35    
+	   2 Input    1 Bit        Muxes := 35    
+	  10 Input    1 Bit        Muxes := 70    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -152,23 +1401,205 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-DSP Report: Generating DSP manual_tester/alu/arithmeticUnit/s0, operation Mode is: A2*B2.
-DSP Report: register manual_tester/M_b_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
-DSP Report: register manual_tester/M_a_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
-DSP Report: operator manual_tester/alu/arithmeticUnit/s0 is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x2121).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x4242).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu_tester/alu/arithmeticUnit/s1, operation Mode is: A*B2.
+DSP Report: register alu_tester/M_b_q_reg is absorbed into DSP alu_tester/alu/arithmeticUnit/s1.
+DSP Report: operator alu_tester/alu/arithmeticUnit/s1 is absorbed into DSP alu_tester/alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu_tester/alu/arithmeticUnit/s0, operation Mode is: A2*B2.
+DSP Report: register alu_tester/M_b_q_reg is absorbed into DSP alu_tester/alu/arithmeticUnit/s0.
+DSP Report: register alu_tester/M_a_q_reg is absorbed into DSP alu_tester/alu/arithmeticUnit/s0.
+DSP Report: operator alu_tester/alu/arithmeticUnit/s0 is absorbed into DSP alu_tester/alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xabcd)*(B:0xabcd).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xffff).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xffff)*(B:0xffff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xffff).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xffff)*(B:0xffff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[0]' (FDR) to 'test_9/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[4]' (FDR) to 'test_9/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[8]' (FDR) to 'test_9/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[12]' (FDR) to 'test_9/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[1]' (FDR) to 'test_9/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[5]' (FDR) to 'test_9/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[9]' (FDR) to 'test_9/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[13]' (FDR) to 'test_9/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[2]' (FDR) to 'test_9/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[6]' (FDR) to 'test_9/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[10]' (FDR) to 'test_9/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[14]' (FDR) to 'test_9/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[3]' (FDR) to 'test_9/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[7]' (FDR) to 'test_9/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_9/M_o_q_reg[11]' (FDR) to 'test_9/M_o_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[0]' (FDR) to 'test_8/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[4]' (FDR) to 'test_8/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[8]' (FDR) to 'test_8/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[12]' (FDR) to 'test_8/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[1]' (FDR) to 'test_8/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[5]' (FDR) to 'test_8/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[9]' (FDR) to 'test_8/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[13]' (FDR) to 'test_8/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[2]' (FDR) to 'test_8/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[6]' (FDR) to 'test_8/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[10]' (FDR) to 'test_8/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[14]' (FDR) to 'test_8/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[3]' (FDR) to 'test_8/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[7]' (FDR) to 'test_8/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_8/M_o_q_reg[11]' (FDR) to 'test_8/M_o_q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_8/\M_o_q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[0]' (FDR) to 'test_7/M_o_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[8]' (FDR) to 'test_7/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[12]' (FDR) to 'test_7/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[1]' (FDR) to 'test_7/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[5]' (FDR) to 'test_7/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[9]' (FDR) to 'test_7/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[13]' (FDR) to 'test_7/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[2]' (FDR) to 'test_7/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[6]' (FDR) to 'test_7/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[10]' (FDR) to 'test_7/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[14]' (FDR) to 'test_7/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[3]' (FDR) to 'test_7/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[7]' (FDR) to 'test_7/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_7/M_o_q_reg[11]' (FDR) to 'test_7/M_o_q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_7/\M_o_q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[0]' (FDR) to 'test_6/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[4]' (FDR) to 'test_6/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[8]' (FDR) to 'test_6/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[12]' (FDR) to 'test_6/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[1]' (FDR) to 'test_6/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[5]' (FDR) to 'test_6/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[9]' (FDR) to 'test_6/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[13]' (FDR) to 'test_6/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[2]' (FDR) to 'test_6/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[6]' (FDR) to 'test_6/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[10]' (FDR) to 'test_6/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[14]' (FDR) to 'test_6/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[3]' (FDR) to 'test_6/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[7]' (FDR) to 'test_6/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_6/M_o_q_reg[11]' (FDR) to 'test_6/M_o_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[0]' (FDR) to 'test_5/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[4]' (FDR) to 'test_5/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[8]' (FDR) to 'test_5/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[12]' (FDR) to 'test_5/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[1]' (FDR) to 'test_5/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[5]' (FDR) to 'test_5/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[9]' (FDR) to 'test_5/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[13]' (FDR) to 'test_5/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[2]' (FDR) to 'test_5/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[6]' (FDR) to 'test_5/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[10]' (FDR) to 'test_5/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[14]' (FDR) to 'test_5/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[3]' (FDR) to 'test_5/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[7]' (FDR) to 'test_5/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_5/M_o_q_reg[11]' (FDR) to 'test_5/M_o_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[0]' (FDR) to 'test_4/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[4]' (FDR) to 'test_4/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[8]' (FDR) to 'test_4/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[12]' (FDR) to 'test_4/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[1]' (FDR) to 'test_4/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[5]' (FDR) to 'test_4/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[9]' (FDR) to 'test_4/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[13]' (FDR) to 'test_4/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[2]' (FDR) to 'test_4/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[6]' (FDR) to 'test_4/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[10]' (FDR) to 'test_4/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[14]' (FDR) to 'test_4/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[3]' (FDR) to 'test_4/M_o_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[7]' (FDR) to 'test_4/M_o_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'test_4/M_o_q_reg[11]' (FDR) to 'test_4/M_o_q_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_4/\M_o_q_reg[15] )
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[0]' (FDR) to 'test_3/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[4]' (FDR) to 'test_3/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[8]' (FDR) to 'test_3/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[12]' (FDR) to 'test_3/M_o_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[1]' (FDR) to 'test_3/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[5]' (FDR) to 'test_3/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[9]' (FDR) to 'test_3/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[13]' (FDR) to 'test_3/M_o_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[2]' (FDR) to 'test_3/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[6]' (FDR) to 'test_3/M_o_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'test_3/M_o_q_reg[10]' (FDR) to 'test_3/M_o_q_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_3/\M_o_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (test_2/\M_o_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_13/M_o_q_reg[7] )
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x7fff)*(B:0x7fff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x7fff)*(B:0x7fff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_20/M_o_q_reg[15] )
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x7fff)*(B:0x7fff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0x7fff).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x2121)*(B:0x2121).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xafe0).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xafe0)*(B:0x2af0).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xabcd)*(B:0xef42).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_1/M_o_q_reg[15] )
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xafe0).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xafe0)*(B:0x2af0).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xff00)*(B:0xff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xafe0).
+DSP Report: operator alu/arithmeticUnit/s1 is absorbed into DSP alu/arithmeticUnit/s1.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xafe0)*(B:0x2af0).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xff00)*(B:0xff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xff00)*(B:0xff).
+DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_28/M_o_q_reg[15] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 1016.812 ; gain = 0.980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping	Report (see note below)
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|au_top_0    | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|alu_arithmetic_44 | (A:0x4242)*(B:0x2121) | 15     | 14     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0x4242)*(B:0x4242) | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|au_top_0          | A*B2                  | 16     | 16     | -      | -      | 32     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|au_top_0          | A2*B2                 | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xabcd)*(B:0xabcd) | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0xffff)          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xffff)*(B:0xffff) | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0xffff)          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xffff)*(B:0xffff) | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0x7fff)*(B:0x7fff) | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0x7fff)*(B:0x7fff) | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0x7fff)*(B:0x7fff) | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0x7fff)          | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0x2121)*(B:0x2121) | 14     | 14     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0xafe0)          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xafe0)*(B:0x2af0) | 16     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xabcd)*(B:0xef42) | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0xafe0)          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xafe0)*(B:0x2af0) | 16     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | A*(B:0xafe0)          | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xafe0)*(B:0x2af0) | 16     | 14     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|alu_arithmetic_44 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -178,19 +1609,19 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 1024.777 ; gain = 8.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.453 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1075.336 ; gain = 59.504
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1022.883 ; gain = 2.430
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1096.598 ; gain = 80.766
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -208,37 +1639,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -255,40 +1686,41 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |CARRY4  |     9|
-|3     |DSP48E1 |     1|
-|4     |LUT1    |     5|
-|5     |LUT3    |    24|
-|6     |LUT4    |    33|
-|7     |LUT5    |    45|
-|8     |LUT6    |    95|
-|9     |MUXF7   |     3|
-|10    |MUXF8   |     1|
-|11    |FDRE    |    79|
-|12    |FDSE    |     5|
-|13    |IBUF    |    26|
-|14    |OBUF    |    45|
+|2     |CARRY4  |   506|
+|3     |DSP48E1 |     3|
+|6     |LUT1    |   105|
+|7     |LUT2    |  1129|
+|8     |LUT3    |   367|
+|9     |LUT4    |   181|
+|10    |LUT5    |   186|
+|11    |LUT6    |   848|
+|12    |MUXF7   |    58|
+|13    |MUXF8   |    14|
+|14    |FDRE    |  1785|
+|15    |FDSE    |     5|
+|16    |IBUF    |    30|
+|17    |OBUF    |    45|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 1101.883 ; gain = 86.051
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1025.637 ; gain = 5.184
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:01:02 . Memory (MB): peak = 1101.883 ; gain = 85.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:06 . Memory (MB): peak = 1101.883 ; gain = 86.051
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1037.637 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1113.949 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 581 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.637 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1113.949 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+340 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1037.637 ; gain = 17.184
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:12 . Memory (MB): peak = 1113.949 ; gain = 98.117
 INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 20:45:37 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 22:10:05 2020...
