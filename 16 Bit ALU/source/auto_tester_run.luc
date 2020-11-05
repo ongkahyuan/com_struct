@@ -133,7 +133,7 @@ module auto_tester_run (
     
     case (autostate.q){
       autostate.STANDBY:
-        if(start)
+        if(start==1)
           autostate.d = autostate.TEST_0;
       
       // INSERT GENERATED autostate.TEST_n CASES HERE      
@@ -142,7 +142,7 @@ module auto_tester_run (
           io_sel = test_0.io_sel;
           opcode_led = test_0.opcode_led;
           test_0.start = 1;
-          if(test_0.done)
+          if(test_0.done==1)
             autostate.d = autostate.TEST_1;
       
         autostate.TEST_1:
@@ -150,7 +150,7 @@ module auto_tester_run (
           io_sel = test_1.io_sel;
           opcode_led = test_1.opcode_led;
           test_1.start = 1;
-          if(test_1.done)
+          if(test_1.done==1)
             autostate.d = autostate.TEST_2;
       
         autostate.TEST_2:
@@ -158,7 +158,7 @@ module auto_tester_run (
           io_sel = test_2.io_sel;
           opcode_led = test_2.opcode_led;
           test_2.start = 1;
-          if(test_2.done)
+          if(test_2.done==1)
             autostate.d = autostate.TEST_3;
       
         autostate.TEST_3:
@@ -166,7 +166,7 @@ module auto_tester_run (
           io_sel = test_3.io_sel;
           opcode_led = test_3.opcode_led;
           test_3.start = 1;
-          if(test_3.done)
+          if(test_3.done==1)
             autostate.d = autostate.TEST_4;
       
         autostate.TEST_4:
@@ -174,7 +174,7 @@ module auto_tester_run (
           io_sel = test_4.io_sel;
           opcode_led = test_4.opcode_led;
           test_4.start = 1;
-          if(test_4.done)
+          if(test_4.done==1)
             autostate.d = autostate.TEST_5;
       
         autostate.TEST_5:
@@ -182,7 +182,7 @@ module auto_tester_run (
           io_sel = test_5.io_sel;
           opcode_led = test_5.opcode_led;
           test_5.start = 1;
-          if(test_5.done)
+          if(test_5.done==1)
             autostate.d = autostate.TEST_6;
       
         autostate.TEST_6:
@@ -190,7 +190,7 @@ module auto_tester_run (
           io_sel = test_6.io_sel;
           opcode_led = test_6.opcode_led;
           test_6.start = 1;
-          if(test_6.done)
+          if(test_6.done==1)
             autostate.d = autostate.TEST_7;
       
         autostate.TEST_7:
@@ -206,7 +206,7 @@ module auto_tester_run (
           io_sel = test_8.io_sel;
           opcode_led = test_8.opcode_led;
           test_8.start = 1;
-          if(test_8.done)
+          if(test_8.done==1)
             autostate.d = autostate.TEST_9;
       
         autostate.TEST_9:
@@ -214,7 +214,7 @@ module auto_tester_run (
           io_sel = test_9.io_sel;
           opcode_led = test_9.opcode_led;
           test_9.start = 1;
-          if(test_9.done)
+          if(test_9.done==1)
             autostate.d = autostate.TEST_10;
       
         autostate.TEST_10:
@@ -222,7 +222,7 @@ module auto_tester_run (
           io_sel = test_10.io_sel;
           opcode_led = test_10.opcode_led;
           test_10.start = 1;
-          if(test_10.done)
+          if(test_10.done==1)
             autostate.d = autostate.TEST_11;
       
         autostate.TEST_11:
@@ -230,7 +230,7 @@ module auto_tester_run (
           io_sel = test_11.io_sel;
           opcode_led = test_11.opcode_led;
           test_11.start = 1;
-          if(test_11.done)
+          if(test_11.done==1)
             autostate.d = autostate.TEST_12;
       
         autostate.TEST_12:
@@ -238,7 +238,7 @@ module auto_tester_run (
           io_sel = test_12.io_sel;
           opcode_led = test_12.opcode_led;
           test_12.start = 1;
-          if(test_12.done)
+          if(test_12.done==1)
             autostate.d = autostate.TEST_13;
       
         autostate.TEST_13:
@@ -246,7 +246,7 @@ module auto_tester_run (
           io_sel = test_13.io_sel;
           opcode_led = test_13.opcode_led;
           test_13.start = 1;
-          if(test_13.done)
+          if(test_13.done==1)
             autostate.d = autostate.TEST_14;
       
         autostate.TEST_14:
@@ -254,7 +254,7 @@ module auto_tester_run (
           io_sel = test_14.io_sel;
           opcode_led = test_14.opcode_led;
           test_14.start = 1;
-          if(test_14.done)
+          if(test_14.done==1)
             autostate.d = autostate.TEST_15;
       
         autostate.TEST_15:
@@ -262,7 +262,7 @@ module auto_tester_run (
           io_sel = test_15.io_sel;
           opcode_led = test_15.opcode_led;
           test_15.start = 1;
-          if(test_15.done)
+          if(test_15.done==1)
             autostate.d = autostate.TEST_16;
       
         autostate.TEST_16:
@@ -270,7 +270,7 @@ module auto_tester_run (
           io_sel = test_16.io_sel;
           opcode_led = test_16.opcode_led;
           test_16.start = 1;
-          if(test_16.done)
+          if(test_16.done==1)
             autostate.d = autostate.TEST_17;
       
         autostate.TEST_17:
@@ -278,7 +278,7 @@ module auto_tester_run (
           io_sel = test_17.io_sel;
           opcode_led = test_17.opcode_led;
           test_17.start = 1;
-          if(test_17.done)
+          if(test_17.done==1)
             autostate.d = autostate.TEST_18;
       
         autostate.TEST_18:
@@ -286,7 +286,7 @@ module auto_tester_run (
           io_sel = test_18.io_sel;
           opcode_led = test_18.opcode_led;
           test_18.start = 1;
-          if(test_18.done)
+          if(test_18.done==1)
             autostate.d = autostate.TEST_19;
       
         autostate.TEST_19:
@@ -294,7 +294,7 @@ module auto_tester_run (
           io_sel = test_19.io_sel;
           opcode_led = test_19.opcode_led;
           test_19.start = 1;
-          if(test_19.done)
+          if(test_19.done==1)
             autostate.d = autostate.TEST_20;
       
         autostate.TEST_20:
@@ -302,7 +302,7 @@ module auto_tester_run (
           io_sel = test_20.io_sel;
           opcode_led = test_20.opcode_led;
           test_20.start = 1;
-          if(test_20.done)
+          if(test_20.done==1)
             autostate.d = autostate.TEST_21;
       
         autostate.TEST_21:
@@ -310,7 +310,7 @@ module auto_tester_run (
           io_sel = test_21.io_sel;
           opcode_led = test_21.opcode_led;
           test_21.start = 1;
-          if(test_21.done)
+          if(test_21.done==1)
             autostate.d = autostate.TEST_22;
       
         autostate.TEST_22:
@@ -318,7 +318,7 @@ module auto_tester_run (
           io_sel = test_22.io_sel;
           opcode_led = test_22.opcode_led;
           test_22.start = 1;
-          if(test_22.done)
+          if(test_22.done==1)
             autostate.d = autostate.TEST_23;
       
         autostate.TEST_23:
@@ -326,7 +326,7 @@ module auto_tester_run (
           io_sel = test_23.io_sel;
           opcode_led = test_23.opcode_led;
           test_23.start = 1;
-          if(test_23.done)
+          if(test_23.done==1)
             autostate.d = autostate.TEST_24;
       
         autostate.TEST_24:
@@ -334,7 +334,7 @@ module auto_tester_run (
           io_sel = test_24.io_sel;
           opcode_led = test_24.opcode_led;
           test_24.start = 1;
-          if(test_24.done)
+          if(test_24.done==1)
             autostate.d = autostate.TEST_25;
       
         autostate.TEST_25:
@@ -342,7 +342,7 @@ module auto_tester_run (
           io_sel = test_25.io_sel;
           opcode_led = test_25.opcode_led;
           test_25.start = 1;
-          if(test_25.done)
+          if(test_25.done==1)
             autostate.d = autostate.TEST_26;
       
         autostate.TEST_26:
@@ -350,7 +350,7 @@ module auto_tester_run (
           io_sel = test_26.io_sel;
           opcode_led = test_26.opcode_led;
           test_26.start = 1;
-          if(test_26.done)
+          if(test_26.done==1)
             autostate.d = autostate.TEST_27;
       
         autostate.TEST_27:
@@ -358,7 +358,7 @@ module auto_tester_run (
           io_sel = test_27.io_sel;
           opcode_led = test_27.opcode_led;
           test_27.start = 1;
-          if(test_27.done)
+          if(test_27.done==1)
             autostate.d = autostate.TEST_28;
       
         autostate.TEST_28:
@@ -366,7 +366,7 @@ module auto_tester_run (
           io_sel = test_28.io_sel;
           opcode_led = test_28.opcode_led;
           test_28.start = 1;
-          if(test_28.done)
+          if(test_28.done==1)
             autostate.d = autostate.TEST_29;
       
         autostate.TEST_29:
@@ -374,7 +374,7 @@ module auto_tester_run (
           io_sel = test_29.io_sel;
           opcode_led = test_29.opcode_led;
           test_29.start = 1;
-          if(test_29.done)
+          if(test_29.done==1)
             autostate.d = autostate.TEST_30;
       
         autostate.TEST_30:
@@ -382,7 +382,7 @@ module auto_tester_run (
           io_sel = test_30.io_sel;
           opcode_led = test_30.opcode_led;
           test_30.start = 1;
-          if(test_30.done)
+          if(test_30.done==1)
             autostate.d = autostate.TEST_31;
       
         autostate.TEST_31:
@@ -390,7 +390,7 @@ module auto_tester_run (
           io_sel = test_31.io_sel;
           opcode_led = test_31.opcode_led;
           test_31.start = 1;
-          if(test_31.done)
+          if(test_31.done==1)
             autostate.d = autostate.TEST_32;
       
         autostate.TEST_32:
@@ -398,7 +398,7 @@ module auto_tester_run (
           io_sel = test_32.io_sel;
           opcode_led = test_32.opcode_led;
           test_32.start = 1;
-          if(test_32.done)
+          if(test_32.done==1)
             autostate.d = autostate.TEST_33;
       
         autostate.TEST_33:
@@ -406,7 +406,7 @@ module auto_tester_run (
           io_sel = test_33.io_sel;
           opcode_led = test_33.opcode_led;
           test_33.start = 1;
-          if(test_33.done)
+          if(test_33.done==1)
             autostate.d = autostate.STANDBY;
         
       }

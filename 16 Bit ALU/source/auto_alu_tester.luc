@@ -11,17 +11,26 @@ module auto_alu_tester
     input start,
     output io_seg[8],
     output io_sel[4],
-    output opcode_led,
+    output opcode_led[6],
     output done
   ) {
   
-  edge_detector timerClock(#RISE(1), #FALL(0), .clk(clk));
+  //edge_detector timerClock(#RISE(1), #FALL(0), .clk(clk));
   
-  fsm state(.clk(clk), .rst(rst)) = {INIT, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
-  dff out[16](#INIT(0), .clk(clk), .rst(rst));
-  counter timer (#SIZE(1), #DIV(25), .clk(clk), .rst(rst)); // pace of transition from one value to the next displayed
-  multi_seven_seg seg_display(.clk(clk), .rst(rst));
-  
+  //fsm state(.clk(clk), .rst(rst)) = {INIT, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
+  //dff out[16](#INIT(0), .clk(clk), .rst(rst));
+  //counter timer (#SIZE(1), #DIV(25), .clk(clk), .rst(rst)); // pace of transition from one value to the next displayed
+ // multi_seven_seg seg_display(.clk(clk), .rst(rst));
+    .clk(clk) {
+    edge_detector timerClock(#RISE(1), #FALL(0));
+    
+    .rst(rst){
+      fsm state = {INIT, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
+      dff out[16];
+      counter timer(#SIZE(1), #DIV(25));
+      multi_seven_seg seg_display;
+    }
+  }
   
   
   sig alufn[6];
@@ -34,9 +43,9 @@ module auto_alu_tester
 
     done = 0;
     timerClock.in = timer.value;
-    io_seg = 8b0; // connect segments to the driver
-    io_sel = 4b0; // connect digit select to the driver
-    seg_display.values = {4b0,4b0,4b0,4b0};
+    io_seg = ~seg_display.seg; // connect segments to the driver
+    io_sel = ~seg_display.sel; // connect digit select to the driver
+    seg_display.values = {4b0000,4b0001,4b0010,4b0011};
     
     alufn = OPCODE;
     a = INPUT_A;
@@ -48,14 +57,14 @@ module auto_alu_tester
     
     case (state.q){
       state.INIT:
-        if (start)
+        if (start==1)
           state.d = state.A_VALUE;
    
       state.A_VALUE:
         seg_display.values = {a[15:12], a[11:8], a[7:4], a[3:0]};
         io_seg = ~seg_display.seg;
         io_sel = ~seg_display.sel;
-        if (timerClock.out)
+        if (timerClock.out==1)
           state.d = state.B_VALUE;
       
         
@@ -63,7 +72,7 @@ module auto_alu_tester
         seg_display.values = {b[15:12], b[11:8], b[7:4], b[3:0]};
         io_seg = ~seg_display.seg;
         io_sel = ~seg_display.sel;
-        if (timerClock.out)
+        if (timerClock.out==1)
           state.d = state.EXPECT;
       
           
@@ -71,7 +80,7 @@ module auto_alu_tester
         seg_display.values = {expected[15:12], expected[11:8], expected[7:4], expected[3:0]};
         io_seg = ~seg_display.seg;
         io_sel = ~seg_display.sel;
-        if (timerClock.out)
+        if (timerClock.out==1)
           state.d = state.OUT;
        
       state.OUT:

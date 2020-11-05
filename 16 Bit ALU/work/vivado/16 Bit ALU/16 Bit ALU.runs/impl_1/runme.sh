@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1'
+HD_PWD='C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,12 +2,12 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Thu Nov  5 21:04:36 2020
-# Process ID: 25432
-# Current directory: C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1
+# Start of session at: Fri Nov  6 03:12:30 2020
+# Process ID: 9524
+# Current directory: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1
 # Command line: vivado.exe -log au_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source au_top_0.tcl
-# Log file: C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.vds
-# Journal file: C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1\vivado.jou
+# Log file: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.vds
+# Journal file: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source au_top_0.tcl -notrace
 Command: synth_design -top au_top_0 -part xc7a35tftg256-1
@@ -17,46 +17,46 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15800
+INFO: [Synth 8-7075] Helper process launched with PID 2460
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 	Parameter MANUAL_state bound to: 1'b0 
 	Parameter AUTO_state bound to: 1'b1 
-INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
 	Parameter STAGES bound to: 3'b100 
-INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_1' (1#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
-INFO: [Synth 8-6157] synthesizing module 'button_conditioner_2' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_1' (1#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner_2' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
 	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'pipeline_6' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
+INFO: [Synth 8-6157] synthesizing module 'pipeline_6' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 	Parameter DEPTH bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_2' (3#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
-INFO: [Synth 8-6157] synthesizing module 'edge_detector_3' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_2' (3#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_3' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
 	Parameter RISE bound to: 1'b1 
 	Parameter FALL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'edge_detector_3' (4#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
-INFO: [Synth 8-6157] synthesizing module 'manual_alu_tester_4' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_3' (4#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
+INFO: [Synth 8-6157] synthesizing module 'manual_alu_tester_4' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:7]
 	Parameter A_state bound to: 2'b00 
 	Parameter B_state bound to: 2'b01 
 	Parameter OUTPUT_state bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_7' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_42' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_42.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_arithmetic_42' (5#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_42.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_boolean_43' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_43.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_boolean_43' (6#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_43.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_compare_44' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_compare_44' (7#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v:7]
-INFO: [Synth 8-6157] synthesizing module 'alu_shifter_45' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_45.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_45' (8#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_45.v:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:101]
-INFO: [Synth 8-6155] done synthesizing module 'alu_16_bit_7' (9#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:7]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:89]
-INFO: [Synth 8-6155] done synthesizing module 'manual_alu_tester_4' (10#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:7]
-INFO: [Synth 8-6157] synthesizing module 'auto_tester_run_5' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_7' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_42' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_42.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_arithmetic_42' (5#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_42.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_boolean_43' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_43.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_boolean_43' (6#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_43.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_compare_44' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_compare_44' (7#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_shifter_45' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_45.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_45' (8#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_45.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'alu_16_bit_7' (9#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'manual_alu_tester_4' (10#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v:7]
+INFO: [Synth 8-6157] synthesizing module 'auto_tester_run_5' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:7]
 	Parameter STANDBY_autostate bound to: 6'b000000 
 	Parameter TEST_0_autostate bound to: 6'b000001 
 	Parameter TEST_1_autostate bound to: 6'b000010 
@@ -92,7 +92,7 @@ INFO: [Synth 8-6157] synthesizing module 'auto_tester_run_5' [C:/Users/sqiya/One
 	Parameter TEST_31_autostate bound to: 6'b100000 
 	Parameter TEST_32_autostate bound to: 6'b100001 
 	Parameter TEST_33_autostate bound to: 6'b100010 
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_8' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_8' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:14]
 	Parameter INPUT_A bound to: 16'b1010101111001101 
 	Parameter INPUT_B bound to: 16'b1110111101000010 
 	Parameter OPCODE bound to: 6'b000000 
@@ -104,34 +104,34 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_8' [C:/Users/sqiya/One
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-6157] synthesizing module 'counter_46' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_46.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counter_46' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_46.v:14]
 	Parameter SIZE bound to: 1'b1 
 	Parameter DIV bound to: 5'b11001 
 	Parameter TOP bound to: 1'b0 
 	Parameter UP bound to: 1'b1 
 	Parameter MAX_VALUE bound to: 26'b01111111111111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'counter_46' (11#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_46.v:14]
-INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg_47' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_47.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'counter_46' (11#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_46.v:14]
+INFO: [Synth 8-6157] synthesizing module 'multi_seven_seg_47' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_47.v:12]
 	Parameter DIGITS bound to: 3'b100 
 	Parameter DIV bound to: 5'b10000 
 	Parameter DIGIT_BITS bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'counter_48' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
+INFO: [Synth 8-6157] synthesizing module 'counter_48' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
 	Parameter SIZE bound to: 2'b10 
 	Parameter DIV bound to: 5'b10000 
 	Parameter TOP bound to: 4'b0011 
 	Parameter UP bound to: 1'b1 
 	Parameter MAX_VALUE bound to: 20'b00111111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'counter_48' (12#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg_49' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
-INFO: [Synth 8-226] default block is never used [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:16]
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg_49' (13#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
-INFO: [Synth 8-6157] synthesizing module 'decoder_50' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'counter_48' (12#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v:14]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_49' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_49' (13#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v:7]
+INFO: [Synth 8-6157] synthesizing module 'decoder_50' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
 	Parameter WIDTH bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'decoder_50' (14#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg_47' (15#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_47.v:12]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_8' (16#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_9' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'decoder_50' (14#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'multi_seven_seg_47' (15#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_47.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_8' (16#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_9' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:14]
 	Parameter INPUT_A bound to: 16'b0000000101101000 
 	Parameter INPUT_B bound to: 16'b0000000101101000 
 	Parameter OPCODE bound to: 6'b000000 
@@ -143,9 +143,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_9' [C:/Users/sqiya/One
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_9' (17#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_10' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_9' (17#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_10' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:14]
 	Parameter INPUT_A bound to: 16'b0000000101101000 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b000001 
@@ -157,9 +157,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_10' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_10' (18#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_11' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_10' (18#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_11' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:14]
 	Parameter INPUT_A bound to: 16'b1010101111001101 
 	Parameter INPUT_B bound to: 16'b1010101111001101 
 	Parameter OPCODE bound to: 6'b000001 
@@ -171,9 +171,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_11' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_11' (19#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_12' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_11' (19#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_12' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000000000 
 	Parameter INPUT_B bound to: 16'b1111111111111111 
 	Parameter OPCODE bound to: 6'b011000 
@@ -185,9 +185,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_12' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_12' (20#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_13' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_12' (20#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_13' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b1111111111111111 
 	Parameter OPCODE bound to: 6'b011000 
@@ -199,9 +199,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_13' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_13' (21#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_14' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_13' (21#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_14' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000000000 
 	Parameter INPUT_B bound to: 16'b1111111111111111 
 	Parameter OPCODE bound to: 6'b011110 
@@ -213,9 +213,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_14' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_14' (22#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_15' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_14' (22#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_15' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000000001 
 	Parameter INPUT_B bound to: 16'b0000000000010000 
 	Parameter OPCODE bound to: 6'b011110 
@@ -227,9 +227,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_15' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_15' (23#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_16' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_15' (23#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_16' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b1111111111111111 
 	Parameter OPCODE bound to: 6'b010110 
@@ -241,9 +241,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_16' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_16' (24#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_17' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_16' (24#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_17' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b010110 
@@ -255,9 +255,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_17' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_17' (25#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_18' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_17' (25#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_18' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:14]
 	Parameter INPUT_A bound to: 16'b0010000100100001 
 	Parameter INPUT_B bound to: 16'b0100001001000010 
 	Parameter OPCODE bound to: 6'b011010 
@@ -269,9 +269,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_18' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_18' (26#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_19' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_18' (26#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_19' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:14]
 	Parameter INPUT_A bound to: 16'b0100001001000010 
 	Parameter INPUT_B bound to: 16'b0100001001000010 
 	Parameter OPCODE bound to: 6'b011010 
@@ -283,9 +283,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_19' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_19' (27#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_20' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_19' (27#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_20' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000001 
 	Parameter OPCODE bound to: 6'b100000 
@@ -297,9 +297,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_20' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_20' (28#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_21' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_20' (28#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_21' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000001000 
 	Parameter OPCODE bound to: 6'b100000 
@@ -311,9 +311,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_21' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_21' (29#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_22' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_21' (29#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_22' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000001 
 	Parameter OPCODE bound to: 6'b100001 
@@ -325,9 +325,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_22' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_22' (30#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_23' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_22' (30#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_23' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000001000 
 	Parameter OPCODE bound to: 6'b100001 
@@ -339,9 +339,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_23' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_23' (31#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_24' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_23' (31#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_24' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:14]
 	Parameter INPUT_A bound to: 16'b1111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000001 
 	Parameter OPCODE bound to: 6'b100011 
@@ -353,9 +353,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_24' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_24' (32#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_25' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_24' (32#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_25' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:14]
 	Parameter INPUT_A bound to: 16'b0011111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000001000 
 	Parameter OPCODE bound to: 6'b100011 
@@ -367,9 +367,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_25' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_25' (33#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_26' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_25' (33#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_26' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0111111111111111 
 	Parameter OPCODE bound to: 6'b000010 
@@ -381,9 +381,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_26' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_26' (34#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_27' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_26' (34#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_27' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b000010 
@@ -395,9 +395,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_27' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_27' (35#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_28' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_27' (35#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_28' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0111111111111111 
 	Parameter OPCODE bound to: 6'b110011 
@@ -409,9 +409,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_28' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_28' (36#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_29' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_28' (36#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_29' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b110011 
@@ -423,9 +423,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_29' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_29' (37#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_30' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_29' (37#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_30' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0111111111111111 
 	Parameter OPCODE bound to: 6'b110101 
@@ -437,9 +437,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_30' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_30' (38#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_31' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_30' (38#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_31' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000000000 
 	Parameter INPUT_B bound to: 16'b0111111111111111 
 	Parameter OPCODE bound to: 6'b110101 
@@ -451,9 +451,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_31' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_31' (39#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_32' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_31' (39#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_32' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:14]
 	Parameter INPUT_A bound to: 16'b0111111111111111 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b110111 
@@ -465,9 +465,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_32' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_32' (40#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_33' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_32' (40#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_33' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:14]
 	Parameter INPUT_A bound to: 16'b0010000100100001 
 	Parameter INPUT_B bound to: 16'b0010000100100001 
 	Parameter OPCODE bound to: 6'b110111 
@@ -479,9 +479,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_33' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_33' (41#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_34' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_33' (41#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_34' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:14]
 	Parameter INPUT_A bound to: 16'b0010101011110000 
 	Parameter INPUT_B bound to: 16'b1010111111100000 
 	Parameter OPCODE bound to: 6'b010001 
@@ -493,9 +493,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_34' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_34' (42#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_35' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_34' (42#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_35' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:14]
 	Parameter INPUT_A bound to: 16'b1111111100000000 
 	Parameter INPUT_B bound to: 16'b0000000011111111 
 	Parameter OPCODE bound to: 6'b010001 
@@ -507,9 +507,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_35' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_35' (43#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_36' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_35' (43#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_36' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:14]
 	Parameter INPUT_A bound to: 16'b0010101011110000 
 	Parameter INPUT_B bound to: 16'b1010111111100000 
 	Parameter OPCODE bound to: 6'b011111 
@@ -521,9 +521,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_36' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_36' (44#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_37' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_36' (44#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_37' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:14]
 	Parameter INPUT_A bound to: 16'b1111111100000000 
 	Parameter INPUT_B bound to: 16'b0000000011111111 
 	Parameter OPCODE bound to: 6'b011111 
@@ -535,9 +535,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_37' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_37' (45#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_38' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_37' (45#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_38' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:14]
 	Parameter INPUT_A bound to: 16'b0010101011110000 
 	Parameter INPUT_B bound to: 16'b1010111111100000 
 	Parameter OPCODE bound to: 6'b010111 
@@ -549,9 +549,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_38' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_38' (46#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_39' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_38' (46#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_39' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:14]
 	Parameter INPUT_A bound to: 16'b1111111100000000 
 	Parameter INPUT_B bound to: 16'b0000000011111111 
 	Parameter OPCODE bound to: 6'b010111 
@@ -563,9 +563,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_39' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_39' (47#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_40' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_39' (47#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_40' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000011111 
 	Parameter INPUT_B bound to: 16'b0000000000010101 
 	Parameter OPCODE bound to: 6'b000111 
@@ -577,9 +577,9 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_40' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_40' (48#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:14]
-INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_41' [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_40' (48#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v:14]
+INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_41' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:14]
 	Parameter INPUT_A bound to: 16'b0000000000101010 
 	Parameter INPUT_B bound to: 16'b0000000000000000 
 	Parameter OPCODE bound to: 6'b000111 
@@ -591,60 +591,60 @@ INFO: [Synth 8-6157] synthesizing module 'auto_alu_tester_41' [C:/Users/sqiya/On
 	Parameter OUT_state bound to: 3'b100 
 	Parameter PASS_state bound to: 3'b101 
 	Parameter FAIL_state bound to: 3'b110 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:107]
-INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_41' (49#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:14]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:573]
-INFO: [Synth 8-6155] done synthesizing module 'auto_tester_run_5' (50#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (51#1) [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'auto_alu_tester_41' (49#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:573]
+INFO: [Synth 8-6155] done synthesizing module 'auto_tester_run_5' (50#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (51#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.217 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1014.418 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]
-Finished Parsing XDC File [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]
+Finished Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]
-Finished Parsing XDC File [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
+Parsing XDC File [C:/Users/User123/Desktop/alchitry-labs-1.2.0/library/components/au.xdc]
+Finished Parsing XDC File [C:/Users/User123/Desktop/alchitry-labs-1.2.0/library/components/au.xdc]
+Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]
+Finished Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/au_top_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc]
-Finished Parsing XDC File [C:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1014.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_4'
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'auto_alu_tester_8'
@@ -1139,7 +1139,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'M_autostate_q_reg' using encoding 'sequential' in module 'auto_tester_run_5'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1167,19 +1167,22 @@ Detailed RTL Component Info :
 	   7 Input   16 Bit        Muxes := 34    
 	   3 Input   16 Bit        Muxes := 1     
 	  35 Input    8 Bit        Muxes := 1     
-	   7 Input    8 Bit        Muxes := 68    
+	   7 Input    8 Bit        Muxes := 34    
 	   3 Input    8 Bit        Muxes := 1     
 	   2 Input    8 Bit        Muxes := 1     
-	  35 Input    6 Bit        Muxes := 1     
+	  35 Input    6 Bit        Muxes := 2     
+	   7 Input    6 Bit        Muxes := 12    
+	   7 Input    5 Bit        Muxes := 14    
 	  35 Input    4 Bit        Muxes := 1     
 	   4 Input    4 Bit        Muxes := 34    
-	   7 Input    4 Bit        Muxes := 68    
+	   7 Input    4 Bit        Muxes := 34    
 	   2 Input    4 Bit        Muxes := 1     
-	   7 Input    3 Bit        Muxes := 34    
+	   7 Input    3 Bit        Muxes := 36    
 	   2 Input    3 Bit        Muxes := 34    
-	  35 Input    1 Bit        Muxes := 36    
+	   7 Input    2 Bit        Muxes := 2     
+	  35 Input    1 Bit        Muxes := 35    
 	   2 Input    1 Bit        Muxes := 35    
-	   7 Input    1 Bit        Muxes := 88    
+	   7 Input    1 Bit        Muxes := 70    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1355,7 +1358,7 @@ DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xff00)*
 DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_28/M_out_q_reg[15] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:54 . Memory (MB): peak = 1016.762 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1399,19 +1402,19 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:06 . Memory (MB): peak = 1026.402 ; gain = 9.641
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1019.797 ; gain = 5.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:09 . Memory (MB): peak = 1073.207 ; gain = 56.445
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1070.195 ; gain = 55.777
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:11 . Memory (MB): peak = 1094.387 ; gain = 77.625
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 1112.797 ; gain = 98.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1429,37 +1432,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1478,40 +1481,39 @@ Report Cell Usage:
 |1     |BUFG    |     1|
 |2     |CARRY4  |   506|
 |3     |DSP48E1 |     3|
-|6     |LUT1    |   111|
-|7     |LUT2    |  1073|
-|8     |LUT3    |   395|
-|9     |LUT4    |   125|
-|10    |LUT5    |   327|
-|11    |LUT6    |   539|
-|12    |MUXF7   |    53|
-|13    |MUXF8   |    15|
-|14    |FDRE    |  1747|
+|6     |LUT1    |    96|
+|7     |LUT2    |   704|
+|8     |LUT3    |   315|
+|9     |LUT4    |   122|
+|10    |LUT5    |   357|
+|11    |LUT6    |   531|
+|12    |MUXF7   |   181|
+|13    |MUXF8   |    64|
+|14    |FDRE    |  1749|
 |15    |FDSE    |     5|
-|16    |IBUF    |    27|
-|17    |OBUF    |    37|
-|18    |OBUFT   |     8|
+|16    |IBUF    |    30|
+|17    |OBUF    |    45|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:01:15 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1119.055 ; gain = 104.637
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:01:11 . Memory (MB): peak = 1100.707 ; gain = 83.945
-Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 1100.707 ; gain = 83.945
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 1119.055 ; gain = 104.637
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1119.055 ; gain = 104.637
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1100.707 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 577 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1131.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 754 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1100.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1131.098 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 336 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:24 . Memory (MB): peak = 1100.707 ; gain = 83.945
-INFO: [Common 17-1381] The checkpoint 'C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1131.098 ; gain = 116.680
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  5 21:06:04 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 03:13:41 2020...
