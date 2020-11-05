@@ -6,3 +6,5 @@ FPGA CODE TO TEST 1 Bit Full Adder Mini Hardware Project
 
 Youtube video for Mini Hardware Project:
 [video link](https://youtu.be/yrF3i6HiYmk)
+
+16 Bit ALU Final: Auto and Manual Tester for CheckOff 1
