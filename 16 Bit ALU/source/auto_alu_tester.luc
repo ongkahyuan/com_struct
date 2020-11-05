@@ -34,8 +34,8 @@ module auto_alu_tester
 
     done = 0;
     timerClock.in = timer.value;
-    io_seg = 8bzzzzzzzz;
-    io_sel = 4bzzzz;
+    io_seg = 8b0; // connect segments to the driver
+    io_sel = 4b0; // connect digit select to the driver
     seg_display.values = {4b0,4b0,4b0,4b0};
     
     alufn = OPCODE;
@@ -74,9 +74,6 @@ module auto_alu_tester
         if (timerClock.out)
           state.d = state.OUT;
        
-         
-     
-        
       state.OUT:
         seg_display.values = {out.q[15:12], out.q[11:8], out.q[7:4], out.q[3:0]};
         io_seg = ~seg_display.seg;
@@ -92,8 +89,6 @@ module auto_alu_tester
         io_sel = 4b1110;
         opcode_led = 6b000000;
         done = 1;
-        
-      
         
       state.FAIL:
         io_seg = 8b10001110;

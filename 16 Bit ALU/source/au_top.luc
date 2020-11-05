@@ -31,7 +31,6 @@ module au_top (
     reset_cond.in = ~rst_n;   // input raw inverted reset signal
     rst = reset_cond.out;     // conditioned reset_cond
     
-    led = 8h00; // turn off LEDs from documentation
     led = c{3b0, io_button};  // connect buttons to LEDs
     
     usb_tx = usb_rx;          // loop serial port from documentation
@@ -79,8 +78,6 @@ module au_top (
             state.d = state.MANUAL;
         }
     }
-    
-    led = bzzzzzzzz;
     
     //reset_cond.in = ~rst_n;   // input raw inverted reset signal
     //rst = reset_cond.out;     // conditioned reset
