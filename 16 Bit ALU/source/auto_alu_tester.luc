@@ -1,0 +1,114 @@
+module auto_alu_tester (
+    input clk,  // clock : connect to regular 100MHz clock for Alchitry FPGA module
+    input rst,  // reset
+    input start,
+    input input_A,
+    input input_B,
+    input alufn_opcode,
+    input expected,
+    output io_seg[8],
+    output io_sel[4],
+    output done
+  ) {
+  
+  edge_detector timerClock(#RISE(1), #FALL(0), .clk(clk));
+  
+  fsm state(.clk(clk), .rst(rst)) = {INIT, FUNCTION, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
+  dff out[16](#INIT(0), .clk(clk), .rst(rst));
+  counter timer (#SIZE(1), #DIV(25), .clk(clk), .rst(rst)); // pace of transition from one value to the next displayed
+  multi_seven_seg seg_display(.clk(clk), .rst(rst));
+  
+  
+  alu_16_bit alu;
+  
+
+  always {
+
+    done = 0;
+    timerClock.in = timer.value;
+    io_seg = 8bzzzzzzzz;
+    io_sel = 4bzzzz;
+    seg_display.values = {4b0,4b0,4b0,4b0};
+    
+    alu.a = input_A;
+    alu.b = input_B;
+    alu.alufn = alufn_opcode;
+    
+    out.d = alu.out;
+    
+    case (state.q){
+      state.INIT:
+        if (start)
+          state.d = state.FUNCTION;
+      
+      state.FUNCTION:
+        io_seg = 8b10001000;
+        io_sel = 4b1110;
+        if (slow_clk_edge.out)
+          state.d = state.A_VALUE;
+        
+      
+      state.A_VALUE:
+        seg_display.values = {a[15:12], a[11:8], a[7:4], a[3:0]};
+        io_seg = ~seg_display.seg;
+        io_sel = ~seg_display.sel;
+        if (slow_clk_edge.out)
+          state.d = state.B_VALUE;
+      
+        
+      state.B_VALUE:
+        io_seg = 8b10000011;
+        io_sel = 4b1110;
+        if (slow_clk_edge.out)
+          state.d = state.EXPECT;
+      
+          
+      state.EXPECT:
+        seg_display.values = {b[15:12], b[11:8], b[7:4], b[3:0]};
+        io_seg = ~seg_display.seg;
+        io_sel = ~seg_display.sel;
+        if (slow_clk_edge.out)
+          state.d = state.OUT;
+       
+         
+      // state.OUT:
+        io_seg = 8b11000000;
+        io_sel = 4b1110;
+        if (slow_clk_edge.out)
+          state.d = state.DISP_O_2;
+        
+        
+      state.OUT:
+        seg_display.values = {o.q[15:12], o.q[11:8], o.q[7:4], o.q[3:0]};
+        io_seg = ~seg_display.seg;
+        io_sel = ~seg_display.sel;
+        
+        if (slow_clk_edge.out && o.q == EXPECTED)
+          state.d = state.PASS;
+        else if (slow_clk_edge.out && o.q != EXPECTED)  
+          state.d = state.FAIL;
+          
+      state.PASS:
+        io_seg = 8b10100001;
+        io_sel = 4b1110;
+        opcode_led = 6b000000;
+        done = 1;
+        
+      state.FAIL:
+        seg_display.values = {o.q[15:12], o.q[11:8], o.q[7:4], o.q[3:0]};
+        io_seg = ~seg_display.seg;
+        io_sel = ~seg_display.sel;
+        
+        if (slow_clk_edge.out)
+          state.d = state.ERROR_2;
+        
+      state.FAIL:
+        io_seg = 8b10000110;
+        io_sel = 4b1110;
+        
+      }
+
+
+
+  }
+}
