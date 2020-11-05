@@ -2,9 +2,15 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+<<<<<<< HEAD
 # Start of session at: Fri Nov  6 03:12:30 2020
 # Process ID: 9524
 # Current directory: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1
+=======
+# Start of session at: Tue Nov  3 20:44:56 2020
+# Process ID: 5996
+# Current directory: C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 # Command line: vivado.exe -log au_top_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source au_top_0.tcl
 # Log file: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.vds
 # Journal file: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1\vivado.jou
@@ -17,6 +23,7 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+<<<<<<< HEAD
 INFO: [Synth 8-7075] Helper process launched with PID 2460
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.418 ; gain = 0.000
@@ -28,11 +35,27 @@ INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/User123
 	Parameter STAGES bound to: 3'b100 
 INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_1' (1#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
 INFO: [Synth 8-6157] synthesizing module 'button_conditioner_2' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 1960
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
+	Parameter STAGES bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'reset_conditioner_1' (1#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'manual_alu_tester_2' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:7]
+	Parameter A_state bound to: 2'b00 
+	Parameter B_state bound to: 2'b01 
+	Parameter OUTPUT_state bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'button_conditioner_3' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
 INFO: [Synth 8-6157] synthesizing module 'pipeline_6' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 	Parameter DEPTH bound to: 2'b10 
+<<<<<<< HEAD
 INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_2' (3#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
 INFO: [Synth 8-6157] synthesizing module 'edge_detector_3' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v:12]
@@ -598,17 +621,50 @@ INFO: [Synth 8-6155] done synthesizing module 'auto_tester_run_5' (50#1) [C:/Use
 INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (51#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_3' (3#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_4' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
+	Parameter RISE bound to: 1'b1 
+	Parameter FALL bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector_4' (4#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
+INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_5' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_7' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_7.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_arithmetic_7' (5#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_7.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_boolean_8' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_8.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_boolean_8' (6#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_8.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_compare_9' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_compare_9' (7#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v:7]
+INFO: [Synth 8-6157] synthesizing module 'alu_shifter_10' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_10.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'alu_shifter_10' (8#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_10.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'alu_16_bit_5' (9#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:89]
+INFO: [Synth 8-6155] done synthesizing module 'manual_alu_tester_2' (10#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_2.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (11#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -625,6 +681,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1014.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -632,18 +689,32 @@ No Unisim elements were transformed.
 Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_4'
@@ -682,6 +753,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'a
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'auto_alu_tester_40'
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'auto_alu_tester_41'
 INFO: [Synth 8-802] inferred FSM for state register 'M_autostate_q_reg' in module 'auto_tester_run_5'
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_2'
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -689,6 +765,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'M_autostate_q_reg' in modul
                  B_state |                              010 |                               01
             OUTPUT_state |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'manual_alu_tester_4'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -1140,25 +1217,29 @@ INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encod
 INFO: [Synth 8-3354] encoded FSM with state register 'M_autostate_q_reg' using encoding 'sequential' in module 'auto_tester_run_5'
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'manual_alu_tester_2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   18 Bit       Adders := 34    
-	   3 Input   16 Bit       Adders := 70    
+	   3 Input   16 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     16 Bit         XORs := 35    
-	   2 Input      1 Bit         XORs := 70    
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               18 Bit    Registers := 34    
-	               16 Bit    Registers := 37    
+	               16 Bit    Registers := 3     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 37    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
+<<<<<<< HEAD
 	   2 Input   24 Bit        Muxes := 1     
 	   2 Input   18 Bit        Muxes := 34    
 	   2 Input   16 Bit        Muxes := 140   
@@ -1183,6 +1264,12 @@ Detailed RTL Component Info :
 	  35 Input    1 Bit        Muxes := 35    
 	   2 Input    1 Bit        Muxes := 35    
 	   7 Input    1 Bit        Muxes := 70    
+=======
+	   4 Input   16 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1198,6 +1285,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x2121).
 DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x4242).
@@ -1205,10 +1293,13 @@ DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUn
 DSP Report: Generating DSP manual_tester/alu/arithmeticUnit/s1, operation Mode is: A*B2.
 DSP Report: register manual_tester/M_b_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s1.
 DSP Report: operator manual_tester/alu/arithmeticUnit/s1 is absorbed into DSP manual_tester/alu/arithmeticUnit/s1.
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 DSP Report: Generating DSP manual_tester/alu/arithmeticUnit/s0, operation Mode is: A2*B2.
 DSP Report: register manual_tester/M_b_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
 DSP Report: register manual_tester/M_a_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
 DSP Report: operator manual_tester/alu/arithmeticUnit/s0 is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
+<<<<<<< HEAD
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xabcd)*(B:0xabcd).
 DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
 DSP Report: Generating DSP alu/arithmeticUnit/s1, operation Mode is: A*(B:0xffff).
@@ -1359,12 +1450,17 @@ DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUn
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\test_28/M_out_q_reg[15] )
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:41 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping	Report (see note below)
+<<<<<<< HEAD
 +------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name       | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
@@ -1393,6 +1489,13 @@ DSP: Preliminary Mapping	Report (see note below)
 |alu_arithmetic_42 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |alu_arithmetic_42 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+=======
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|au_top_0    | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1402,19 +1505,31 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1019.797 ; gain = 5.379
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1070.195 ; gain = 55.777
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 1112.797 ; gain = 98.379
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1022.883 ; gain = 2.430
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1432,37 +1547,61 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1479,6 +1618,7 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
+<<<<<<< HEAD
 |2     |CARRY4  |   506|
 |3     |DSP48E1 |     3|
 |6     |LUT1    |    96|
@@ -1507,13 +1647,51 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1131.098 ; gain = 0.000
+=======
+|2     |CARRY4  |     9|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     5|
+|5     |LUT3    |    24|
+|6     |LUT4    |    33|
+|7     |LUT5    |    45|
+|8     |LUT6    |    95|
+|9     |MUXF7   |     3|
+|10    |MUXF8   |     1|
+|11    |FDRE    |    79|
+|12    |FDSE    |     5|
+|13    |IBUF    |    26|
+|14    |OBUF    |    45|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1037.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.637 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
+<<<<<<< HEAD
 336 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
 synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1131.098 ; gain = 116.680
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
 INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 03:13:41 2020...
+=======
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1037.637 ; gain = 17.184
+INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 20:45:37 2020...
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA

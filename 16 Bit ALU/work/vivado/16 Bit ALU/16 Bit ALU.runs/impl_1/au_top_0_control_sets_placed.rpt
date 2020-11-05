@@ -1,8 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+<<<<<<< HEAD
 | Date         : Fri Nov  6 03:14:34 2020
 | Host         : Amrish running 64-bit major release  (build 9200)
+=======
+| Date         : Tue Nov  3 20:46:12 2020
+| Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | Command      : report_control_sets -verbose -file au_top_0_control_sets_placed.rpt
 | Design       : au_top_0
 | Device       : xc7a35t
@@ -23,11 +28,19 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
+<<<<<<< HEAD
 | Total control sets                                       |     8 |
 |    Minimum number of control sets                        |     8 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
 | Unused register locations in slices containing registers |    14 |
+=======
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    20 |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +52,23 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
+<<<<<<< HEAD
 | Total control sets |     8 |
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     0 |
 | >= 8 to < 10       |     1 |
+=======
+| Total control sets |     6 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     6 |
+| >= 16              |     4 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,18 +79,28 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
+<<<<<<< HEAD
 | No           | No                    | No                     |              40 |           37 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |            1634 |          457 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              80 |           36 |
+=======
+| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              29 |           19 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              52 |           15 |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
+<<<<<<< HEAD
 +----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
 |  Clock Signal  |                   Enable Signal                  |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
@@ -82,5 +113,17 @@ Table of Contents
 |  clk_IBUF_BUFG |                                                  |                                                  |               37 |             40 |         1.08 |
 |  clk_IBUF_BUFG |                                                  | reset_cond/Q[0]                                  |              454 |           1630 |         3.59 |
 +----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+=======
++----------------+-------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |         Enable Signal         |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                               |                                      |                2 |              3 |         1.50 |
+|  clk_IBUF_BUFG |                               | reset_cond/M_reset_cond_in           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | manual_tester/io_seg_OBUF[0]  | reset_cond/Q[0]                      |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | manual_tester/io_seg_OBUF[1]  | reset_cond/Q[0]                      |                6 |             16 |         2.67 |
+|  clk_IBUF_BUFG | manual_tester/button_cond/sel | manual_tester/button_cond/sync/clear |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG |                               | reset_cond/Q[0]                      |               17 |             25 |         1.47 |
++----------------+-------------------------------+--------------------------------------+------------------+----------------+--------------+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 

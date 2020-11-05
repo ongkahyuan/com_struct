@@ -21,10 +21,13 @@ module au_top_0 (
   
   reg rst;
   
+<<<<<<< HEAD
   reg change_state;
   
   reg start_auto;
   
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   wire [1-1:0] M_reset_cond_out;
   reg [1-1:0] M_reset_cond_in;
   reset_conditioner_1 reset_cond (
@@ -32,6 +35,7 @@ module au_top_0 (
     .in(M_reset_cond_in),
     .out(M_reset_cond_out)
   );
+<<<<<<< HEAD
   
   wire [1-1:0] M_button_cond_out;
   reg [1-1:0] M_button_cond_in;
@@ -55,6 +59,9 @@ module au_top_0 (
   
   reg M_state_d, M_state_q = MANUAL_state;
   
+=======
+  
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   wire [8-1:0] M_manual_tester_io_seg;
   wire [4-1:0] M_manual_tester_io_sel;
   wire [24-1:0] M_manual_tester_io_led;
@@ -62,7 +69,11 @@ module au_top_0 (
   reg [1-1:0] M_manual_tester_rst;
   reg [24-1:0] M_manual_tester_io_dip;
   reg [5-1:0] M_manual_tester_io_button;
+<<<<<<< HEAD
   manual_alu_tester_4 manual_tester (
+=======
+  manual_alu_tester_2 manual_tester (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     .clk(M_manual_tester_clk),
     .rst(M_manual_tester_rst),
     .io_dip(M_manual_tester_io_dip),
@@ -70,6 +81,7 @@ module au_top_0 (
     .io_seg(M_manual_tester_io_seg),
     .io_sel(M_manual_tester_io_sel),
     .io_led(M_manual_tester_io_led)
+<<<<<<< HEAD
   );
   
   wire [8-1:0] M_auto_tester_io_seg;
@@ -85,23 +97,32 @@ module au_top_0 (
     .io_seg(M_auto_tester_io_seg),
     .io_sel(M_auto_tester_io_sel),
     .opcode_led(M_auto_tester_opcode_led)
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   );
   
   always @* begin
-    M_state_d = M_state_q;
-    
     M_reset_cond_in = ~rst_n;
     rst = M_reset_cond_out;
+<<<<<<< HEAD
     led = {3'h0, io_button};
     usb_tx = usb_rx;
     M_button_cond_in = io_button[1+0-:1];
     M_detectPress_in = M_button_cond_out;
     change_state = M_detectPress_out;
     start_auto = 1'h0;
+=======
+    led = 8'h00;
+    usb_tx = usb_rx;
+    io_led = 24'h000000;
+    io_seg = 8'h00;
+    io_sel = 4'h0;
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     M_manual_tester_io_dip = io_dip;
     M_manual_tester_io_button = io_button;
     M_manual_tester_clk = clk;
     M_manual_tester_rst = rst;
+<<<<<<< HEAD
     M_auto_tester_start = start_auto;
     M_auto_tester_clk = clk;
     M_auto_tester_rst = rst;
@@ -128,14 +149,11 @@ module au_top_0 (
         end
       end
     endcase
+=======
+    io_led = 24'h000000;
+    io_seg = M_manual_tester_io_seg;
+    io_sel = M_manual_tester_io_sel;
+    io_led = M_manual_tester_io_led;
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   end
-  
-  always @(posedge clk) begin
-    if (rst == 1'b1) begin
-      M_state_q <= 1'h0;
-    end else begin
-      M_state_q <= M_state_d;
-    end
-  end
-  
 endmodule
