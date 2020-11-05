@@ -11,13 +11,13 @@ module auto_alu_tester
     input start,
     output io_seg[8],
     output io_sel[4],
-    ouput opcode_led,
+    output opcode_led,
     output done
   ) {
   
   edge_detector timerClock(#RISE(1), #FALL(0), .clk(clk));
   
-  fsm state(.clk(clk), .rst(rst)) = {INIT, FUNCTION, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
+  fsm state(.clk(clk), .rst(rst)) = {INIT, A_VALUE, B_VALUE, EXPECT, OUT, PASS, FAIL};
   dff out[16](#INIT(0), .clk(clk), .rst(rst));
   counter timer (#SIZE(1), #DIV(25), .clk(clk), .rst(rst)); // pace of transition from one value to the next displayed
   multi_seven_seg seg_display(.clk(clk), .rst(rst));
@@ -27,8 +27,8 @@ module auto_alu_tester
   sig alufn[6];
   sig a[16];
   sig b[16];
-  sig expected[16]
-  alu_16_bit alu (.alufn(alufn), .a(a), .b(b));
+  sig expected[16];
+  alu_16_bit alu(.alufn(alufn), .a(a), .b(b));
 
   always {
 
@@ -42,7 +42,7 @@ module auto_alu_tester
     a = INPUT_A;
     b = INPUT_B;
     expected = EXPECTED;
-    o.d = alu.out;
+    out.d = alu.out;
     
     opcode_led = OPCODE;
     
@@ -75,17 +75,16 @@ module auto_alu_tester
           state.d = state.OUT;
        
          
-      
-        
+     
         
       state.OUT:
-        seg_display.values = {o.q[15:12], o.q[11:8], o.q[7:4], o.q[3:0]};
+        seg_display.values = {out.q[15:12], out.q[11:8], out.q[7:4], out.q[3:0]};
         io_seg = ~seg_display.seg;
         io_sel = ~seg_display.sel;
         
-        if (timerClock.out && o.q == EXPECTED)
+        if (timerClock.out && out.q == EXPECTED)
           state.d = state.PASS;
-        else if (timerClock.out && o.q != EXPECTED)  
+        else if (timerClock.out && out.q != EXPECTED)  
           state.d = state.FAIL;
           
       state.PASS:
