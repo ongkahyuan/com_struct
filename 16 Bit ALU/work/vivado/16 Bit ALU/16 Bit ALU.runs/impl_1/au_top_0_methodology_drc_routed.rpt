@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Nov  5 14:17:30 2020
-| Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
+| Date         : Thu Nov  5 21:07:55 2020
+| Host         : DESKTOP-QP819M2 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file au_top_0_methodology_drc_routed.rpt -pb au_top_0_methodology_drc_routed.pb -rpx au_top_0_methodology_drc_routed.rpx
 | Design       : au_top_0
 | Device       : xc7a35tftg256-1
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 84
+             Violations found: 83
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| SYNTH-11  | Warning  | DSP output not registered     | 2          |
+| SYNTH-11  | Warning  | DSP output not registered     | 1          |
 | TIMING-16 | Warning  | Large setup violation         | 16         |
 | TIMING-18 | Warning  | Missing input or output delay | 66         |
 +-----------+----------+-------------------------------+------------+
@@ -36,92 +36,87 @@ Table of Contents
 -----------------
 SYNTH-11#1 Warning
 DSP output not registered  
-DSP instance alu_tester/alu/arithmeticUnit/s0 is not fully pipelined on the output side. MREG/PREG are not used.
-Related violations: <none>
-
-SYNTH-11#2 Warning
-DSP output not registered  
-DSP instance alu_tester/alu/arithmeticUnit/s1 is not fully pipelined on the output side. MREG/PREG are not used.
+DSP instance manual_tester/alu/arithmeticUnit/s1 is not fully pipelined on the output side. MREG/PREG are not used.
 Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -31.043 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[1]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -30.784 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[1]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -31.084 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[2]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.208 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[2]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -31.216 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[3]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.339 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[3]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -31.306 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[5]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.371 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[5]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -31.369 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[4]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.404 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[6]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -31.640 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[10]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.435 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[10]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -31.735 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[15]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.438 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[8]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -31.754 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[11]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.452 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[15]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -31.787 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[13]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.491 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[12]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -31.822 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[8]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.503 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[14]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -31.889 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[12]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.522 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[4]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -31.935 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[6]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.534 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[11]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -31.978 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[9]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.577 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[9]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -32.043 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[14]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -31.960 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[13]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -32.107 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[7]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -32.077 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[7]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -32.875 ns between alu_tester/M_b_q_reg[0]/C (clocked by clk_0) and alu_tester/M_o_q_reg[0]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -32.638 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[0]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.tcl"
+  variable script "C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,65 +76,65 @@ create_project -in_memory -part xc7a35tftg256-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_41.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_44.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_45.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_46.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_47.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_10.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_11.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_12.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_13.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_14.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_15.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_16.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_17.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_18.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_19.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_20.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_21.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_22.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_23.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_24.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_25.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_26.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_27.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_28.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_29.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_30.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_31.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_32.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_33.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_34.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_35.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_36.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_37.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_38.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_39.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_40.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_7.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_8.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_statement_tester_9.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_5.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_tester_auto_4.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_42.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_43.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v}
-  {C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_7.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_42.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_43.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_shifter_45.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_10.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_11.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_12.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_13.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_14.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_15.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_16.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_17.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_18.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_19.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_20.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_21.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_22.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_23.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_24.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_25.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_26.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_27.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_28.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_29.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_30.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_31.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_32.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_33.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_34.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_35.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_36.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_37.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_38.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_39.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_40.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_41.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_8.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_alu_tester_9.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/auto_tester_run_5.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_46.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/counter_48.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/decoder_50.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_3.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/manual_alu_tester_4.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/multi_seven_seg_47.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/seven_seg_49.v}
+  {C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -145,14 +145,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc}}]
+read_xdc {{C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/alchitry.xdc}}]
 
-read_xdc C:/Users/amris/Downloads/alchitry-labs-1.2.1/library/components/au.xdc
-set_property used_in_implementation false [get_files C:/Users/amris/Downloads/alchitry-labs-1.2.1/library/components/au.xdc]
+read_xdc {{C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/sqiya/OneDrive/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc}}]
 
-read_xdc {{C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc}}]
+read_xdc {{C:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc}}
+set_property used_in_implementation false [get_files {{C:/Program Files/Alchitry/Alchitry Labs/library/components/au.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

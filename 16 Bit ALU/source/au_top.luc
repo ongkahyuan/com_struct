@@ -24,7 +24,7 @@ module au_top (
   fsm state(.clk(clk), .rst(rst)) = {MANUAL, AUTO};
   
   manual_alu_tester manual_tester;
-  auto_alu_tester auto_tester;
+  auto_tester_run auto_tester;
   
   always {
   
@@ -53,12 +53,12 @@ module au_top (
     auto_tester.rst = rst;
      
     io_led = 3x{{h00}};
-    io_seg = 8b0; // connect segments to the driver
-    io_sel = 4b0; // connect digit select to the driver
+    // io_seg = 8b0; // connect segments to the driver
+    // io_sel = 4b0; // connect digit select to the driver
     
     // Initialise state of the led, seven_seg and selector
-    // io_seg = manual_tester.io_seg;
-    // io_sel = manual_tester.io_sel;
+    io_seg = manual_tester.io_seg;
+    io_sel = manual_tester.io_sel;
       
     case(state.q){
         state.MANUAL:
@@ -79,6 +79,8 @@ module au_top (
             state.d = state.MANUAL;
         }
     }
+    
+    led = bzzzzzzzz;
     
     //reset_cond.in = ~rst_n;   // input raw inverted reset signal
     //rst = reset_cond.out;     // conditioned reset

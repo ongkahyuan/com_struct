@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Nov  5 14:16:50 2020
-| Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
+| Date         : Thu Nov  5 21:07:14 2020
+| Host         : DESKTOP-QP819M2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file au_top_0_control_sets_placed.rpt
 | Design       : au_top_0
 | Device       : xc7a35t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    42 |
-|    Minimum number of control sets                        |    42 |
+| Total control sets                                       |     8 |
+|    Minimum number of control sets                        |     8 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   154 |
+| Unused register locations in slices containing registers |    16 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,9 +39,9 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    42 |
+| Total control sets |     8 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |    35 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
@@ -58,63 +58,29 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              40 |           36 |
+| No           | No                    | No                     |              40 |           35 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |            1536 |          418 |
+| No           | Yes                   | No                     |            1634 |          450 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             214 |          103 |
+| Yes          | Yes                   | No                     |              78 |           38 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |                 Enable Signal                 |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | alu_tester_auto/test_3/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_27/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG |                                               | reset_cond/M_reset_cond_in                    |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_28/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_29/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_5/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_4/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_30/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_6/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_7/slow_clock/E[0]        | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_31/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_8/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_9/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_10/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_12/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_11/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_13/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_14/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_15/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_16/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_17/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_22/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_18/slow_clock/E[0]       | reset_cond/Q[0]                               |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_19/slow_clock/E[0]       | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_20/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_21/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_23/slow_clock/E[0]       | reset_cond/Q[0]                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_24/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_25/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_32/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_33/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_0/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_1/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_2/slow_clk_edge/E[0]     | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_26/slow_clk_edge/E[0]    | reset_cond/Q[0]                               |                2 |              4 |         2.00 |
-|  clk_IBUF_BUFG | alu_tester_auto/test_24/E[0]                  | reset_cond/Q[0]                               |                2 |              6 |         3.00 |
-|  clk_IBUF_BUFG | alu_tester/M_a_d                              | reset_cond/Q[0]                               |               15 |             16 |         1.07 |
-|  clk_IBUF_BUFG | alu_tester/M_b_d                              | reset_cond/Q[0]                               |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG | alu_tester/button_cond/M_ctr_q[0]_i_2__34_n_0 | alu_tester/button_cond/sync/M_pipe_q_reg[1]_0 |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG | button_cond/sel                               | button_cond/sync/clear                        |                5 |             20 |         4.00 |
-|  clk_IBUF_BUFG |                                               |                                               |               36 |             40 |         1.11 |
-|  clk_IBUF_BUFG |                                               | reset_cond/Q[0]                               |              416 |           1532 |         3.68 |
-+----------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
++----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                   Enable Signal                  |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                  | reset_cond/M_reset_cond_in                       |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | auto_tester/test_32/E[0]                         | reset_cond/Q[0]                                  |                4 |              6 |         1.50 |
+|  clk_IBUF_BUFG | manual_tester/M_a_d                              | reset_cond/Q[0]                                  |               15 |             16 |         1.07 |
+|  clk_IBUF_BUFG | manual_tester/M_b_d                              | reset_cond/Q[0]                                  |                9 |             16 |         1.78 |
+|  clk_IBUF_BUFG | manual_tester/button_cond/M_ctr_q[0]_i_2__34_n_0 | manual_tester/button_cond/sync/M_pipe_q_reg[1]_0 |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG | button_cond/sel                                  | button_cond/sync/clear                           |                5 |             20 |         4.00 |
+|  clk_IBUF_BUFG |                                                  |                                                  |               35 |             40 |         1.14 |
+|  clk_IBUF_BUFG |                                                  | reset_cond/Q[0]                                  |              447 |           1630 |         3.65 |
++----------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+--------------+
 
 
