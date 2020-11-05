@@ -2,9 +2,12 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Fri Nov  6 03:15:10 2020
 | Host         : Amrish running 64-bit major release  (build 9200)
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | Date         : Tue Nov  3 20:46:32 2020
 | Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -50,7 +53,11 @@ Table of Contents
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin           | Net           |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+-------+----------------------+---------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 4 |        1760 |               0 |       10.000 | clk_0 | clk_IBUF_BUFG_inst/O | clk_IBUF_BUFG |
+=======
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 1 |          85 |               0 |       10.000 | clk_0 | clk_IBUF_BUFG_inst/O | clk_IBUF_BUFG |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 | g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 1 |          85 |               0 |       10.000 | clk_0 | clk_IBUF_BUFG_inst/O | clk_IBUF_BUFG |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -80,15 +87,21 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 | X0Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  274 |  1200 |   46 |   400 |    0 |    20 |    0 |    10 |    1 |    20 |
 | X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  627 |  1500 |  193 |   450 |    0 |    40 |    0 |    20 |    2 |    20 |
 | X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  229 |  1200 |   86 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  627 |  1500 |  152 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   84 |  1500 |   23 |   450 |    0 |    40 |    0 |    20 |    1 |    20 |
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1800 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y2              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |   950 |    0 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
@@ -116,7 +129,11 @@ All Modules
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 | g0        | BUFG/O          | n/a               | clk_0 |      10.000 | {0.000 5.000} |        1760 |        0 |              0 |        0 | clk_IBUF_BUFG |
+=======
+| g0        | BUFG/O          | n/a               | clk_0 |      10.000 | {0.000 5.000} |          85 |        0 |              0 |        0 | clk_IBUF_BUFG |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 | g0        | BUFG/O          | n/a               | clk_0 |      10.000 | {0.000 5.000} |          85 |        0 |              0 |        0 | clk_IBUF_BUFG |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -128,6 +145,7 @@ All Modules
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 +----+------+------+
 |    | X0   | X1   |
 +----+------+------+
@@ -136,6 +154,8 @@ All Modules
 | Y0 |  275 |  629 |
 +----+------+------+
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 +----+----+-----+
 |    | X0 | X1  |
 +----+----+-----+
@@ -143,6 +163,9 @@ All Modules
 | Y1 |  0 |  85 |
 | Y0 |  0 |   0 |
 +----+----+-----+
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 
@@ -167,6 +190,7 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 8. Clock Region Cell Placement per Global Clock: Region X1Y0
 ------------------------------------------------------------
@@ -207,6 +231,8 @@ All Modules
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
 
 
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 

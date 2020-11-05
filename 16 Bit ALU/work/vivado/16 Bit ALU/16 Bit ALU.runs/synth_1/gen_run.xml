@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1604603548">
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1604407494">
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 <GenRun Id="synth_1" LaunchPart="xc7a35tftg256-1" LaunchTime="1604407494">
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -16,6 +20,7 @@
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <File Path="$PSRCDIR/sources_1/imports/verilog/alu_16_bit_7.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_16_bit_7.v"/>
@@ -26,17 +31,16 @@
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_16_bit_5.v"/>
         <Attr Name="ImportTime" Val="1604407486"/>
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_16_bit_5.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_16_bit_5.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-<<<<<<< HEAD
-    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_arithmetic_42.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_arithmetic_42.v"/>
-        <Attr Name="ImportTime" Val="1604603543"/>
-=======
     <File Path="$PSRCDIR/sources_1/imports/verilog/alu_arithmetic_7.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_arithmetic_7.v"/>
@@ -48,10 +52,17 @@
       </FileInfo>
     </File>
 <<<<<<< HEAD
-    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_boolean_43.v">
+<<<<<<< HEAD
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_arithmetic_42.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_boolean_43.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_arithmetic_42.v"/>
         <Attr Name="ImportTime" Val="1604603543"/>
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_arithmetic_7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_arithmetic_7.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <File Path="$PSRCDIR/sources_1/imports/verilog/alu_boolean_8.v">
       <FileInfo>
@@ -64,10 +75,17 @@
       </FileInfo>
     </File>
 <<<<<<< HEAD
-    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_compare_44.v">
+<<<<<<< HEAD
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_boolean_43.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_compare_44.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_boolean_43.v"/>
         <Attr Name="ImportTime" Val="1604603543"/>
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_boolean_8.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_boolean_8.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <File Path="$PSRCDIR/sources_1/imports/verilog/alu_compare_9.v">
       <FileInfo>
@@ -80,10 +98,17 @@
       </FileInfo>
     </File>
 <<<<<<< HEAD
-    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_shifter_45.v">
+<<<<<<< HEAD
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_compare_44.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_shifter_45.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_compare_44.v"/>
         <Attr Name="ImportTime" Val="1604603543"/>
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_compare_9.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_compare_9.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <File Path="$PSRCDIR/sources_1/imports/verilog/alu_shifter_10.v">
       <FileInfo>
@@ -96,10 +121,17 @@
       </FileInfo>
     </File>
 <<<<<<< HEAD
-    <File Path="$PSRCDIR/sources_1/imports/verilog/auto_alu_tester_10.v">
+<<<<<<< HEAD
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_shifter_45.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/auto_alu_tester_10.v"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_shifter_45.v"/>
         <Attr Name="ImportTime" Val="1604603543"/>
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/alu_shifter_10.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/alu_shifter_10.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <File Path="$PSRCDIR/sources_1/imports/verilog/button_conditioner_3.v">
       <FileInfo>
@@ -111,6 +143,30 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <File Path="$PSRCDIR/sources_1/imports/verilog/auto_alu_tester_10.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/auto_alu_tester_10.v"/>
+        <Attr Name="ImportTime" Val="1604603543"/>
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/button_conditioner_3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/button_conditioner_3.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/edge_detector_4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/edge_detector_4.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <File Path="$PSRCDIR/sources_1/imports/verilog/auto_alu_tester_11.v">
       <FileInfo>
@@ -489,6 +545,12 @@
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/manual_alu_tester_2.v"/>
         <Attr Name="ImportTime" Val="1604407486"/>
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+    <File Path="$PSRCDIR/sources_1/imports/verilog/manual_alu_tester_2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/manual_alu_tester_2.v"/>
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -498,7 +560,11 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/pipeline_6.v"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Attr Name="ImportTime" Val="1604603543"/>
+=======
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
         <Attr Name="ImportTime" Val="1604407486"/>
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -510,6 +576,7 @@
     <File Path="$PSRCDIR/sources_1/imports/verilog/reset_conditioner_1.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/reset_conditioner_1.v"/>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <Attr Name="ImportTime" Val="1604603542"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -524,6 +591,9 @@
 =======
         <Attr Name="ImportTime" Val="1604407486"/>
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -533,7 +603,11 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../verilog/au_top_0.v"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Attr Name="ImportTime" Val="1604603542"/>
+=======
+        <Attr Name="ImportTime" Val="1604407486"/>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
         <Attr Name="ImportTime" Val="1604407486"/>
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA

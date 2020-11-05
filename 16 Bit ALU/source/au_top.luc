@@ -14,8 +14,11 @@ module au_top (
   
   sig rst;
 <<<<<<< HEAD
+<<<<<<< HEAD
   sig change_state;
   sig start_auto;
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   
@@ -23,12 +26,16 @@ module au_top (
   // clock. This ensures the entire FPGA comes out of reset at the same time.
   reset_conditioner reset_cond(.clk(clk));
 <<<<<<< HEAD
+<<<<<<< HEAD
   button_conditioner button_cond(.clk(clk));
   edge_detector detectPress(#RISE(1), #FALL(0), .clk(clk));
   fsm state(.clk(clk), .rst(rst)) = {MANUAL, AUTO};
 =======
   manual_alu_tester manual_tester;
   
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+  manual_alu_tester manual_tester;
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   
   manual_alu_tester manual_tester;
@@ -40,6 +47,7 @@ module au_top (
     reset_cond.in = ~rst_n;   // input raw inverted reset signal
     rst = reset_cond.out;     // conditioned reset
     
+<<<<<<< HEAD
 <<<<<<< HEAD
     led = c{3b0, io_button};  // connect buttons to LEDs
     
@@ -101,6 +109,22 @@ module au_top (
     
 <<<<<<< HEAD
 =======
+    manual_tester.io_dip = io_dip;
+    manual_tester.io_button = io_button;
+    manual_tester.clk = clk;
+    manual_tester.rst = rst;
+    
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+    led = 8h00; // turn off LEDs
+    // led = c{3b0, io_button};  // connect buttons to LEDs
+    
+    usb_tx = usb_rx;          // loop serial port
+    
+    io_led = 3x{{h00}};
+    io_seg = 8b0; // connect segments to the driver
+    io_sel = 4b0; // connect digit select to the driver
+    
     manual_tester.io_dip = io_dip;
     manual_tester.io_button = io_button;
     manual_tester.clk = clk;

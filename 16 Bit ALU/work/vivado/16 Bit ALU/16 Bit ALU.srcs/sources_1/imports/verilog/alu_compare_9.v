@@ -5,10 +5,20 @@
 */
 
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_compare_44.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_compare_44.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 module alu_compare_44 (
 =======
 module alu_compare_9 (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v
+<<<<<<< HEAD
+=======
+=======
+module alu_compare_9 (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_9.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     input z,
     input v,
     input n,

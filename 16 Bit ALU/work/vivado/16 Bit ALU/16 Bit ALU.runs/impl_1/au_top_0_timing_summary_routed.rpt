@@ -2,9 +2,12 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Fri Nov  6 03:15:10 2020
 | Host         : Amrish running 64-bit major release  (build 9200)
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | Date         : Tue Nov  3 20:46:32 2020
 | Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -49,8 +52,13 @@ Table of Contents
 3. checking pulse_width_clock (0)
 4. checking unconstrained_internal_endpoints (0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 5. checking no_input_delay (25)
 6. checking no_output_delay (34)
+=======
+5. checking no_input_delay (24)
+6. checking no_output_delay (27)
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 5. checking no_input_delay (24)
 6. checking no_output_delay (27)
@@ -92,9 +100,15 @@ Table of Contents
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 6. checking no_output_delay (34)
 --------------------------------
  There are 34 ports with no output delay specified. (HIGH)
+=======
+6. checking no_output_delay (27)
+--------------------------------
+ There are 27 ports with no output delay specified. (HIGH)
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 6. checking no_output_delay (27)
 --------------------------------
@@ -145,7 +159,11 @@ Table of Contents
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 <<<<<<< HEAD
+<<<<<<< HEAD
     -32.865     -580.327                    102                 3510        0.034        0.000                      0                 3510        4.500        0.000                       0                  1759  
+=======
+      3.705        0.000                      0                  177        0.147        0.000                      0                  177        4.500        0.000                       0                    85  
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
       3.705        0.000                      0                  177        0.147        0.000                      0                  177        4.500        0.000                       0                    85  
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -172,7 +190,11 @@ clk_0  {0.000 5.000}      10.000          100.000
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 <<<<<<< HEAD
+<<<<<<< HEAD
 clk_0             -32.865     -580.327                    102                 3510        0.034        0.000                      0                 3510        4.500        0.000                       0                  1759  
+=======
+clk_0               3.705        0.000                      0                  177        0.147        0.000                      0                  177        4.500        0.000                       0                    85  
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 clk_0               3.705        0.000                      0                  177        0.147        0.000                      0                  177        4.500        0.000                       0                    85  
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -207,8 +229,13 @@ From Clock:  clk_0
   To Clock:  clk_0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Setup :          102  Failing Endpoints,  Worst Slack      -32.865ns,  Total Violation     -580.327ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.034ns,  Total Violation        0.000ns
+=======
+Setup :            0  Failing Endpoints,  Worst Slack        3.705ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.147ns,  Total Violation        0.000ns
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Setup :            0  Failing Endpoints,  Worst Slack        3.705ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.147ns,  Total Violation        0.000ns
@@ -220,20 +247,27 @@ PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Vio
 Max Delay Paths
 --------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Slack (VIOLATED) :        -32.865ns  (required time - arrival time)
   Source:                 manual_tester/M_b_q_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[0]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             3.705ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[1]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        42.858ns  (logic 28.332ns (66.107%)  route 14.526ns (33.893%))
   Logic Levels:           105  (CARRY4=84 DSP48E1=1 LUT2=1 LUT3=15 LUT6=4)
@@ -242,12 +276,17 @@ Slack (MET) :             3.705ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        6.278ns  (logic 4.257ns (67.811%)  route 2.021ns (32.189%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -263,6 +302,7 @@ Slack (MET) :             3.705ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -569,6 +609,11 @@ Slack (MET) :             3.705ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[1])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[1]
                          net (fo=1, routed)           1.368    10.609    manual_tester/alu/arithmeticUnit/s0_n_104
@@ -577,6 +622,9 @@ Slack (MET) :             3.705ns  (required time - arrival time)
     SLICE_X60Y55         LUT5 (Prop_lut5_I4_O)        0.124    11.510 r  manual_tester/alu/arithmeticUnit/M_out_q[1]_i_1/O
                          net (fo=1, routed)           0.000    11.510    manual_tester/M_out_d[1]
     SLICE_X60Y55         FDRE                                         r  manual_tester/M_out_q_reg[1]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -586,6 +634,7 @@ Slack (MET) :             3.705ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.441    14.846    manual_tester/CLK
     SLICE_X52Y29         FDRE                                         r  manual_tester/M_out_q_reg[0]/C
@@ -614,15 +663,32 @@ Slack (VIOLATED) :        -32.222ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  3.705    
 
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X60Y55         FDRE                                         r  manual_tester/M_out_q_reg[1]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X60Y55         FDRE (Setup_fdre_C_D)        0.081    15.216    manual_tester/M_out_q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         15.216    
+                         arrival time                         -11.510    
+  -------------------------------------------------------------------
+                         slack                                  3.705    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             3.767ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[13]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        42.236ns  (logic 28.084ns (66.492%)  route 14.152ns (33.508%))
   Logic Levels:           103  (CARRY4=83 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -631,12 +697,17 @@ Slack (MET) :             3.767ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        6.211ns  (logic 4.257ns (68.540%)  route 1.954ns (31.460%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.911ns = ( 14.911 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -652,6 +723,7 @@ Slack (MET) :             3.767ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -953,6 +1025,11 @@ Slack (MET) :             3.767ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[13])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[13]
                          net (fo=1, routed)           1.274    10.515    manual_tester/alu/arithmeticUnit/s0_n_92
@@ -961,6 +1038,9 @@ Slack (MET) :             3.767ns  (required time - arrival time)
     SLICE_X60Y58         LUT5 (Prop_lut5_I4_O)        0.124    11.443 r  manual_tester/alu/arithmeticUnit/M_out_q[13]_i_1/O
                          net (fo=1, routed)           0.000    11.443    manual_tester/M_out_d[13]
     SLICE_X60Y58         FDRE                                         r  manual_tester/M_out_q_reg[13]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -970,6 +1050,7 @@ Slack (MET) :             3.767ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.511    14.916    manual_tester/CLK
     SLICE_X59Y33         FDRE                                         r  manual_tester/M_out_q_reg[11]/C
@@ -998,15 +1079,32 @@ Slack (VIOLATED) :        -32.104ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  3.767    
 
+=======
+                         net (fo=85, routed)          1.507    14.911    manual_tester/CLK
+    SLICE_X60Y58         FDRE                                         r  manual_tester/M_out_q_reg[13]/C
+                         clock pessimism              0.258    15.169    
+                         clock uncertainty           -0.035    15.134    
+    SLICE_X60Y58         FDRE (Setup_fdre_C_D)        0.077    15.211    manual_tester/M_out_q_reg[13]
+  -------------------------------------------------------------------
+                         required time                         15.211    
+                         arrival time                         -11.443    
+  -------------------------------------------------------------------
+                         slack                                  3.767    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             3.845ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[11]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        42.051ns  (logic 28.208ns (67.080%)  route 13.843ns (32.920%))
   Logic Levels:           104  (CARRY4=84 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -1015,12 +1113,17 @@ Slack (MET) :             3.845ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        6.134ns  (logic 4.257ns (69.395%)  route 1.877ns (30.605%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -1036,6 +1139,7 @@ Slack (MET) :             3.845ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -1340,6 +1444,11 @@ Slack (MET) :             3.845ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[11])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[11]
                          net (fo=1, routed)           1.142    10.383    manual_tester/alu/arithmeticUnit/s0_n_94
@@ -1348,6 +1457,9 @@ Slack (MET) :             3.845ns  (required time - arrival time)
     SLICE_X64Y57         LUT5 (Prop_lut5_I4_O)        0.124    11.367 r  manual_tester/alu/arithmeticUnit/M_out_q[11]_i_1/O
                          net (fo=1, routed)           0.000    11.367    manual_tester/M_out_d[11]
     SLICE_X64Y57         FDRE                                         r  manual_tester/M_out_q_reg[11]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -1357,6 +1469,7 @@ Slack (MET) :             3.845ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.444    14.849    manual_tester/CLK
     SLICE_X51Y32         FDRE                                         r  manual_tester/M_out_q_reg[13]/C
@@ -1388,11 +1501,28 @@ Slack (MET) :             3.919ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X64Y57         FDRE                                         r  manual_tester/M_out_q_reg[11]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X64Y57         FDRE (Setup_fdre_C_D)        0.077    15.212    manual_tester/M_out_q_reg[11]
+  -------------------------------------------------------------------
+                         required time                         15.212    
+                         arrival time                         -11.367    
+  -------------------------------------------------------------------
+                         slack                                  3.845    
+
+Slack (MET) :             3.919ns  (required time - arrival time)
+  Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Destination:            manual_tester/M_out_q_reg[15]/D
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.966ns  (logic 28.201ns (67.199%)  route 13.765ns (32.801%))
   Logic Levels:           104  (CARRY4=84 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -1401,12 +1531,17 @@ Slack (MET) :             3.919ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        6.010ns  (logic 4.257ns (70.830%)  route 1.753ns (29.170%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.910ns = ( 14.910 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -1422,6 +1557,7 @@ Slack (MET) :             3.919ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -1726,6 +1862,11 @@ Slack (MET) :             3.919ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[15])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[15]
                          net (fo=1, routed)           1.088    10.330    manual_tester/alu/arithmeticUnit/s0_n_90
@@ -1734,6 +1875,9 @@ Slack (MET) :             3.919ns  (required time - arrival time)
     SLICE_X59Y59         LUT5 (Prop_lut5_I4_O)        0.124    11.243 r  manual_tester/alu/arithmeticUnit/M_out_q[15]_i_1/O
                          net (fo=1, routed)           0.000    11.243    manual_tester/M_out_d[15]
     SLICE_X59Y59         FDRE                                         r  manual_tester/M_out_q_reg[15]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -1743,6 +1887,7 @@ Slack (MET) :             3.919ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.445    14.850    manual_tester/CLK
     SLICE_X55Y33         FDRE                                         r  manual_tester/M_out_q_reg[15]/C
@@ -1771,15 +1916,32 @@ Slack (VIOLATED) :        -31.993ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  3.919    
 
+=======
+                         net (fo=85, routed)          1.506    14.910    manual_tester/CLK
+    SLICE_X59Y59         FDRE                                         r  manual_tester/M_out_q_reg[15]/C
+                         clock pessimism              0.258    15.168    
+                         clock uncertainty           -0.035    15.133    
+    SLICE_X59Y59         FDRE (Setup_fdre_C_D)        0.029    15.162    manual_tester/M_out_q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         15.162    
+                         arrival time                         -11.243    
+  -------------------------------------------------------------------
+                         slack                                  3.919    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.024ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[7]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.989ns  (logic 28.091ns (66.900%)  route 13.898ns (33.100%))
   Logic Levels:           103  (CARRY4=83 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -1788,12 +1950,17 @@ Slack (MET) :             4.024ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.956ns  (logic 4.257ns (71.472%)  route 1.699ns (28.528%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.062ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.913ns = ( 14.913 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -1809,6 +1976,7 @@ Slack (MET) :             4.024ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -2110,6 +2278,11 @@ Slack (MET) :             4.024ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[7])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[7]
                          net (fo=1, routed)           0.881    10.123    manual_tester/alu/arithmeticUnit/s0_n_98
@@ -2118,6 +2291,9 @@ Slack (MET) :             4.024ns  (required time - arrival time)
     SLICE_X64Y56         LUT5 (Prop_lut5_I4_O)        0.124    11.189 r  manual_tester/alu/arithmeticUnit/M_out_q[7]_i_1/O
                          net (fo=1, routed)           0.000    11.189    manual_tester/M_out_d[7]
     SLICE_X64Y56         FDRE                                         r  manual_tester/M_out_q_reg[7]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -2127,6 +2303,7 @@ Slack (MET) :             4.024ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.445    14.850    manual_tester/CLK
     SLICE_X54Y33         FDRE                                         r  manual_tester/M_out_q_reg[9]/C
@@ -2155,15 +2332,32 @@ Slack (VIOLATED) :        -31.895ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  4.024    
 
+=======
+                         net (fo=85, routed)          1.509    14.913    manual_tester/CLK
+    SLICE_X64Y56         FDRE                                         r  manual_tester/M_out_q_reg[7]/C
+                         clock pessimism              0.258    15.171    
+                         clock uncertainty           -0.035    15.136    
+    SLICE_X64Y56         FDRE (Setup_fdre_C_D)        0.077    15.213    manual_tester/M_out_q_reg[7]
+  -------------------------------------------------------------------
+                         required time                         15.213    
+                         arrival time                         -11.189    
+  -------------------------------------------------------------------
+                         slack                                  4.024    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.067ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[3]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.843ns  (logic 27.976ns (66.859%)  route 13.867ns (33.141%))
   Logic Levels:           103  (CARRY4=83 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -2172,12 +2366,17 @@ Slack (MET) :             4.067ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.864ns  (logic 4.257ns (72.591%)  route 1.607ns (27.409%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -2193,6 +2392,7 @@ Slack (MET) :             4.067ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -2494,6 +2694,11 @@ Slack (MET) :             4.067ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[3])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[3]
                          net (fo=1, routed)           1.212    10.454    manual_tester/alu/arithmeticUnit/s0_n_102
@@ -2502,6 +2707,9 @@ Slack (MET) :             4.067ns  (required time - arrival time)
     SLICE_X61Y56         LUT5 (Prop_lut5_I4_O)        0.124    11.097 r  manual_tester/alu/arithmeticUnit/M_out_q[3]_i_1/O
                          net (fo=1, routed)           0.000    11.097    manual_tester/M_out_d[3]
     SLICE_X61Y56         FDRE                                         r  manual_tester/M_out_q_reg[3]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -2511,6 +2719,7 @@ Slack (MET) :             4.067ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.443    14.848    manual_tester/CLK
     SLICE_X57Y31         FDRE                                         r  manual_tester/M_out_q_reg[8]/C
@@ -2539,15 +2748,32 @@ Slack (VIOLATED) :        -31.874ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  4.067    
 
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X61Y56         FDRE                                         r  manual_tester/M_out_q_reg[3]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X61Y56         FDRE (Setup_fdre_C_D)        0.029    15.164    manual_tester/M_out_q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         15.164    
+                         arrival time                         -11.097    
+  -------------------------------------------------------------------
+                         slack                                  4.067    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.081ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[2]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.865ns  (logic 27.967ns (66.802%)  route 13.898ns (33.198%))
   Logic Levels:           102  (CARRY4=82 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -2556,12 +2782,17 @@ Slack (MET) :             4.081ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.900ns  (logic 4.257ns (72.149%)  route 1.643ns (27.851%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -2577,6 +2808,7 @@ Slack (MET) :             4.081ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -2875,6 +3107,11 @@ Slack (MET) :             4.081ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[2])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[2]
                          net (fo=1, routed)           1.229    10.470    manual_tester/alu/arithmeticUnit/s0_n_103
@@ -2883,6 +3120,9 @@ Slack (MET) :             4.081ns  (required time - arrival time)
     SLICE_X60Y55         LUT5 (Prop_lut5_I4_O)        0.124    11.133 r  manual_tester/alu/arithmeticUnit/M_out_q[2]_i_1/O
                          net (fo=1, routed)           0.000    11.133    manual_tester/M_out_d[2]
     SLICE_X60Y55         FDRE                                         r  manual_tester/M_out_q_reg[2]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -2892,6 +3132,7 @@ Slack (MET) :             4.081ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.442    14.847    manual_tester/CLK
     SLICE_X52Y31         FDRE                                         r  manual_tester/M_out_q_reg[7]/C
@@ -2920,15 +3161,32 @@ Slack (VIOLATED) :        -31.722ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  4.081    
 
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X60Y55         FDRE                                         r  manual_tester/M_out_q_reg[2]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X60Y55         FDRE (Setup_fdre_C_D)        0.079    15.214    manual_tester/M_out_q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         15.214    
+                         arrival time                         -11.133    
+  -------------------------------------------------------------------
+                         slack                                  4.081    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.124ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[8]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.718ns  (logic 28.093ns (67.340%)  route 13.625ns (32.660%))
   Logic Levels:           104  (CARRY4=84 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -2937,12 +3195,17 @@ Slack (MET) :             4.124ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.809ns  (logic 4.257ns (73.277%)  route 1.552ns (26.723%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -2958,6 +3221,7 @@ Slack (MET) :             4.124ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -3262,6 +3526,11 @@ Slack (MET) :             4.124ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[8])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[8]
                          net (fo=1, routed)           1.061    10.302    manual_tester/alu/arithmeticUnit/s0_n_97
@@ -3270,6 +3539,9 @@ Slack (MET) :             4.124ns  (required time - arrival time)
     SLICE_X62Y57         LUT5 (Prop_lut5_I4_O)        0.124    11.042 r  manual_tester/alu/arithmeticUnit/M_out_q[8]_i_1/O
                          net (fo=1, routed)           0.000    11.042    manual_tester/M_out_d[8]
     SLICE_X62Y57         FDRE                                         r  manual_tester/M_out_q_reg[8]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -3279,6 +3551,7 @@ Slack (MET) :             4.124ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.446    14.851    manual_tester/CLK
     SLICE_X54Y34         FDRE                                         r  manual_tester/M_out_q_reg[12]/C
@@ -3307,15 +3580,32 @@ Slack (VIOLATED) :        -31.648ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  4.124    
 
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X62Y57         FDRE                                         r  manual_tester/M_out_q_reg[8]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X62Y57         FDRE (Setup_fdre_C_D)        0.031    15.166    manual_tester/M_out_q_reg[8]
+  -------------------------------------------------------------------
+                         required time                         15.166    
+                         arrival time                         -11.042    
+  -------------------------------------------------------------------
+                         slack                                  4.124    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.133ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[12]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.598ns  (logic 27.995ns (67.300%)  route 13.603ns (32.700%))
   Logic Levels:           103  (CARRY4=84 DSP48E1=1 LUT2=1 LUT3=15 LUT6=2)
@@ -3324,12 +3614,17 @@ Slack (MET) :             4.133ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.798ns  (logic 4.257ns (73.421%)  route 1.541ns (26.579%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.912ns = ( 14.912 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -3345,6 +3640,7 @@ Slack (MET) :             4.133ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -3647,6 +3943,11 @@ Slack (MET) :             4.133ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[12])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[12]
                          net (fo=1, routed)           1.094    10.335    manual_tester/alu/arithmeticUnit/s0_n_93
@@ -3655,6 +3956,9 @@ Slack (MET) :             4.133ns  (required time - arrival time)
     SLICE_X62Y57         LUT5 (Prop_lut5_I4_O)        0.124    11.031 r  manual_tester/alu/arithmeticUnit/M_out_q[12]_i_1/O
                          net (fo=1, routed)           0.000    11.031    manual_tester/M_out_d[12]
     SLICE_X62Y57         FDRE                                         r  manual_tester/M_out_q_reg[12]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -3664,6 +3968,7 @@ Slack (MET) :             4.133ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.445    14.850    manual_tester/CLK
     SLICE_X55Y33         FDRE                                         r  manual_tester/M_out_q_reg[14]/C
@@ -3692,15 +3997,32 @@ Slack (VIOLATED) :        -31.528ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  4.133    
 
+=======
+                         net (fo=85, routed)          1.508    14.912    manual_tester/CLK
+    SLICE_X62Y57         FDRE                                         r  manual_tester/M_out_q_reg[12]/C
+                         clock pessimism              0.258    15.170    
+                         clock uncertainty           -0.035    15.135    
+    SLICE_X62Y57         FDRE (Setup_fdre_C_D)        0.029    15.164    manual_tester/M_out_q_reg[12]
+  -------------------------------------------------------------------
+                         required time                         15.164    
+                         arrival time                         -11.031    
+  -------------------------------------------------------------------
+                         slack                                  4.133    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             4.140ns  (required time - arrival time)
   Source:                 manual_tester/alu/arithmeticUnit/s0/CLK
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/M_out_q_reg[14]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_0 rise@10.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        41.471ns  (logic 27.885ns (67.240%)  route 13.586ns (32.760%))
   Logic Levels:           102  (CARRY4=82 DSP48E1=1 LUT2=2 LUT3=15 LUT6=2)
@@ -3709,12 +4031,17 @@ Slack (MET) :             4.140ns  (required time - arrival time)
     Source Clock Delay      (SCD):    5.156ns
     Clock Pessimism Removal (CPR):    0.259ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        5.789ns  (logic 4.257ns (73.540%)  route 1.532ns (26.460%))
   Logic Levels:           2  (LUT4=1 LUT5=1)
   Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    4.910ns = ( 14.910 - 10.000 ) 
     Source Clock Delay      (SCD):    5.233ns
     Clock Pessimism Removal (CPR):    0.258ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -3730,6 +4057,7 @@ Slack (MET) :             4.140ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.517     1.517 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.972     3.488    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.584 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.572     5.156    manual_tester/CLK
     SLICE_X55Y0          FDRE                                         r  manual_tester/M_b_q_reg[0]/C
@@ -4028,6 +4356,11 @@ Slack (MET) :             4.140ns  (required time - arrival time)
                          net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          1.649     5.233    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     DSP48_X1Y22          DSP48E1 (Prop_dsp48e1_CLK_P[14])
                                                       4.009     9.242 r  manual_tester/alu/arithmeticUnit/s0/P[14]
                          net (fo=1, routed)           1.229    10.470    manual_tester/alu/arithmeticUnit/s0_n_91
@@ -4036,6 +4369,9 @@ Slack (MET) :             4.140ns  (required time - arrival time)
     SLICE_X58Y59         LUT5 (Prop_lut5_I4_O)        0.124    11.021 r  manual_tester/alu/arithmeticUnit/M_out_q[14]_i_1/O
                          net (fo=1, routed)           0.000    11.021    manual_tester/M_out_d[14]
     SLICE_X58Y59         FDRE                                         r  manual_tester/M_out_q_reg[14]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4045,6 +4381,7 @@ Slack (MET) :             4.140ns  (required time - arrival time)
     N14                  IBUF (Prop_ibuf_I_O)         1.446    11.446 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.868    13.314    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.405 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        1.441    14.846    manual_tester/CLK
     SLICE_X51Y29         FDRE                                         r  manual_tester/M_out_q_reg[6]/C
@@ -4057,6 +4394,8 @@ Slack (MET) :             4.140ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                -31.528    
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          1.506    14.910    manual_tester/CLK
     SLICE_X58Y59         FDRE                                         r  manual_tester/M_out_q_reg[14]/C
                          clock pessimism              0.258    15.168    
@@ -4067,6 +4406,9 @@ Slack (MET) :             4.140ns  (required time - arrival time)
                          arrival time                         -11.021    
   -------------------------------------------------------------------
                          slack                                  4.140    
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 
@@ -4076,20 +4418,27 @@ Slack (MET) :             4.140ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Slack (MET) :             0.034ns  (arrival time - required time)
   Source:                 auto_tester/test_22/timerClock/M_last_q_reg/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            auto_tester/test_22/FSM_sequential_M_state_q_reg[2]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             0.147ns  (arrival time - required time)
   Source:                 manual_tester/detectPress/M_last_q_reg/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/FSM_onehot_M_state_q_reg[2]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.436ns  (logic 0.212ns (48.634%)  route 0.224ns (51.366%))
   Logic Levels:           1  (LUT5=1)
@@ -4098,12 +4447,17 @@ Slack (MET) :             0.147ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.506ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.291ns  (logic 0.189ns (64.902%)  route 0.102ns (35.098%))
   Logic Levels:           1  (LUT4=1)
   Clock Path Skew:        0.013ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.504ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4114,6 +4468,7 @@ Slack (MET) :             0.147ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.562     1.506    auto_tester/test_22/timerClock/clk_IBUF_BUFG
     SLICE_X38Y50         FDRE                                         r  auto_tester/test_22/timerClock/M_last_q_reg/C
@@ -4127,11 +4482,19 @@ Slack (MET) :             0.147ns  (arrival time - required time)
                          net (fo=85, routed)          0.564     1.508    manual_tester/detectPress/CLK
     SLICE_X55Y53         FDRE                                         r  manual_tester/detectPress/M_last_q_reg/C
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          0.564     1.508    manual_tester/detectPress/CLK
+    SLICE_X55Y53         FDRE                                         r  manual_tester/detectPress/M_last_q_reg/C
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     SLICE_X55Y53         FDRE (Prop_fdre_C_Q)         0.141     1.649 r  manual_tester/detectPress/M_last_q_reg/Q
                          net (fo=3, routed)           0.102     1.751    manual_tester/button_cond/M_last_q
     SLICE_X54Y53         LUT4 (Prop_lut4_I2_O)        0.048     1.799 r  manual_tester/button_cond/FSM_onehot_M_state_q[2]_i_1/O
                          net (fo=1, routed)           0.000     1.799    manual_tester/button_cond_n_0
     SLICE_X54Y53         FDRE                                         r  manual_tester/FSM_onehot_M_state_q_reg[2]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4141,6 +4504,7 @@ Slack (MET) :             0.147ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.833     2.023    auto_tester/test_22/clk_IBUF_BUFG
     SLICE_X38Y49         FDRE                                         r  auto_tester/test_22/FSM_sequential_M_state_q_reg[2]/C
@@ -4170,12 +4534,27 @@ Slack (MET) :             0.041ns  (arrival time - required time)
 Slack (MET) :             0.151ns  (arrival time - required time)
   Source:                 manual_tester/detectPress/M_last_q_reg/C
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.834     2.024    manual_tester/CLK
+    SLICE_X54Y53         FDRE                                         r  manual_tester/FSM_onehot_M_state_q_reg[2]/C
+                         clock pessimism             -0.504     1.521    
+    SLICE_X54Y53         FDRE (Hold_fdre_C_D)         0.131     1.652    manual_tester/FSM_onehot_M_state_q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.652    
+                         arrival time                           1.799    
+  -------------------------------------------------------------------
+                         slack                                  0.147    
+
+Slack (MET) :             0.151ns  (arrival time - required time)
+  Source:                 manual_tester/detectPress/M_last_q_reg/C
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/FSM_onehot_M_state_q_reg[0]/D
                             (rising edge-triggered cell FDSE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.433ns  (logic 0.209ns (48.278%)  route 0.224ns (51.722%))
   Logic Levels:           1  (LUT5=1)
@@ -4184,12 +4563,17 @@ Slack (MET) :             0.151ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.506ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.284ns  (logic 0.186ns (65.445%)  route 0.098ns (34.555%))
   Logic Levels:           1  (LUT4=1)
   Clock Path Skew:        0.013ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.504ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4201,6 +4585,7 @@ Slack (MET) :             0.151ns  (arrival time - required time)
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
 <<<<<<< HEAD
+<<<<<<< HEAD
                          net (fo=1760, routed)        0.562     1.506    auto_tester/test_22/timerClock/clk_IBUF_BUFG
     SLICE_X38Y50         FDRE                                         r  auto_tester/test_22/timerClock/M_last_q_reg/C
   -------------------------------------------------------------------    -------------------
@@ -4210,6 +4595,8 @@ Slack (MET) :             0.151ns  (arrival time - required time)
                          net (fo=1, routed)           0.000     1.939    auto_tester/test_22/timer_n_2
     SLICE_X38Y49         FDRE                                         r  auto_tester/test_22/FSM_sequential_M_state_q_reg[1]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.564     1.508    manual_tester/detectPress/CLK
     SLICE_X55Y53         FDRE                                         r  manual_tester/detectPress/M_last_q_reg/C
   -------------------------------------------------------------------    -------------------
@@ -4218,6 +4605,9 @@ Slack (MET) :             0.151ns  (arrival time - required time)
     SLICE_X54Y53         LUT4 (Prop_lut4_I2_O)        0.045     1.792 r  manual_tester/button_cond/FSM_onehot_M_state_q[0]_i_1/O
                          net (fo=1, routed)           0.000     1.792    manual_tester/button_cond_n_3
     SLICE_X54Y53         FDSE                                         r  manual_tester/FSM_onehot_M_state_q_reg[0]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4227,6 +4617,7 @@ Slack (MET) :             0.151ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.833     2.023    auto_tester/test_22/clk_IBUF_BUFG
     SLICE_X38Y49         FDRE                                         r  auto_tester/test_22/FSM_sequential_M_state_q_reg[1]/C
@@ -4258,10 +4649,27 @@ Slack (MET) :             0.154ns  (arrival time - required time)
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/FSM_onehot_M_state_q_reg[1]/D
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.834     2.024    manual_tester/CLK
+    SLICE_X54Y53         FDSE                                         r  manual_tester/FSM_onehot_M_state_q_reg[0]/C
+                         clock pessimism             -0.504     1.521    
+    SLICE_X54Y53         FDSE (Hold_fdse_C_D)         0.120     1.641    manual_tester/FSM_onehot_M_state_q_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.641    
+                         arrival time                           1.792    
+  -------------------------------------------------------------------
+                         slack                                  0.151    
+
+Slack (MET) :             0.154ns  (arrival time - required time)
+  Source:                 manual_tester/detectPress/M_last_q_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            manual_tester/FSM_onehot_M_state_q_reg[1]/D
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.400ns  (logic 0.164ns (41.019%)  route 0.236ns (58.981%))
   Logic Levels:           0  
@@ -4270,12 +4678,17 @@ Slack (MET) :             0.154ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.505ns
     Clock Pessimism Removal (CPR):    0.251ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.288ns  (logic 0.186ns (64.537%)  route 0.102ns (35.463%))
   Logic Levels:           1  (LUT4=1)
   Clock Path Skew:        0.013ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.504ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4287,6 +4700,7 @@ Slack (MET) :             0.154ns  (arrival time - required time)
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
 <<<<<<< HEAD
+<<<<<<< HEAD
                          net (fo=1760, routed)        0.561     1.505    auto_tester/test_22/timer/clk_IBUF_BUFG
     SLICE_X34Y50         FDRE                                         r  auto_tester/test_22/timer/M_ctr_q_reg[25]/C
   -------------------------------------------------------------------    -------------------
@@ -4294,6 +4708,8 @@ Slack (MET) :             0.154ns  (arrival time - required time)
                          net (fo=5, routed)           0.236     1.905    auto_tester/test_22/timerClock/M_timerClock_in
     SLICE_X38Y50         FDRE                                         r  auto_tester/test_22/timerClock/M_last_q_reg/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.564     1.508    manual_tester/detectPress/CLK
     SLICE_X55Y53         FDRE                                         r  manual_tester/detectPress/M_last_q_reg/C
   -------------------------------------------------------------------    -------------------
@@ -4302,6 +4718,9 @@ Slack (MET) :             0.154ns  (arrival time - required time)
     SLICE_X54Y53         LUT4 (Prop_lut4_I2_O)        0.045     1.796 r  manual_tester/button_cond/FSM_onehot_M_state_q[1]_i_1/O
                          net (fo=1, routed)           0.000     1.796    manual_tester/button_cond_n_2
     SLICE_X54Y53         FDRE                                         r  manual_tester/FSM_onehot_M_state_q_reg[1]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4311,6 +4730,7 @@ Slack (MET) :             0.154ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.830     2.020    auto_tester/test_22/timerClock/clk_IBUF_BUFG
     SLICE_X38Y50         FDRE                                         r  auto_tester/test_22/timerClock/M_last_q_reg/C
@@ -4347,6 +4767,18 @@ Slack (MET) :             0.085ns  (arrival time - required time)
   -------------------------------------------------------------------
                          slack                                  0.154    
 
+=======
+                         net (fo=85, routed)          0.834     2.024    manual_tester/CLK
+    SLICE_X54Y53         FDRE                                         r  manual_tester/FSM_onehot_M_state_q_reg[1]/C
+                         clock pessimism             -0.504     1.521    
+    SLICE_X54Y53         FDRE (Hold_fdre_C_D)         0.121     1.642    manual_tester/FSM_onehot_M_state_q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -1.642    
+                         arrival time                           1.796    
+  -------------------------------------------------------------------
+                         slack                                  0.154    
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Slack (MET) :             0.224ns  (arrival time - required time)
   Source:                 reset_cond/M_stage_q_reg[2]/C
                             (rising edge-triggered cell FDSE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
@@ -4361,6 +4793,9 @@ Slack (MET) :             0.224ns  (arrival time - required time)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.480ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4371,6 +4806,7 @@ Slack (MET) :             0.224ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.567     1.511    auto_tester/test_31/timer/clk_IBUF_BUFG
     SLICE_X54Y49         FDRE                                         r  auto_tester/test_31/timer/M_ctr_q_reg[6]/C
@@ -4392,6 +4828,14 @@ Slack (MET) :             0.224ns  (arrival time - required time)
                          net (fo=1, routed)           0.167     1.839    reset_cond/M_stage_d[3]
     SLICE_X57Y56         FDSE                                         r  reset_cond/M_stage_q_reg[3]/D
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.564     1.508    reset_cond/CLK
+    SLICE_X54Y55         FDSE                                         r  reset_cond/M_stage_q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y55         FDSE (Prop_fdse_C_Q)         0.164     1.672 r  reset_cond/M_stage_q_reg[2]/Q
+                         net (fo=1, routed)           0.167     1.839    reset_cond/M_stage_d[3]
+    SLICE_X57Y56         FDSE                                         r  reset_cond/M_stage_q_reg[3]/D
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_0 rise edge)      0.000     0.000 r  
@@ -4400,6 +4844,7 @@ Slack (MET) :             0.224ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.835     2.025    auto_tester/test_31/timer/clk_IBUF_BUFG
     SLICE_X54Y50         FDRE                                         r  auto_tester/test_31/timer/M_ctr_q_reg[8]/C
@@ -4429,12 +4874,27 @@ Slack (MET) :             0.087ns  (arrival time - required time)
 Slack (MET) :             0.226ns  (arrival time - required time)
   Source:                 manual_tester/FSM_onehot_M_state_q_reg[1]/C
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.834     2.024    reset_cond/CLK
+    SLICE_X57Y56         FDSE                                         r  reset_cond/M_stage_q_reg[3]/C
+                         clock pessimism             -0.480     1.545    
+    SLICE_X57Y56         FDSE (Hold_fdse_C_D)         0.070     1.615    reset_cond/M_stage_q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -1.615    
+                         arrival time                           1.839    
+  -------------------------------------------------------------------
+                         slack                                  0.224    
+
+Slack (MET) :             0.226ns  (arrival time - required time)
+  Source:                 manual_tester/FSM_onehot_M_state_q_reg[1]/C
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/alu/arithmeticUnit/s0/CEB2
                             (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.488ns  (logic 0.373ns (76.423%)  route 0.115ns (23.577%))
   Logic Levels:           2  (CARRY4=2)
@@ -4443,12 +4903,17 @@ Slack (MET) :             0.226ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.507ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.353ns  (logic 0.164ns (46.442%)  route 0.189ns (53.558%))
   Logic Levels:           0  
   Clock Path Skew:        0.106ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.114ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.501ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4459,6 +4924,7 @@ Slack (MET) :             0.226ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.563     1.507    auto_tester/test_22/timer/clk_IBUF_BUFG
     SLICE_X34Y49         FDRE                                         r  auto_tester/test_22/timer/M_ctr_q_reg[22]/C
@@ -4480,6 +4946,14 @@ Slack (MET) :             0.226ns  (arrival time - required time)
                          net (fo=38, routed)          0.189     1.861    manual_tester/alu/arithmeticUnit/s0_0[0]
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CEB2
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.564     1.508    manual_tester/CLK
+    SLICE_X54Y53         FDRE                                         r  manual_tester/FSM_onehot_M_state_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X54Y53         FDRE (Prop_fdre_C_Q)         0.164     1.672 r  manual_tester/FSM_onehot_M_state_q_reg[1]/Q
+                         net (fo=38, routed)          0.189     1.861    manual_tester/alu/arithmeticUnit/s0_0[0]
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CEB2
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_0 rise edge)      0.000     0.000 r  
@@ -4488,6 +4962,7 @@ Slack (MET) :             0.226ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.829     2.019    auto_tester/test_22/timer/clk_IBUF_BUFG
     SLICE_X34Y50         FDRE                                         r  auto_tester/test_22/timer/M_ctr_q_reg[24]/C
@@ -4533,12 +5008,36 @@ Slack (MET) :             0.229ns  (arrival time - required time)
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+=======
+                         net (fo=85, routed)          0.924     2.114    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+                         clock pessimism             -0.501     1.613    
+    DSP48_X1Y22          DSP48E1 (Hold_dsp48e1_CLK_CEB2)
+                                                      0.022     1.635    manual_tester/alu/arithmeticUnit/s0
+  -------------------------------------------------------------------
+                         required time                         -1.635    
+                         arrival time                           1.861    
+  -------------------------------------------------------------------
+                         slack                                  0.226    
+
+Slack (MET) :             0.229ns  (arrival time - required time)
+  Source:                 manual_tester/FSM_onehot_M_state_q_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            manual_tester/alu/arithmeticUnit/s0/CEA2
+                            (rising edge-triggered cell DSP48E1 clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.353ns  (logic 0.164ns (46.469%)  route 0.189ns (53.531%))
   Logic Levels:           0  
   Clock Path Skew:        0.106ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.114ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.501ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4549,6 +5048,7 @@ Slack (MET) :             0.229ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.564     1.508    auto_tester/test_19/timer/clk_IBUF_BUFG
     SLICE_X39Y49         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[15]/C
@@ -4563,12 +5063,17 @@ Slack (MET) :             0.229ns  (arrival time - required time)
                          net (fo=1, routed)           0.000     1.972    auto_tester/test_19/timer/M_ctr_q_reg[16]_i_1__17_n_7
     SLICE_X39Y50         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[16]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.564     1.508    manual_tester/CLK
     SLICE_X54Y53         FDSE                                         r  manual_tester/FSM_onehot_M_state_q_reg[0]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X54Y53         FDSE (Prop_fdse_C_Q)         0.164     1.672 r  manual_tester/FSM_onehot_M_state_q_reg[0]/Q
                          net (fo=37, routed)          0.189     1.861    manual_tester/alu/arithmeticUnit/E[0]
     DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CEA2
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4578,6 +5083,7 @@ Slack (MET) :             0.229ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.830     2.020    auto_tester/test_19/timer/clk_IBUF_BUFG
     SLICE_X39Y50         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[16]/C
@@ -4610,10 +5116,28 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/button_cond/M_ctr_q_reg[11]/D
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+                         net (fo=85, routed)          0.924     2.114    manual_tester/alu/arithmeticUnit/CLK
+    DSP48_X1Y22          DSP48E1                                      r  manual_tester/alu/arithmeticUnit/s0/CLK
+                         clock pessimism             -0.501     1.613    
+    DSP48_X1Y22          DSP48E1 (Hold_dsp48e1_CLK_CEA2)
+                                                      0.018     1.631    manual_tester/alu/arithmeticUnit/s0
+  -------------------------------------------------------------------
+                         required time                         -1.631    
+                         arrival time                           1.861    
+  -------------------------------------------------------------------
+                         slack                                  0.229    
+
+Slack (MET) :             0.263ns  (arrival time - required time)
+  Source:                 manual_tester/button_cond/M_ctr_q_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            manual_tester/button_cond/M_ctr_q_reg[11]/D
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.464ns  (logic 0.355ns (76.531%)  route 0.109ns (23.469%))
   Logic Levels:           2  (CARRY4=2)
@@ -4622,12 +5146,17 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.368ns  (logic 0.249ns (67.612%)  route 0.119ns (32.388%))
   Logic Levels:           1  (CARRY4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.517ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4638,6 +5167,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.564     1.508    auto_tester/test_3/timer/clk_IBUF_BUFG
     SLICE_X37Y49         FDRE                                         r  auto_tester/test_3/timer/M_ctr_q_reg[11]/C
@@ -4652,6 +5182,8 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                          net (fo=1, routed)           0.000     1.972    auto_tester/test_3/timer/M_ctr_q_reg[12]_i_1__1_n_7
     SLICE_X37Y50         FDRE                                         r  auto_tester/test_3/timer/M_ctr_q_reg[12]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.564     1.508    manual_tester/button_cond/CLK
     SLICE_X53Y54         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[11]/C
   -------------------------------------------------------------------    -------------------
@@ -4661,6 +5193,9 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                                                       0.108     1.876 r  manual_tester/button_cond/M_ctr_q_reg[8]_i_1/O[3]
                          net (fo=1, routed)           0.000     1.876    manual_tester/button_cond/M_ctr_q_reg[8]_i_1_n_4
     SLICE_X53Y54         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[11]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4670,6 +5205,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.830     2.020    auto_tester/test_3/timer/clk_IBUF_BUFG
     SLICE_X37Y50         FDRE                                         r  auto_tester/test_3/timer/M_ctr_q_reg[12]/C
@@ -4686,6 +5222,8 @@ Slack (MET) :             0.098ns  (arrival time - required time)
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            auto_tester/test_31/timer/M_ctr_q_reg[10]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.834     2.024    manual_tester/button_cond/CLK
     SLICE_X53Y54         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[11]/C
                          clock pessimism             -0.517     1.508    
@@ -4700,11 +5238,15 @@ Slack (MET) :             0.263ns  (arrival time - required time)
   Source:                 manual_tester/button_cond/M_ctr_q_reg[15]/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/button_cond/M_ctr_q_reg[15]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.501ns  (logic 0.386ns (77.035%)  route 0.115ns (22.965%))
   Logic Levels:           2  (CARRY4=2)
@@ -4713,12 +5255,17 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.511ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.368ns  (logic 0.249ns (67.612%)  route 0.119ns (32.388%))
   Logic Levels:           1  (CARRY4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.517ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4729,6 +5276,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.567     1.511    auto_tester/test_31/timer/clk_IBUF_BUFG
     SLICE_X54Y49         FDRE                                         r  auto_tester/test_31/timer/M_ctr_q_reg[6]/C
@@ -4746,12 +5294,20 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                          net (fo=85, routed)          0.564     1.508    manual_tester/button_cond/CLK
     SLICE_X53Y55         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[15]/C
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          0.564     1.508    manual_tester/button_cond/CLK
+    SLICE_X53Y55         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     SLICE_X53Y55         FDRE (Prop_fdre_C_Q)         0.141     1.649 r  manual_tester/button_cond/M_ctr_q_reg[15]/Q
                          net (fo=2, routed)           0.119     1.768    manual_tester/button_cond/M_ctr_q_reg[15]
     SLICE_X53Y55         CARRY4 (Prop_carry4_S[3]_O[3])
                                                       0.108     1.876 r  manual_tester/button_cond/M_ctr_q_reg[12]_i_1/O[3]
                          net (fo=1, routed)           0.000     1.876    manual_tester/button_cond/M_ctr_q_reg[12]_i_1_n_4
     SLICE_X53Y55         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[15]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4761,6 +5317,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.835     2.025    auto_tester/test_31/timer/clk_IBUF_BUFG
     SLICE_X54Y50         FDRE                                         r  auto_tester/test_31/timer/M_ctr_q_reg[10]/C
@@ -4782,6 +5339,13 @@ Slack (MET) :             0.103ns  (arrival time - required time)
                          clock pessimism             -0.517     1.508    
     SLICE_X53Y55         FDRE (Hold_fdre_C_D)         0.105     1.613    manual_tester/button_cond/M_ctr_q_reg[15]
   -------------------------------------------------------------------
+=======
+                         net (fo=85, routed)          0.834     2.024    manual_tester/button_cond/CLK
+    SLICE_X53Y55         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[15]/C
+                         clock pessimism             -0.517     1.508    
+    SLICE_X53Y55         FDRE (Hold_fdre_C_D)         0.105     1.613    manual_tester/button_cond/M_ctr_q_reg[15]
+  -------------------------------------------------------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          required time                         -1.613    
                          arrival time                           1.876    
   -------------------------------------------------------------------
@@ -4791,11 +5355,15 @@ Slack (MET) :             0.263ns  (arrival time - required time)
   Source:                 manual_tester/button_cond/M_ctr_q_reg[19]/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/button_cond/M_ctr_q_reg[19]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.475ns  (logic 0.366ns (77.074%)  route 0.109ns (22.926%))
   Logic Levels:           2  (CARRY4=2)
@@ -4804,12 +5372,17 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.368ns  (logic 0.249ns (67.612%)  route 0.119ns (32.388%))
   Logic Levels:           1  (CARRY4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.024ns
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.517ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4820,6 +5393,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.564     1.508    auto_tester/test_19/timer/clk_IBUF_BUFG
     SLICE_X39Y49         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[15]/C
@@ -4834,6 +5408,8 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                          net (fo=1, routed)           0.000     1.983    auto_tester/test_19/timer/M_ctr_q_reg[16]_i_1__17_n_5
     SLICE_X39Y50         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[18]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.564     1.508    manual_tester/button_cond/CLK
     SLICE_X53Y56         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[19]/C
   -------------------------------------------------------------------    -------------------
@@ -4843,6 +5419,9 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                                                       0.108     1.876 r  manual_tester/button_cond/M_ctr_q_reg[16]_i_1/O[3]
                          net (fo=1, routed)           0.000     1.876    manual_tester/button_cond/M_ctr_q_reg[16]_i_1_n_4
     SLICE_X53Y56         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[19]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4852,6 +5431,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.830     2.020    auto_tester/test_19/timer/clk_IBUF_BUFG
     SLICE_X39Y50         FDRE                                         r  auto_tester/test_19/timer/M_ctr_q_reg[18]/C
@@ -4868,6 +5448,8 @@ Slack (MET) :             0.103ns  (arrival time - required time)
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            auto_tester/test_3/timer/M_ctr_q_reg[14]/D
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.834     2.024    manual_tester/button_cond/CLK
     SLICE_X53Y56         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[19]/C
                          clock pessimism             -0.517     1.508    
@@ -4882,11 +5464,15 @@ Slack (MET) :             0.263ns  (arrival time - required time)
   Source:                 manual_tester/button_cond/M_ctr_q_reg[3]/C
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            manual_tester/button_cond/M_ctr_q_reg[3]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                             (rising edge-triggered cell FDRE clocked by clk_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_0 rise@0.000ns - clk_0 rise@0.000ns)
+<<<<<<< HEAD
 <<<<<<< HEAD
   Data Path Delay:        0.475ns  (logic 0.366ns (77.074%)  route 0.109ns (22.926%))
   Logic Levels:           2  (CARRY4=2)
@@ -4895,12 +5481,17 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     Source Clock Delay      (SCD):    1.508ns
     Clock Pessimism Removal (CPR):    0.246ns
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   Data Path Delay:        0.368ns  (logic 0.249ns (67.612%)  route 0.119ns (32.388%))
   Logic Levels:           1  (CARRY4=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    2.025ns
     Source Clock Delay      (SCD):    1.509ns
     Clock Pessimism Removal (CPR):    0.517ns
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -4911,6 +5502,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.284     0.284 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.634     0.918    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.944 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.564     1.508    auto_tester/test_3/timer/clk_IBUF_BUFG
     SLICE_X37Y49         FDRE                                         r  auto_tester/test_3/timer/M_ctr_q_reg[11]/C
@@ -4928,12 +5520,20 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                          net (fo=85, routed)          0.565     1.509    manual_tester/button_cond/CLK
     SLICE_X53Y52         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[3]/C
   -------------------------------------------------------------------    -------------------
+=======
+                         net (fo=85, routed)          0.565     1.509    manual_tester/button_cond/CLK
+    SLICE_X53Y52         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     SLICE_X53Y52         FDRE (Prop_fdre_C_Q)         0.141     1.650 r  manual_tester/button_cond/M_ctr_q_reg[3]/Q
                          net (fo=2, routed)           0.119     1.769    manual_tester/button_cond/M_ctr_q_reg[3]
     SLICE_X53Y52         CARRY4 (Prop_carry4_S[3]_O[3])
                                                       0.108     1.877 r  manual_tester/button_cond/M_ctr_q_reg[0]_i_3/O[3]
                          net (fo=1, routed)           0.000     1.877    manual_tester/button_cond/M_ctr_q_reg[0]_i_3_n_4
     SLICE_X53Y52         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[3]/D
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   -------------------------------------------------------------------    -------------------
 
@@ -4943,6 +5543,7 @@ Slack (MET) :             0.263ns  (arrival time - required time)
     N14                  IBUF (Prop_ibuf_I_O)         0.472     0.472 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.689     1.161    clk_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.190 r  clk_IBUF_BUFG_inst/O
+<<<<<<< HEAD
 <<<<<<< HEAD
                          net (fo=1760, routed)        0.830     2.020    auto_tester/test_3/timer/clk_IBUF_BUFG
     SLICE_X37Y50         FDRE                                         r  auto_tester/test_3/timer/M_ctr_q_reg[14]/C
@@ -4954,6 +5555,8 @@ Slack (MET) :             0.263ns  (arrival time - required time)
   -------------------------------------------------------------------
                          slack                                  0.103    
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
                          net (fo=85, routed)          0.835     2.025    manual_tester/button_cond/CLK
     SLICE_X53Y52         FDRE                                         r  manual_tester/button_cond/M_ctr_q_reg[3]/C
                          clock pessimism             -0.517     1.509    
@@ -4963,6 +5566,9 @@ Slack (MET) :             0.263ns  (arrival time - required time)
                          arrival time                           1.877    
   -------------------------------------------------------------------
                          slack                                  0.263    
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 
@@ -4976,6 +5582,7 @@ Waveform(ns):       { 0.000 5.000 }
 Period(ns):         10.000
 Sources:            { clk }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
 Min Period        n/a     BUFG/I       n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
@@ -5009,6 +5616,8 @@ High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       
 High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X33Y52   auto_tester/test_0/seg_display/ctr/M_ctr_q_reg[16]/C
 High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X33Y52   auto_tester/test_0/seg_display/ctr/M_ctr_q_reg[17]/C
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
 Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
 Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X53Y52   manual_tester/button_cond/M_ctr_q_reg[0]/C
@@ -5040,6 +5649,9 @@ High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.50
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X59Y55   manual_tester/M_a_q_reg[1]/C
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X59Y55   manual_tester/M_a_q_reg[2]/C
 High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X59Y55   manual_tester/M_a_q_reg[3]/C
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 

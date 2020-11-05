@@ -4,11 +4,15 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_compare_9.v
 <<<<<<< HEAD:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_44.v
 module alu_compare_44 (
 =======
 module alu_compare_9 (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/verilog/alu_compare_9.v
+=======
+module alu_compare_9 (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_compare_46.v
     input z,
     input v,
     input n,

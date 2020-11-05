@@ -2,9 +2,12 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Fri Nov  6 03:13:41 2020
 | Host         : Amrish running 64-bit major release  (build 9200)
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | Date         : Tue Nov  3 20:45:37 2020
 | Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -36,6 +39,7 @@ Table of Contents
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Slice LUTs*             | 1750 |     0 |     20800 |  8.41 |
 |   LUT as Logic          | 1750 |     0 |     20800 |  8.41 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
@@ -44,6 +48,16 @@ Table of Contents
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |  181 |     0 |     16300 |  1.11 |
 | F8 Muxes                |   64 |     0 |      8150 |  0.79 |
+=======
+| Slice LUTs*             |  185 |     0 |     20800 |  0.89 |
+|   LUT as Logic          |  185 |     0 |     20800 |  0.89 |
+|   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
+| Slice Registers         |   84 |     0 |     41600 |  0.20 |
+|   Register as Flip Flop |   84 |     0 |     41600 |  0.20 |
+|   Register as Latch     |    0 |     0 |     41600 |  0.00 |
+| F7 Muxes                |    3 |     0 |     16300 |  0.02 |
+| F8 Muxes                |    1 |     0 |      8150 |  0.01 |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 | Slice LUTs*             |  185 |     0 |     20800 |  0.89 |
 |   LUT as Logic          |  185 |     0 |     20800 |  0.89 |
@@ -74,7 +88,11 @@ Table of Contents
 | 0     |          Yes |           - |        Reset |
 | 5     |          Yes |         Set |            - |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | 1749  |          Yes |       Reset |            - |
+=======
+| 79    |          Yes |       Reset |            - |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 | 79    |          Yes |       Reset |            - |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -168,6 +186,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 | FDRE     | 1749 |        Flop & Latch |
 | LUT2     |  704 |                 LUT |
 | LUT6     |  531 |                 LUT |
@@ -184,12 +203,20 @@ Table of Contents
 | LUT6     |   95 |                 LUT |
 | FDRE     |   79 |        Flop & Latch |
 | OBUF     |   45 |                  IO |
+=======
+| LUT6     |   95 |                 LUT |
+| FDRE     |   79 |        Flop & Latch |
+| OBUF     |   45 |                  IO |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | LUT5     |   45 |                 LUT |
 | LUT4     |   33 |                 LUT |
 | IBUF     |   26 |                  IO |
 | LUT3     |   24 |                 LUT |
 | CARRY4   |    9 |          CarryLogic |
 | LUT1     |    5 |                 LUT |
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | FDSE     |    5 |        Flop & Latch |
 | MUXF7    |    3 |               MuxFx |

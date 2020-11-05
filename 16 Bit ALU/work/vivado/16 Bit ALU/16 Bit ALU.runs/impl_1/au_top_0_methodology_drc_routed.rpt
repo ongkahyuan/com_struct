@@ -2,9 +2,12 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Date         : Fri Nov  6 03:15:09 2020
 | Host         : Amrish running 64-bit major release  (build 9200)
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 | Date         : Tue Nov  3 20:46:32 2020
 | Host         : DESKTOP-6N6MSBK running 64-bit major release  (build 9200)
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -29,6 +32,7 @@ Table of Contents
       Design limits: <entire design considered>
              Max violations: <unlimited>
 <<<<<<< HEAD
+<<<<<<< HEAD
              Violations found: 123
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
@@ -44,10 +48,18 @@ Table of Contents
 +-----------+----------+-------------------------------+------------+
 | TIMING-18 | Warning  | Missing input or output delay | 62         |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+             Violations found: 62
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 62         |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+<<<<<<< HEAD
 <<<<<<< HEAD
 SYNTH-11#1 Warning
 DSP output not registered  
@@ -334,6 +346,8 @@ Large setup violation
 There is a large setup violation of -32.865 ns between manual_tester/M_b_q_reg[0]/C (clocked by clk_0) and manual_tester/M_out_q_reg[0]/D (clocked by clk_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 TIMING-18#1 Warning

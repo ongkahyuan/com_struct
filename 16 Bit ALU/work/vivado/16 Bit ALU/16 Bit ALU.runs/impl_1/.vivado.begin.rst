@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Process Command="vivado.bat" Owner="User123" Host="AMRISH" Pid="3048" HostCore="12" HostMemory="017125937152">
+=======
+    <Process Command="vivado.bat" Owner="amris" Host="DESKTOP-6N6MSBK" Pid="14504" HostCore="12" HostMemory="017066782720">
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <Process Command="vivado.bat" Owner="amris" Host="DESKTOP-6N6MSBK" Pid="14504" HostCore="12" HostMemory="017066782720">
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA

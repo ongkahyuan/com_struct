@@ -17,7 +17,11 @@ source {C:\Users\User123\Documents\GitHub\com_struct\16 Bit ALU\work\project.tcl
 # create_project $projName "$projDir/$projName" -part $device
 # set_property design_mode RTL [get_filesets sources_1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 # set verilogSources [list "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/au_top_0.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/reset_conditioner_1.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/button_conditioner_2.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/edge_detector_3.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/manual_alu_tester_4.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_tester_run_5.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/pipeline_6.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_16_bit_7.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_8.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_9.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_10.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_11.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_12.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_13.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_14.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_15.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_16.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_17.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_18.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_19.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_20.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_21.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_22.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_23.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_24.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_25.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_26.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_27.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_28.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_29.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_30.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_31.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_32.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_33.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_34.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_35.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_36.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_37.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_38.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_39.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_40.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/auto_alu_tester_41.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_arithmetic_42.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_boolean_43.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_compare_44.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_shifter_45.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/counter_46.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/multi_seven_seg_47.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/counter_48.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/seven_seg_49.v" "C:/Users/User123/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/decoder_50.v" ]
+=======
+# set verilogSources [list "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/au_top_0.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/reset_conditioner_1.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/manual_alu_tester_2.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/button_conditioner_3.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/edge_detector_4.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_16_bit_5.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/pipeline_6.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_arithmetic_7.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_boolean_8.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_compare_9.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_shifter_10.v" ]
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 # set verilogSources [list "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/au_top_0.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/reset_conditioner_1.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/manual_alu_tester_2.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/button_conditioner_3.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/edge_detector_4.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_16_bit_5.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/pipeline_6.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_arithmetic_7.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_boolean_8.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_compare_9.v" "C:/Users/amris/Documents/GitHub/com_struct/16\ Bit\ ALU/work/verilog/alu_shifter_10.v" ]
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -29,15 +33,21 @@ source {C:\Users\User123\Documents\GitHub\com_struct\16 Bit ALU\work\project.tcl
 # launch_runs -runs synth_1 -jobs 8
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 [Fri Nov  6 03:12:28 2020] Launched synth_1...
 Run output will be captured here: C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/runme.log
 # wait_on_run synth_1
 [Fri Nov  6 03:12:29 2020] Waiting for synth_1 to finish...
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 [Tue Nov  3 20:44:54 2020] Launched synth_1...
 Run output will be captured here: C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/runme.log
 # wait_on_run synth_1
 [Tue Nov  3 20:44:54 2020] Waiting for synth_1 to finish...
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 *** Running vivado
@@ -59,6 +69,7 @@ INFO: [Device 21-403] Loading part xc7a35tftg256-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Synth 8-7075] Helper process launched with PID 2460
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1014.418 ; gain = 0.000
@@ -75,6 +86,12 @@ INFO: [Synth 8-7075] Helper process launched with PID 1960
 ---------------------------------------------------------------------------------
 Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1020.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
+=======
+INFO: [Synth 8-7075] Helper process launched with PID 1960
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Synth 8-6157] synthesizing module 'au_top_0' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 INFO: [Synth 8-6157] synthesizing module 'reset_conditioner_1' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/reset_conditioner_1.v:11]
 	Parameter STAGES bound to: 3'b100 
@@ -84,12 +101,16 @@ INFO: [Synth 8-6157] synthesizing module 'manual_alu_tester_2' [C:/Users/amris/D
 	Parameter B_state bound to: 2'b01 
 	Parameter OUTPUT_state bound to: 2'b10 
 INFO: [Synth 8-6157] synthesizing module 'button_conditioner_3' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 	Parameter CLK_FREQ bound to: 26'b10111110101111000010000000 
 	Parameter MIN_DELAY bound to: 5'b10100 
 	Parameter NUM_SYNC bound to: 2'b10 
 INFO: [Synth 8-6157] synthesizing module 'pipeline_6' [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 	Parameter DEPTH bound to: 2'b10 
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
 INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_2' (3#1) [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_2.v:13]
@@ -662,6 +683,13 @@ INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_3' (3#1) [C:/U
 INFO: [Synth 8-6157] synthesizing module 'edge_detector_4' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
 	Parameter RISE bound to: 1'b1 
 	Parameter FALL bound to: 1'b0 
+=======
+INFO: [Synth 8-6155] done synthesizing module 'pipeline_6' (2#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/pipeline_6.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'button_conditioner_3' (3#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/button_conditioner_3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector_4' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
+	Parameter RISE bound to: 1'b1 
+	Parameter FALL bound to: 1'b0 
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Synth 8-6155] done synthesizing module 'edge_detector_4' (4#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/edge_detector_4.v:12]
 INFO: [Synth 8-6157] synthesizing module 'alu_16_bit_5' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v:7]
 INFO: [Synth 8-6157] synthesizing module 'alu_arithmetic_7' [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_arithmetic_7.v:7]
@@ -679,6 +707,9 @@ INFO: [Synth 8-6155] done synthesizing module 'manual_alu_tester_2' (10#1) [C:/U
 INFO: [Synth 8-6155] done synthesizing module 'au_top_0' (11#1) [C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/au_top_0.v:7]
 ---------------------------------------------------------------------------------
 Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
@@ -686,16 +717,26 @@ Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1014.418 ; gain = 0.000
 =======
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1020.453 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1020.453 ; gain = 0.000
@@ -717,6 +758,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/au_top_0_pro
 Completed Processing XDC Constraints
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1014.418 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
@@ -733,6 +775,15 @@ Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.00
 ---------------------------------------------------------------------------------
 Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1020.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -740,7 +791,11 @@ Start Loading Part and Timing Information
 Loading part: xc7a35tftg256-1
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
+=======
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -749,6 +804,7 @@ Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapse
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
+<<<<<<< HEAD
 <<<<<<< HEAD
 Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1014.418 ; gain = 0.000
 ---------------------------------------------------------------------------------
@@ -793,6 +849,11 @@ Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; el
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_2'
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'manual_alu_tester_2'
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -800,6 +861,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'M_state_q_reg' in module 'm
                  B_state |                              010 |                               01
             OUTPUT_state |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'manual_alu_tester_4'
 ---------------------------------------------------------------------------------------------------
@@ -1257,6 +1319,11 @@ INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encod
 ---------------------------------------------------------------------------------
 Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+INFO: [Synth 8-3354] encoded FSM with state register 'M_state_q_reg' using encoding 'one-hot' in module 'manual_alu_tester_2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1274,6 +1341,7 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
+<<<<<<< HEAD
 <<<<<<< HEAD
 	   2 Input   24 Bit        Muxes := 1     
 	   2 Input   18 Bit        Muxes := 34    
@@ -1305,6 +1373,12 @@ Detailed RTL Component Info :
 	   3 Input   16 Bit        Muxes := 1     
 	   3 Input    8 Bit        Muxes := 1     
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+	   4 Input   16 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -1321,6 +1395,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x2121).
 DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0x4242)*(B:0x4242).
@@ -1330,10 +1405,13 @@ DSP Report: register manual_tester/M_b_q_reg is absorbed into DSP manual_tester/
 DSP Report: operator manual_tester/alu/arithmeticUnit/s1 is absorbed into DSP manual_tester/alu/arithmeticUnit/s1.
 =======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 DSP Report: Generating DSP manual_tester/alu/arithmeticUnit/s0, operation Mode is: A2*B2.
 DSP Report: register manual_tester/M_b_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
 DSP Report: register manual_tester/M_a_q_reg is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
 DSP Report: operator manual_tester/alu/arithmeticUnit/s0 is absorbed into DSP manual_tester/alu/arithmeticUnit/s0.
+<<<<<<< HEAD
 <<<<<<< HEAD
 DSP Report: Generating DSP alu/arithmeticUnit/s0, operation Mode is: (A:0xabcd)*(B:0xabcd).
 DSP Report: operator alu/arithmeticUnit/s0 is absorbed into DSP alu/arithmeticUnit/s0.
@@ -1489,12 +1567,17 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elaps
 ---------------------------------------------------------------------------------
 Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping	Report (see note below)
+<<<<<<< HEAD
 <<<<<<< HEAD
 +------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name       | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
@@ -1525,11 +1608,16 @@ DSP: Preliminary Mapping	Report (see note below)
 |alu_arithmetic_42 | (A:0xff00)*(B:0xff)   | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |au_top_0    | A2*B2       | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -1541,7 +1629,11 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:52 . Memory (MB): peak = 1019.797 ; gain = 5.379
+=======
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1551,7 +1643,11 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1070.195 ; gain = 55.777
+=======
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.453 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1020.453 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1561,7 +1657,11 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:57 . Memory (MB): peak = 1112.797 ; gain = 98.379
+=======
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1022.883 ; gain = 2.430
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1022.883 ; gain = 2.430
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1583,7 +1683,11 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1593,7 +1697,11 @@ Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1603,7 +1711,11 @@ Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1613,7 +1725,11 @@ Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1623,7 +1739,11 @@ Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1633,7 +1753,11 @@ Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:01 . Memory (MB): peak = 1119.055 ; gain = 104.637
+=======
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1653,6 +1777,7 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
+<<<<<<< HEAD
 <<<<<<< HEAD
 |2     |CARRY4  |   506|
 |3     |DSP48E1 |     3|
@@ -1711,10 +1836,40 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.637 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+|2     |CARRY4  |     9|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     5|
+|5     |LUT3    |    24|
+|6     |LUT4    |    33|
+|7     |LUT5    |    45|
+|8     |LUT6    |    95|
+|9     |MUXF7   |     3|
+|10    |MUXF8   |     1|
+|11    |FDRE    |    79|
+|12    |FDSE    |     5|
+|13    |IBUF    |    26|
+|14    |OBUF    |    45|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1025.637 ; gain = 5.184
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1025.637 ; gain = 5.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1037.637 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1037.637 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
+<<<<<<< HEAD
 <<<<<<< HEAD
 336 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
@@ -1732,6 +1887,10 @@ Run output will be captured here: C:/Users/User123/Documents/GitHub/com_struct/1
 =======
 42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
+=======
+42 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1037.637 ; gain = 17.184
 INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/synth_1/au_top_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_synth.rpt -pb au_top_0_utilization_synth.pb
@@ -1743,6 +1902,9 @@ wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:45 . Memory (MB): peak =
 Run output will be captured here: C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/runme.log
 # wait_on_run impl_1
 [Tue Nov  3 20:45:39 2020] Waiting for impl_1 to finish...
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 
@@ -1762,10 +1924,13 @@ Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7a35tftg256-1
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1013.859 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 754 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1015.574 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1780,7 +1945,11 @@ Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/c
 Finished Parsing XDC File [C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/constraint/io.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1013.859 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.574 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1015.574 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1790,7 +1959,11 @@ No Unisim elements were transformed.
 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
 <<<<<<< HEAD
+<<<<<<< HEAD
 link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.859 ; gain = 0.000
+=======
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.574 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1015.574 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1804,6 +1977,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.955 . Memory (MB): peak = 1013.859 ; gain = 0.000
 
@@ -1821,12 +1995,22 @@ Ending Cache Timing Information Task | Checksum: 124b4366b
 
 Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1169.609 ; gain = 154.035
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.899 . Memory (MB): peak = 1015.574 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 124b4366b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1169.609 ; gain = 154.035
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 1 Retarget | Checksum: 1eee54353
 
@@ -1858,6 +2042,15 @@ INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 2 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+=======
+Phase 1 Retarget | Checksum: e707ea31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1374.785 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 2 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Phase 2 Constant propagation | Checksum: e707ea31
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1374.785 ; gain = 0.000
@@ -1873,11 +2066,15 @@ Phase 4 BUFG optimization
 Phase 4 BUFG optimization | Checksum: 12737325e
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1374.785 ; gain = 0.000
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 5 Shift Register Optimization | Checksum: 243cd9962
 
@@ -1899,6 +2096,17 @@ Phase 6 Post Processing Netlist | Checksum: 12737325e
 
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1374.785 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Phase 5 Shift Register Optimization | Checksum: 12737325e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1374.785 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 12737325e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1374.785 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -1908,7 +2116,11 @@ Opt_design Change Summary
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 |  Retarget                     |               0  |               2  |                                              0  |
+=======
+|  Retarget                     |               1  |               2  |                                              0  |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 |  Retarget                     |               1  |               2  |                                              0  |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -1923,6 +2135,7 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1397.375 ; gain = 0.000
 Ending Logic Optimization Task | Checksum: 2ba34c8b5
@@ -1976,15 +2189,45 @@ INFO: [Common 17-83] Releasing license: Implementation
 opt_design completed successfully
 opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.480 ; gain = 362.906
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1374.785 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 56e3e46f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1374.785 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 56e3e46f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1378.480 ; gain = 3.695
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 56e3e46f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1378.480 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1378.480 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 56e3e46f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1378.480 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1378.480 ; gain = 362.906
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1397.375 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_opt.dcp' has been generated.
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1378.703 ; gain = 0.223
 INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_opt.dcp' has been generated.
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -2014,6 +2257,7 @@ Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1401.195 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1bfdc5357
 
@@ -2042,6 +2286,11 @@ Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1410.352 ; g
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.777 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 215401a0
 
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.777 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 215401a0
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1396.777 ; gain = 0.000
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.777 ; gain = 0.000
 
@@ -2063,15 +2312,24 @@ Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1396.840 ; g
 Phase 1 Placer Initialization | Checksum: 1ceee2c6d
 
 Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1396.840 ; gain = 0.062
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
 <<<<<<< HEAD
+<<<<<<< HEAD
 Phase 2.1 Floorplanning | Checksum: 10a8a655b
 
 Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1410.352 ; gain = 9.156
+=======
+Phase 2.1 Floorplanning | Checksum: 178e35757
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1396.840 ; gain = 0.062
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Phase 2.1 Floorplanning | Checksum: 178e35757
 
@@ -2082,9 +2340,15 @@ Phase 2.2 Global Placement Core
 
 Phase 2.2.1 Physical Synthesis In Placer
 <<<<<<< HEAD
+<<<<<<< HEAD
 INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 23 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
 INFO: [Physopt 32-775] End 1 Pass. Optimized 9 nets or cells. Created 0 new cell, deleted 9 existing cells and moved 0 existing cell
+=======
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 2 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 1 existing cell and moved 0 existing cell
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 2 LUT instances to create LUTNM shape
 INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
@@ -2101,7 +2365,11 @@ INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was
 INFO: [Physopt 32-949] No candidate nets found for HD net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 <<<<<<< HEAD
+<<<<<<< HEAD
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1410.352 ; gain = 0.000
+=======
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.840 ; gain = 0.000
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1396.840 ; gain = 0.000
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -2114,7 +2382,11 @@ Summary of Physical Synthesis Optimizations
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
 |  LUT Combining                                    |            0  |              9  |                     9  |           0  |           1  |  00:00:00  |
+=======
+|  LUT Combining                                    |            0  |              1  |                     1  |           0  |           1  |  00:00:00  |
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 |  LUT Combining                                    |            0  |              1  |                     1  |           0  |           1  |  00:00:00  |
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -2125,6 +2397,7 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+<<<<<<< HEAD
 <<<<<<< HEAD
 |  Total                                            |            0  |              9  |                     9  |           0  |           8  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2140,6 +2413,8 @@ Phase 2 Global Placement | Checksum: 17e8065f7
 
 Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1410.352 ; gain = 9.156
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 |  Total                                            |            0  |              1  |                     1  |           0  |           3  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -2153,11 +2428,15 @@ Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; g
 Phase 2 Global Placement | Checksum: 1de99bab3
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; gain = 0.062
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 3.1 Commit Multi Column Macros | Checksum: 1b7934ec9
 
@@ -2243,6 +2522,44 @@ Phase 3 Detail Placement | Checksum: 2619ee60b
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.840 ; gain = 0.062
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Phase 3.1 Commit Multi Column Macros | Checksum: 189ea0fb1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1938127f2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1b503b0e9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 176118bcc
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1ba8b2737
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1df0fd9e3
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.840 ; gain = 0.062
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 2619ee60b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.840 ; gain = 0.062
+Phase 3 Detail Placement | Checksum: 2619ee60b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.840 ; gain = 0.062
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -2251,7 +2568,11 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
 <<<<<<< HEAD
+<<<<<<< HEAD
 Post Placement Optimization Initialization | Checksum: 13cc98ec7
+=======
+Post Placement Optimization Initialization | Checksum: 143968625
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Post Placement Optimization Initialization | Checksum: 143968625
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -2262,6 +2583,7 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+<<<<<<< HEAD
 <<<<<<< HEAD
 INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-34.331 | TNS=-524.609 |
 Phase 1 Physical Synthesis Initialization | Checksum: 1b1d72f2f
@@ -2322,6 +2644,25 @@ Phase 4.1.1 Post Placement Optimization | Checksum: 107944922
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; gain = 10.055
 Phase 4.1 Post Commit Optimization | Checksum: 107944922
 
+=======
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=3.911 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: f2d0f8b7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1406.832 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 129ed9e55
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1406.832 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 143968625
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; gain = 10.055
+INFO: [Place 30-746] Post Placement Timing Summary WNS=3.911. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 107944922
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; gain = 10.055
+Phase 4.1 Post Commit Optimization | Checksum: 107944922
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; gain = 10.055
 
 Phase 4.2 Post Placement Cleanup
@@ -2345,6 +2686,7 @@ Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; g
 Ending Placer Task | Checksum: c0786657
 
 Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1406.832 ; gain = 10.055
+<<<<<<< HEAD
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Common 17-83] Releasing license: Implementation
 60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
@@ -2353,11 +2695,17 @@ place_design completed successfully
 place_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1429.070 ; gain = 27.883
 =======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
+<<<<<<< HEAD
 <<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.376 . Memory (MB): peak = 1429.117 ; gain = 0.047
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_placed.dcp' has been generated.
@@ -2840,15 +3188,35 @@ INFO: [Common 17-83] Releasing license: Implementation
 69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1406.922 ; gain = 0.090
+INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file au_top_0_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1406.922 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file au_top_0_utilization_placed.rpt -pb au_top_0_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file au_top_0_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1406.922 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.393 . Memory (MB): peak = 1441.242 ; gain = 8.812
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_physopt.dcp' has been generated.
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1412.945 ; gain = 6.023
 INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_physopt.dcp' has been generated.
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -2864,6 +3232,7 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
 <<<<<<< HEAD
+<<<<<<< HEAD
 Checksum: PlaceDB: 33d2865 ConstDB: 0 ShapeSum: 4a87ac62 RouteDB: 0
 
 Phase 1 Build RT Design
@@ -2872,6 +3241,8 @@ Phase 1 Build RT Design | Checksum: 2a975b27
 Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 1561.125 ; gain = 106.832
 Post Restoration Checksum: NetGraph: 16f08eaf NumContArr: 13a6cc78 Constraints: 0 Timing: 0
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Checksum: PlaceDB: 8655703d ConstDB: 0 ShapeSum: 3a22f61a RouteDB: 0
 
 Phase 1 Build RT Design
@@ -2879,11 +3250,15 @@ Phase 1 Build RT Design | Checksum: 16e503700
 
 Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.906 ; gain = 77.934
 Post Restoration Checksum: NetGraph: a6608cc3 NumContArr: c7efaa3d Constraints: 0 Timing: 0
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 2.1 Create Timer | Checksum: 2a975b27
 
@@ -2935,6 +3310,32 @@ Phase 2 Router Initialization | Checksum: 11693ed0d
 
 Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1515.621 ; gain = 88.648
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Phase 2.1 Create Timer | Checksum: 16e503700
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.906 ; gain = 77.934
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 16e503700
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1510.895 ; gain = 83.922
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 16e503700
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1510.895 ; gain = 83.922
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 123c358da
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1515.621 ; gain = 88.648
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.833  | TNS=0.000  | WHS=-0.111 | THS=-0.599 |
+
+Phase 2 Router Initialization | Checksum: 11693ed0d
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 1515.621 ; gain = 88.648
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -2943,9 +3344,15 @@ Router Utilization Summary
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
 <<<<<<< HEAD
+<<<<<<< HEAD
   Number of Failed Nets               = 3905
     (Failed Nets is the sum of unrouted and partially routed nets)
   Number of Unrouted Nets             = 3905
+=======
+  Number of Failed Nets               = 312
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 312
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
   Number of Failed Nets               = 312
     (Failed Nets is the sum of unrouted and partially routed nets)
@@ -2957,9 +3364,15 @@ Router Utilization Summary
 
 Phase 3 Initial Routing
 <<<<<<< HEAD
+<<<<<<< HEAD
 Phase 3 Initial Routing | Checksum: 2213c3409
 
 Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 1593.156 ; gain = 138.863
+=======
+Phase 3 Initial Routing | Checksum: 20cbc5cd4
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.645 ; gain = 90.672
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Phase 3 Initial Routing | Checksum: 20cbc5cd4
 
@@ -2969,6 +3382,7 @@ Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.645 ; g
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
+<<<<<<< HEAD
 <<<<<<< HEAD
  Number of Nodes with overlaps = 482
  Number of Nodes with overlaps = 60
@@ -3021,12 +3435,25 @@ Phase 4 Rip-up And Reroute | Checksum: 1bb771516
 
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.627  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1bb771516
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+Phase 4 Rip-up And Reroute | Checksum: 1bb771516
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 Phase 5.1 Delay CleanUp | Checksum: 1bb771516
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 5.1.1 Update Timing
 Phase 5.1.1 Update Timing | Checksum: 112eb6354
@@ -3057,12 +3484,24 @@ Phase 5 Delay and Skew Optimization | Checksum: 1bb771516
 
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1bb771516
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+Phase 5 Delay and Skew Optimization | Checksum: 1bb771516
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 6.1.1 Update Timing | Checksum: 1c209c352
 
@@ -3088,13 +3527,31 @@ Phase 6 Post Hold Fix | Checksum: 1013f2d20
 
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Phase 6.1.1 Update Timing | Checksum: 1013f2d20
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.707  | TNS=0.000  | WHS=0.140  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1013f2d20
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+Phase 6 Post Hold Fix | Checksum: 1013f2d20
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 7 Route finalize
 
 Router Utilization Summary
 <<<<<<< HEAD
+<<<<<<< HEAD
   Global Vertical Routing Utilization    = 1.0578 %
   Global Horizontal Routing Utilization  = 0.984643 %
+=======
+  Global Vertical Routing Utilization    = 0.141992 %
+  Global Horizontal Routing Utilization  = 0.126366 %
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
   Global Vertical Routing Utilization    = 0.141992 %
   Global Horizontal Routing Utilization  = 0.126366 %
@@ -3108,6 +3565,7 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Congestion Report
 North Dir 1x1 Area, Max Cong = 39.6396%, No Congested Regions.
@@ -3143,10 +3601,16 @@ Phase 7 Route finalize | Checksum: 1419470b5
 
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+Phase 7 Route finalize | Checksum: 1419470b5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.648 ; gain = 90.676
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
+<<<<<<< HEAD
 <<<<<<< HEAD
 Phase 8 Verifying routed nets | Checksum: 2046b61a1
 
@@ -3190,6 +3654,23 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=3.707  | TNS=0.000  | WHS=0.1
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 10 Post Router Timing | Checksum: 1643725c3
 
+=======
+Phase 8 Verifying routed nets | Checksum: 1419470b5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1519.680 ; gain = 92.707
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1643725c3
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1519.680 ; gain = 92.707
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.707  | TNS=0.000  | WHS=0.140  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1643725c3
+
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1519.680 ; gain = 92.707
 INFO: [Route 35-16] Router Completed Successfully
 
@@ -3200,6 +3681,9 @@ INFO: [Common 17-83] Releasing license: Implementation
 83 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
 route_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1519.680 ; gain = 106.734
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
@@ -3207,9 +3691,12 @@ Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.446 . Memory (MB): peak = 1601.008 ; gain = 5.836
 INFO: [Common 17-1381] The checkpoint 'C:/Users/User123/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_routed.dcp' has been generated.
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1529.617 ; gain = 9.938
 INFO: [Common 17-1381] The checkpoint 'C:/Users/amris/Documents/GitHub/com_struct/16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.runs/impl_1/au_top_0_routed.dcp' has been generated.
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -3232,7 +3719,11 @@ Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 <<<<<<< HEAD
+<<<<<<< HEAD
 507 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+=======
+95 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 95 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -3254,6 +3745,7 @@ Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 <<<<<<< HEAD
+<<<<<<< HEAD
 WARNING: [DRC DPIP-1] Input pipelining: DSP manual_tester/alu/arithmeticUnit/s1 input manual_tester/alu/arithmeticUnit/s1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 output manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s1 output manual_tester/alu/arithmeticUnit/s1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
@@ -3261,6 +3753,11 @@ WARNING: [DRC DPOP-2] MREG Output pipelining: DSP auto_tester/test_18/alu/arithm
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 multiplier stage manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s1 multiplier stage manual_tester/alu/arithmeticUnit/s1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 6 Warnings
+=======
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 output manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 multiplier stage manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 2 Warnings
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 WARNING: [DRC DPOP-1] PREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 output manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP manual_tester/alu/arithmeticUnit/s0 multiplier stage manual_tester/alu/arithmeticUnit/s0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
@@ -3275,7 +3772,11 @@ Processing options...
 Creating bitmap...
 Creating bitstream...
 <<<<<<< HEAD
+<<<<<<< HEAD
 Bitstream compression saved 10763328 bits.
+=======
+Bitstream compression saved 14320896 bits.
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
 Bitstream compression saved 14320896 bits.
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
@@ -3285,6 +3786,7 @@ INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
 <<<<<<< HEAD
+<<<<<<< HEAD
 526 Infos, 7 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2053.148 ; gain = 425.059
@@ -3293,6 +3795,8 @@ INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 03:15:38 2020...
 wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:56 . Memory (MB): peak = 1012.777 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 03:15:41 2020...
 =======
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 114 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 1980.449 ; gain = 414.980
@@ -3300,6 +3804,9 @@ INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 20:46:57 2020...
 [Tue Nov  3 20:47:00 2020] impl_1 finished
 wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:21 . Memory (MB): peak = 1016.273 ; gain = 0.000
 INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 20:47:00 2020...
+<<<<<<< HEAD
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 
 Finished building project.

@@ -5,7 +5,11 @@
 */
 
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
 module alu_16_bit_7 (
+=======
+module alu_16_bit_5 (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
 =======
 module alu_16_bit_5 (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
@@ -27,8 +31,13 @@ module alu_16_bit_5 (
   reg [16-1:0] M_arithmeticUnit_a;
   reg [16-1:0] M_arithmeticUnit_b;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
   reg [4-1:0] M_arithmeticUnit_alufn;
   alu_arithmetic_42 arithmeticUnit (
+=======
+  reg [2-1:0] M_arithmeticUnit_alufn;
+  alu_arithmetic_7 arithmeticUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
 =======
   reg [2-1:0] M_arithmeticUnit_alufn;
   alu_arithmetic_7 arithmeticUnit (
@@ -47,7 +56,11 @@ module alu_16_bit_5 (
   reg [16-1:0] M_booleanUnit_b;
   reg [4-1:0] M_booleanUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
   alu_boolean_43 booleanUnit (
+=======
+  alu_boolean_8 booleanUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
 =======
   alu_boolean_8 booleanUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
@@ -63,7 +76,11 @@ module alu_16_bit_5 (
   reg [1-1:0] M_compareUnit_n;
   reg [4-1:0] M_compareUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
   alu_compare_44 compareUnit (
+=======
+  alu_compare_9 compareUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
 =======
   alu_compare_9 compareUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
@@ -79,7 +96,11 @@ module alu_16_bit_5 (
   reg [4-1:0] M_shifterUnit_b;
   reg [2-1:0] M_shifterUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
   alu_shifter_45 shifterUnit (
+=======
+  alu_shifter_10 shifterUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
 =======
   alu_shifter_10 shifterUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v

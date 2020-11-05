@@ -5,10 +5,20 @@
 */
 
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 module alu_16_bit_7 (
 =======
 module alu_16_bit_5 (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+<<<<<<< HEAD
+=======
+=======
+module alu_16_bit_5 (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     input [15:0] a,
     input [15:0] b,
     input [5:0] alufn,
@@ -27,12 +37,23 @@ module alu_16_bit_5 (
   reg [16-1:0] M_arithmeticUnit_a;
   reg [16-1:0] M_arithmeticUnit_b;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   reg [4-1:0] M_arithmeticUnit_alufn;
   alu_arithmetic_42 arithmeticUnit (
 =======
   reg [2-1:0] M_arithmeticUnit_alufn;
   alu_arithmetic_7 arithmeticUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+<<<<<<< HEAD
+=======
+=======
+  reg [2-1:0] M_arithmeticUnit_alufn;
+  alu_arithmetic_7 arithmeticUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     .a(M_arithmeticUnit_a),
     .b(M_arithmeticUnit_b),
     .alufn(M_arithmeticUnit_alufn),
@@ -47,10 +68,20 @@ module alu_16_bit_5 (
   reg [16-1:0] M_booleanUnit_b;
   reg [4-1:0] M_booleanUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   alu_boolean_43 booleanUnit (
 =======
   alu_boolean_8 booleanUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+<<<<<<< HEAD
+=======
+=======
+  alu_boolean_8 booleanUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     .a(M_booleanUnit_a),
     .b(M_booleanUnit_b),
     .alufn(M_booleanUnit_alufn),
@@ -63,10 +94,20 @@ module alu_16_bit_5 (
   reg [1-1:0] M_compareUnit_n;
   reg [4-1:0] M_compareUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   alu_compare_44 compareUnit (
 =======
   alu_compare_9 compareUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+<<<<<<< HEAD
+=======
+=======
+  alu_compare_9 compareUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     .z(M_compareUnit_z),
     .v(M_compareUnit_v),
     .n(M_compareUnit_n),
@@ -79,10 +120,20 @@ module alu_16_bit_5 (
   reg [4-1:0] M_shifterUnit_b;
   reg [2-1:0] M_shifterUnit_alufn;
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_16_bit_7.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
   alu_shifter_45 shifterUnit (
 =======
   alu_shifter_10 shifterUnit (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+<<<<<<< HEAD
+=======
+=======
+  alu_shifter_10 shifterUnit (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_16_bit_5.v
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
     .a(M_shifterUnit_a),
     .b(M_shifterUnit_b),
     .alufn(M_shifterUnit_alufn),

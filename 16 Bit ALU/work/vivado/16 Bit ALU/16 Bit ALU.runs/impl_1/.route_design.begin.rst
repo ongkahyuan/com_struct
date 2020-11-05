@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Process Command=".planAhead." Owner="User123" Host="AMRISH" Pid="12828">
+=======
+    <Process Command=".planAhead." Owner="amris" Host="DESKTOP-6N6MSBK" Pid="8840">
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
 =======
     <Process Command=".planAhead." Owner="amris" Host="DESKTOP-6N6MSBK" Pid="8840">
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA

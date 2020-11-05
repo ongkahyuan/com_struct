@@ -4,11 +4,15 @@
    This is a temporary file and any changes made to it will be destroyed.
 */
 
+<<<<<<< HEAD:16 Bit ALU/work/verilog/alu_boolean_8.v
 <<<<<<< HEAD:16 Bit ALU/work/verilog/alu_boolean_43.v
 module alu_boolean_43 (
 =======
 module alu_boolean_8 (
 >>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/verilog/alu_boolean_8.v
+=======
+module alu_boolean_8 (
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA:16 Bit ALU/work/vivado/16 Bit ALU/16 Bit ALU.srcs/sources_1/imports/verilog/alu_boolean_45.v
     input [15:0] a,
     input [15:0] b,
     input [3:0] alufn,
