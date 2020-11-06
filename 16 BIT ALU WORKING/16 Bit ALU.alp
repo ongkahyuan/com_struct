@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="16 Bit ALU" board="Alchitry Au" language="Lucid" version="3">
+  <files>
+    <src>alu_arithmetic.luc</src>
+    <src>manual_alu_tester.luc</src>
+    <src>alu_compare.luc</src>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <src>alu_tester.luc</src>
+>>>>>>> b02f176be14280e4bccc160ef1acaa0586c174ee
+    <component>pipeline.luc</component>
+    <src>auto_tester_run.luc</src>
+    <component>counter.luc</component>
+    <component>decoder.luc</component>
+=======
+    <component>pipeline.luc</component>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+    <component>pipeline.luc</component>
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+    <src top="true">au_top.luc</src>
+    <src>seven_seg.luc</src>
+    <src>alu_16_bit.luc</src>
+    <src>alu_shifter.luc</src>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <src>auto_alu_tester.luc</src>
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+    <component>reset_conditioner.luc</component>
+    <src>alu_boolean.luc</src>
+    <component>edge_detector.luc</component>
+    <component>button_conditioner.luc</component>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <src>multi_seven_seg.luc</src>
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+=======
+>>>>>>> parent of 6052a66... Added Auto Tester Files and flashed FPGA
+    <constraint lib="true">alchitry.acf</constraint>
+    <constraint lib="true">io.acf</constraint>
+    <constraint lib="true">au.xdc</constraint>
+  </files>
+</project>
